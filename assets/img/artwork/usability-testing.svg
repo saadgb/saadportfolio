@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="536" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="640" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="329" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect width="630" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect width="232" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect width="141" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <rect width="45" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-usability-testing">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="usability-testing" clip-path="url(#clip-usability-testing)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <line id="Line_1" data-name="Line 1" x2="1806" transform="translate(57.5 148.5)" fill="none" stroke="#e91e63" stroke-width="8"/>
+    <text id="OPTIMIZING_TASK_COMPLETION" data-name="OPTIMIZING TASK COMPLETION" transform="translate(76 118)" fill="#262626" font-size="28" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">OPTIMIZING TASK COMPLETION</tspan></text>
+    <text id="Very_Hard" data-name="Very Hard" transform="translate(1143 64)" fill="#262626" font-size="28" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Very Hard</tspan></text>
+    <text id="Very_Easy" data-name="Very Easy" transform="translate(1749 64)" fill="#262626" font-size="28" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Very Easy</tspan></text>
+    <text id="Verify_e-mail_sent_with_attachment_s_" data-name="Verify e-mail sent with attachment(s)" transform="translate(71 225)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Verify e-mail sent with attachment(s)</tspan></text>
+    <text id="Create_to-do_task_list" data-name="Create to-do task list" transform="translate(71 315)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Create to-do task list</tspan></text>
+    <text id="Send_e-mail_with_attachement" data-name="Send e-mail with attachement" transform="translate(71 405)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Send e-mail with attachement</tspan></text>
+    <text id="Group_meetings_and_email_invites_in_folders" data-name="Group meetings and email invites in folders" transform="translate(71 495)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Group meetings and email invites in folders</tspan></text>
+    <text id="Contact_meeting_creator" data-name="Contact meeting creator" transform="translate(71 586)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Contact meeting creator</tspan></text>
+    <text id="Create_group_e-mail_list" data-name="Create group e-mail list" transform="translate(71 676)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Create group e-mail list</tspan></text>
+    <text id="Create_group_calendar_and_schedule_meeting" data-name="Create group calendar and schedule meeting" transform="translate(71 766)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Create group calendar and schedule meeting</tspan></text>
+    <text id="Meeting_accept_or_decline_status" data-name="Meeting accept or decline status" transform="translate(71 856)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Meeting accept or decline status</tspan></text>
+    <line id="Line_2" data-name="Line 2" x2="1800" transform="translate(60.5 259.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <line id="Line_3" data-name="Line 3" x2="1800" transform="translate(60.5 349.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <line id="Line_4" data-name="Line 4" x2="1800" transform="translate(60.5 439.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <line id="Line_5" data-name="Line 5" x2="1800" transform="translate(60.5 529.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <line id="Line_6" data-name="Line 6" x2="1800" transform="translate(60.5 620.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <line id="Line_7" data-name="Line 7" x2="1800" transform="translate(60.5 710.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <line id="Line_8" data-name="Line 8" x2="1800" transform="translate(60.5 800.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <line id="Line_9" data-name="Line 9" x2="1800" transform="translate(60.5 890.5)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="6 9" opacity="0.55"/>
+    <text id="_1_2_3_4_5_6_7_" data-name=" 1            2             3            4             5            6             7             " transform="translate(1198 121)" fill="#262626" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0" xml:space="preserve"> 1            2             3            4             5            6             7             </tspan></text>
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(1193 206)" clip-path="url(#clip-path)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-1095 -186)">
+        <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-994 -186)">
+        <circle id="Ellipse_1-3" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-893 -186)">
+        <circle id="Ellipse_1-4" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-792 -186)">
+        <circle id="Ellipse_1-5" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-691 -186)">
+        <circle id="Ellipse_1-6" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(1193 297)" clip-path="url(#clip-path-2)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1-7" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-1095 -186)">
+        <circle id="Ellipse_1-8" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-994 -186)">
+        <circle id="Ellipse_1-9" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-893 -186)">
+        <circle id="Ellipse_1-10" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-792 -186)">
+        <circle id="Ellipse_1-11" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-691 -186)">
+        <circle id="Ellipse_1-12" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-590 -186)">
+        <circle id="Ellipse_1-13" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_3" data-name="Repeat Grid 3" transform="translate(1193 388)" clip-path="url(#clip-path-3)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1-14" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-1095 -186)">
+        <circle id="Ellipse_1-15" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-994 -186)">
+        <circle id="Ellipse_1-16" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-893 -186)">
+        <circle id="Ellipse_1-17" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_4" data-name="Repeat Grid 4" transform="translate(1193 479)" clip-path="url(#clip-path)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1-18" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-1095 -186)">
+        <circle id="Ellipse_1-19" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-994 -186)">
+        <circle id="Ellipse_1-20" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-893 -186)">
+        <circle id="Ellipse_1-21" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-792 -186)">
+        <circle id="Ellipse_1-22" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-691 -186)">
+        <circle id="Ellipse_1-23" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_5" data-name="Repeat Grid 5" transform="translate(1193 570)" clip-path="url(#clip-path-5)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1-24" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-1095 -186)">
+        <circle id="Ellipse_1-25" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-994 -186)">
+        <circle id="Ellipse_1-26" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-893 -186)">
+        <circle id="Ellipse_1-27" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-792 -186)">
+        <circle id="Ellipse_1-28" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-691 -186)">
+        <circle id="Ellipse_1-29" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-590 -186)">
+        <circle id="Ellipse_1-30" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_6" data-name="Repeat Grid 6" transform="translate(1193 661)" clip-path="url(#clip-path-6)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1-31" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-1095 -186)">
+        <circle id="Ellipse_1-32" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-994 -186)">
+        <circle id="Ellipse_1-33" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_7" data-name="Repeat Grid 7" transform="translate(1193 752)" clip-path="url(#clip-path-7)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1-34" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+      <g transform="translate(-1095 -186)">
+        <circle id="Ellipse_1-35" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_8" data-name="Repeat Grid 8" transform="translate(1193 837)" clip-path="url(#clip-path-8)">
+      <g transform="translate(-1196 -186)">
+        <circle id="Ellipse_1-36" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1196 186)" fill="#e91e63"/>
+      </g>
+    </g>
+  </g>
+</svg>

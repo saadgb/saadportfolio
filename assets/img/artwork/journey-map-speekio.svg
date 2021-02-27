@@ -1,0 +1,445 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3385" height="2356" viewBox="0 0 3385 2356">
+  <defs>
+    <clipPath id="clip-journey-map-speekio">
+      <rect width="3385" height="2356"/>
+    </clipPath>
+  </defs>
+  <g id="journey-map-speekio" clip-path="url(#clip-journey-map-speekio)">
+    <rect width="3385" height="2356" fill="#fff"/>
+    <path id="Path_4" data-name="Path 4" d="M2714.664,60.79H2496.07l-97.318.621L2416,86.672l-17.25,24.828,97.318-.2h231.924V60.79Z" transform="translate(599.5 -17.5)" fill="#2e2e2e"/>
+    <path id="Path_184" data-name="Path 184" d="M2327.26,60.79H2006.044l17.25,25.26-17.25,25.25H2327.26l17.25-25.25Z" transform="translate(659.5 -17.5)" fill="#2e2e2e"/>
+    <path id="Path_1" data-name="Path 1" d="M335.11,60.79H30.266V111.3H335.11l17.25-25.25Z" transform="translate(628.23 -17.5)" fill="#2e2e2e"/>
+    <path id="Path_2" data-name="Path 2" d="M541.38,60.79H217.839L235.1,86.05l-17.26,25.25H541.38l17.25-25.25Z" transform="translate(763.5 -17.5)" fill="#2e2e2e"/>
+    <path id="Path_5" data-name="Path 5" d="M902,60.79H583.174l17.25,25.26-17.25,25.25H902l17.25-25.25Z" transform="translate(738.5 -17.5)" fill="#2e2e2e"/>
+    <path id="Path_169" data-name="Path 169" d="M902,60.79H583l17.25,25.26L583,111.3H902l17.25-25.25Z" transform="translate(1074.5 -17.5)" fill="#2e2e2e"/>
+    <path id="Path_170" data-name="Path 170" d="M902,60.79H581.82l17.25,25.26L581.82,111.3H902l17.25-25.25Z" transform="translate(1748.5 -17.5)" fill="#2e2e2e"/>
+    <line id="Line_3" data-name="Line 3" y1="2181.4" transform="translate(644.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_12" data-name="Line 12" y1="2181.4" transform="translate(982.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_13" data-name="Line 13" y1="2181.4" transform="translate(1319.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_14" data-name="Line 14" y1="2181.4" transform="translate(1657.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_19" data-name="Line 19" y1="2181.4" transform="translate(1993.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_15" data-name="Line 15" y1="2181.4" transform="translate(2329.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_16" data-name="Line 16" y1="2181.4" transform="translate(2667.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_17" data-name="Line 17" y1="2181.4" transform="translate(3004.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <line id="Line_18" data-name="Line 18" y1="2181.4" transform="translate(3342.5 118.6)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="10 10" opacity="0.26"/>
+    <text id="AWARENESS" transform="translate(694 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="0" y="0">AWA</tspan><tspan y="0" letter-spacing="0.1em">REN</tspan><tspan y="0" letter-spacing="0.09em">E</tspan><tspan y="0" letter-spacing="0.1em">SS</tspan></text>
+    <text id="HIRING_MANAGER" data-name="HIRING MANAGER" transform="translate(90 327)" fill="#1e1e1e" font-size="33" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="0" y="0">HIRING MANAGER</tspan></text>
+    <text id="CREATE_JOB" data-name="CREATE JOB" transform="translate(1032.56 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">CREATE JOB</tspan></text>
+    <text id="CANDIDATE_PROFILE" data-name="CANDIDATE PROFILE" transform="translate(1372.63 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">CANDIDATE PROFILE</tspan></text>
+    <text id="CREATE_TEST" data-name="CREATE TEST" transform="translate(1708.63 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">CREATE TEST</tspan></text>
+    <text id="EVALUATION" transform="translate(2381.63 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">EVALUATION</tspan></text>
+    <text id="HIRING_STAGES" data-name="HIRING STAGES" transform="translate(2718.66 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">HIRING STAGES</tspan></text>
+    <text id="USER_GOALS" data-name="USER GOALS" transform="translate(587.82 300.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="0" y="0">USER GOALS</tspan></text>
+    <text id="USER_EXPECTATION" data-name="USER 
+EXPECTATION" transform="translate(570.82 514.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="-30.646" y="0">USER </tspan><tspan x="-73.786" y="27">EXPECTATION</tspan></text>
+    <text id="PROCESS" transform="translate(584.82 791.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="-47.73" y="0">PROCESS</tspan></text>
+    <text id="CUSTOMER_SAYS" data-name="CUSTOMER 
+SAYS" transform="translate(570.82 1069.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="-62.728" y="0">CUSTOMER </tspan><tspan x="-25.862" y="27">SAYS</tspan></text>
+    <text id="IDEAS" transform="translate(584.82 2177.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="-31.843" y="0">IDEAS</tspan></text>
+    <text id="PROBLEMS" transform="translate(584.82 1623.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="-57.778" y="0">PROBLEMS</tspan></text>
+    <text id="EXPERIENCE" transform="translate(584.82 1900.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="-65.222" y="0">EXPERIENCE</tspan></text>
+    <text id="TOUCHPOINTS" transform="translate(584.82 1346.478) rotate(-90)" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.08em"><tspan x="-78.464" y="0">TOUCHPOINTS</tspan></text>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(659 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(659 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(659 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(659 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_57" data-name="Rectangle 57" transform="translate(659 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_49" data-name="Rectangle 49" transform="translate(659 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(659 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(999 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(999 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(999 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_29" data-name="Rectangle 29" transform="translate(999 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_58" data-name="Rectangle 58" transform="translate(999 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_50" data-name="Rectangle 50" transform="translate(999 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_37" data-name="Rectangle 37" transform="translate(999 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(1337 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(1337 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_19" data-name="Rectangle 19" transform="translate(1337 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_30" data-name="Rectangle 30" transform="translate(1337 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_59" data-name="Rectangle 59" transform="translate(1337 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_51" data-name="Rectangle 51" transform="translate(1337 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_38" data-name="Rectangle 38" transform="translate(1337 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(1673 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(1673 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_21" data-name="Rectangle 21" transform="translate(1673 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_31" data-name="Rectangle 31" transform="translate(1673 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_60" data-name="Rectangle 60" transform="translate(1673 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_52" data-name="Rectangle 52" transform="translate(1673 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_39" data-name="Rectangle 39" transform="translate(1673 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(2346 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(2346 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(2346 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_33" data-name="Rectangle 33" transform="translate(2346 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_62" data-name="Rectangle 62" transform="translate(2346 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_54" data-name="Rectangle 54" transform="translate(2346 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_41" data-name="Rectangle 41" transform="translate(2346 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(2682 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_16" data-name="Rectangle 16" transform="translate(2682 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_24" data-name="Rectangle 24" transform="translate(2682 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(2682 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_63" data-name="Rectangle 63" transform="translate(2682 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(2682 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_43" data-name="Rectangle 43" transform="translate(2682 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <text id="The_need_to_hire_a_candidate_for_a_job_arises._Decide_what_content_to_post_for_the_job_opening" data-name="The need to hire a candidate for a job arises. Decide what content to post for the job opening" transform="translate(674 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">The need to hire a candidate </tspan><tspan x="0" y="49">for a job arises. Decide what </tspan><tspan x="0" y="76">content to post for the job </tspan><tspan x="0" y="103">opening</tspan></text>
+    <text id="Hiring_manager_is_looking_for_a_right_candidate_for_the_job_opening_and_he_doesn_t_want_to_spend_much_time_in_filtering_for_the_right_candidate" data-name="Hiring manager is looking for a right candidate for the job opening and he doesn&apos;t want to spend much time in filtering for the right candidate" transform="translate(674 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager is looking for </tspan><tspan x="0" y="49">a right candidate for the job </tspan><tspan x="0" y="76">opening and he doesn&apos;t want </tspan><tspan x="0" y="103">to spend much time in filtering </tspan><tspan x="0" y="130">for the right candidate</tspan></text>
+    <text id="_Middle-aged_hiring_manager_who_is_struggling_to_hire_right_candidate_for_a_job_opening_at_his_company._Going_through_a_number_of_profiles_and_evaluation_to_shortlist_candidates_adds_to_his_frustration._He_hopes_that_his_hiring_process_could_be_fast_enough" data-name=" Middle-aged hiring manager who is struggling to hire right candidate for a job opening at his company. Going through a number of profiles and evaluation to shortlist candidates adds to his frustration. He hopes that his hiring process could be fast enough" transform="translate(90 362)" font-size="28" font-family="SegoeUI, Segoe UI" letter-spacing="0.044em"><tspan x="29.31" y="30" xml:space="preserve"> Middle-aged hiring </tspan><tspan x="57.588" y="67">manager who is </tspan><tspan x="9.298" y="104">struggling to hire right </tspan><tspan x="35.928" y="141">candidate for a job </tspan><tspan x="67.466" y="178">opening at his </tspan><tspan x="54.477" y="215">company. Going </tspan><tspan x="23.049" y="252">through a number of </tspan><tspan x="9.415" y="289">profiles and evaluation </tspan><tspan x="13.667" y="326">to shortlist candidates </tspan><tspan x="10.932" y="363">adds to his frustration. </tspan><tspan x="1.587" y="400">He hopes that his hiring </tspan><tspan x="20.737" y="437">process could be fast </tspan><tspan x="36.223" y="474">enough, so he may </tspan><tspan x="8.185" y="511">execute other assigned </tspan><tspan x="126.678" y="548">tasks.</tspan></text>
+    <text id="Hiring_manager_wants_to_hire_a_right_candidate_so_he_opens_up_the_website_to_post_about_job_details" data-name="Hiring manager wants to hire a right candidate so he opens up the website to post about job details" transform="translate(674 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager wants to hire a </tspan><tspan x="0" y="49">right candidate so he opens </tspan><tspan x="0" y="76">up the website to post about </tspan><tspan x="0" y="103">job details</tspan></text>
+    <text id="I_want_a_perfect_candidate_but_I_don_t_want_to_filter_him_out_manually_because_it_s_a_time_consuming_process" data-name="I want a perfect candidate but I don&apos;t want to filter him out manually because it&apos;s a time consuming process" transform="translate(674 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I want a perfect candidate but </tspan><tspan x="0" y="49">I don&apos;t want to filter him out </tspan><tspan x="0" y="76">manually because it&apos;s a time </tspan><tspan x="0" y="103">consuming process</tspan></text>
+    <text id="UNCERTAIN_BORED" data-name="UNCERTAIN, 
+BORED" transform="translate(676 1853)" font-size="30" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="51.627" y="32">UNCERTAIN, </tspan><tspan x="88.241" y="72">BORED</tspan></text>
+    <text id="UNCERTAIN_CONFUSED" data-name="UNCERTAIN, 
+CONFUSED" transform="translate(1015 1853)" font-size="30" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="51.627" y="32">UNCERTAIN, </tspan><tspan x="59.757" y="72">CONFUSED</tspan></text>
+    <text id="UNCERTAIN_CONFUSED-2" data-name="UNCERTAIN, 
+CONFUSED" transform="translate(1353 1853)" font-size="30" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="51.627" y="32">UNCERTAIN, </tspan><tspan x="59.757" y="72">CONFUSED</tspan></text>
+    <text id="ANNOYED_CONFUSED" data-name="ANNOYED, 
+CONFUSED" transform="translate(2025 1853)" font-size="30" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="62.372" y="32">ANNOYED, </tspan><tspan x="59.757" y="72">CONFUSED</tspan></text>
+    <text id="CURIOUS_MILD_STRESS" data-name="CURIOUS, 
+MILD STRESS" transform="translate(2361 1853)" font-size="30" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="69.256" y="32">CURIOUS, </tspan><tspan x="46.17" y="72">MILD STRESS</tspan></text>
+    <text id="EXCITED" transform="translate(1689 1878)" font-size="30" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="78.99" y="32">EXCITED</tspan></text>
+    <text id="Create_a_job_post_that_hiring_manager_needs_to_publish_online" data-name="Create a job post that hiring manager needs to publish online" transform="translate(1014 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Create a job post that hiring </tspan><tspan x="0" y="49">manager needs to publish </tspan><tspan x="0" y="76">online</tspan></text>
+    <text id="Hiring_manager_expects_that_job_creation_flow_will_be_easier_and_intuitive_where_he_can_add_job_details_and_all_the_information_related_to_that_vacancy" data-name="Hiring manager expects that job creation flow will be easier and intuitive where he can add job details and all the information related to that vacancy" transform="translate(1014 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager expects that </tspan><tspan x="0" y="49">job creation flow will be easier </tspan><tspan x="0" y="76">and intuitive where he can add </tspan><tspan x="0" y="103">job details and all the </tspan><tspan x="0" y="130">information related to that </tspan><tspan x="0" y="157">vacancy</tspan></text>
+    <text id="Once_hiring_manager_opens_up_the_job_creation_wizard_he_starts_putting_data_in_to_the_relevant_field_so_that_the_candidate_knows_about_the_position_clearly" data-name="Once hiring manager opens up the job creation wizard, he starts putting data in to the relevant field so that the candidate knows about the position clearly" transform="translate(1014 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Once hiring manager opens </tspan><tspan x="0" y="49">up the job creation wizard, he </tspan><tspan x="0" y="76">starts putting data in to the </tspan><tspan x="0" y="103">relevant field so that the </tspan><tspan x="0" y="130">candidate knows about the </tspan><tspan x="0" y="157">position clearly</tspan></text>
+    <text id="I_wonder_how_I_will_post_the_ad_and_share_it_on_social_media_so_it_can_reach_to_my_right_candidate_" data-name="I wonder how I will post the ad and share it on social media so it can reach to my right candidate?" transform="translate(1014 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I wonder how I will post the ad </tspan><tspan x="0" y="49">and share it on social media so </tspan><tspan x="0" y="76">it can reach to my right </tspan><tspan x="0" y="103">candidate?</tspan></text>
+    <text id="There_should_be_more_options_to_define_company_and_terms_and_condition_in_job_ad_so_the_candidate_may_have_clear_picture_where_they_are_applying" data-name="There should be more options to define company and terms and condition in job ad so the candidate may have clear picture where they are applying" transform="translate(1014 2074)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">There should be more options </tspan><tspan x="0" y="49">to define company and terms </tspan><tspan x="0" y="76">and condition in job ad so the </tspan><tspan x="0" y="103">candidate may have clear </tspan><tspan x="0" y="130">picture where they are </tspan><tspan x="0" y="157">applying</tspan></text>
+    <text id="It_seems_that_there_are_not_enough_options_to_describe_about_the_job_and_the_company_information" data-name="It seems that there are not enough options to describe about the job and the company information" transform="translate(1014 1520)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">It seems that there are not </tspan><tspan x="0" y="49">enough options to describe </tspan><tspan x="0" y="76">about the job and the </tspan><tspan x="0" y="103">company information</tspan></text>
+    <text id="Ask_candidate_about_their_personal_information_along_with_the_short_introduction_video" data-name="Ask candidate about their personal information along with the short introduction video" transform="translate(1352 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Ask candidate about their </tspan><tspan x="0" y="49">personal information along </tspan><tspan x="0" y="76">with the short introduction </tspan><tspan x="0" y="103">video</tspan></text>
+    <text id="Hiring_manager_expects_that_he_can_design_the_personal_page_by_himself_so_he_can_ask_personal_information_from_the_candidate_according_to_the_requirements_and_GDPR" data-name="Hiring manager expects that he can design the personal page by himself so he can ask personal information from the candidate according to the requirements and GDPR" transform="translate(1352 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager expects that </tspan><tspan x="0" y="49">he can design the personal </tspan><tspan x="0" y="76">page by himself so he can ask </tspan><tspan x="0" y="103">personal information from the </tspan><tspan x="0" y="130">candidate according to the </tspan><tspan x="0" y="157">requirements and GDPR</tspan></text>
+    <text id="Hiring_manager_then_creates_a_customized_personal_profile_through_profile_builder_with_his_required_options_for_the_candidate" data-name="Hiring manager then creates a customized personal profile through profile builder with his required options for the candidate" transform="translate(1352 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager then creates a </tspan><tspan x="0" y="49">customized personal profile </tspan><tspan x="0" y="76">through profile builder with </tspan><tspan x="0" y="103">his required options for the </tspan><tspan x="0" y="130">candidate</tspan></text>
+    <text id="I_wonder_if_I_can_plug_and_play_profile_components_so_I_know_what_should_I_ask_from_the_candidate_at_personal_level" data-name="I wonder if I can plug and play profile components so I know what should I ask from the candidate at personal level" transform="translate(1352 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I wonder if I can plug and play </tspan><tspan x="0" y="49">profile components so I know </tspan><tspan x="0" y="76">what should I ask from the </tspan><tspan x="0" y="103">candidate at personal level</tspan></text>
+    <text id="Make_sure_this_profile_can_be_completely_of_plug_and_play_type_so_hiring_manager_can_ask_relevant_or_customized_type_personal_information" data-name="Make sure this profile can be completely of plug and play type so hiring manager can ask relevant or customized type personal information" transform="translate(1352 2074)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Make sure this profile can be </tspan><tspan x="0" y="49">completely of plug and play </tspan><tspan x="0" y="76">type so hiring manager can </tspan><tspan x="0" y="103">ask relevant or customized </tspan><tspan x="0" y="130">type personal information</tspan></text>
+    <text id="Asking_candidate_information_is_not_aligned_with_GDPR_compliance._We_cannot_remove_any_information_from_the_form" data-name="Asking candidate information is not aligned with GDPR compliance. We cannot remove any information from the form" transform="translate(1352 1520)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Asking candidate information </tspan><tspan x="0" y="49">is not aligned with GDPR </tspan><tspan x="0" y="76">compliance. We cannot </tspan><tspan x="0" y="103">remove any information from </tspan><tspan x="0" y="130">the form</tspan></text>
+    <text id="Create_a_technical_test_for_candidate_evaluation_which_he_needs_to_undergo_to_qualify_for_the_next_stage" data-name="Create a technical test for candidate evaluation which he needs to undergo to qualify for the next stage" transform="translate(1688 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Create a technical test for </tspan><tspan x="0" y="49">candidate evaluation which he </tspan><tspan x="0" y="76">needs to undergo to qualify </tspan><tspan x="0" y="103">for the next stage</tspan></text>
+    <text id="Hiring_manager_expects_that_he_can_design_online_test_and_scores_for_the_candidate_accordingly" data-name="Hiring manager expects that he can design online test and scores for the candidate accordingly" transform="translate(1688 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager expects that </tspan><tspan x="0" y="49">he can design online test and </tspan><tspan x="0" y="76">scores for the candidate </tspan><tspan x="0" y="103">accordingly</tspan></text>
+    <text id="He_then_creates_and_designs_online_test_for_the_candidate_asking_relevant_test_questions._These_questions_are_based_on_multiple_choices_and_some_open_ended_questions_for_candidate" data-name="He then creates and designs online test for the candidate asking relevant test questions. These questions are based on multiple choices and some open ended questions for candidate" transform="translate(1688 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">He then creates and designs </tspan><tspan x="0" y="49">online test for the candidate </tspan><tspan x="0" y="76">asking relevant test questions. </tspan><tspan x="0" y="103">These questions are based on </tspan><tspan x="0" y="130">multiple choices and some </tspan><tspan x="0" y="157">open ended questions for </tspan><tspan x="0" y="184">candidate</tspan></text>
+    <text id="I_wish_that_the_test_creation_system_will_be_easy_to_design_so_anyone_could_design_a_test_in_few_minutes" data-name="I wish that the test creation system will be easy to design so anyone could design a test in few minutes" transform="translate(1688 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I wish that the test creation </tspan><tspan x="0" y="49">system will be easy to design </tspan><tspan x="0" y="76">so anyone could design a test </tspan><tspan x="0" y="103">in few minutes</tspan></text>
+    <text id="Creating_test_should_also_plug_and_play_so_the_admin_can_create_pre-defined_questions_to_add_them_while_creating_test" data-name="Creating test should also plug and play so the admin can create pre-defined questions to add them while creating test" transform="translate(1688 2074)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Creating test should also plug </tspan><tspan x="0" y="49">and play so the admin can </tspan><tspan x="0" y="76">create pre-defined questions </tspan><tspan x="0" y="103">to add them while creating </tspan><tspan x="0" y="130">test</tspan></text>
+    <text id="I_can_somehow_create_test_for_my_candidates_" data-name="I can somehow create test for my candidates " transform="translate(1688 1520)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I can somehow create test for </tspan><tspan x="0" y="49">my candidates </tspan></text>
+    <text id="Evaluate_the_candidate_on_the_basis_of_his_test_score._Test_score_s_total_sum_will_be_equal_to_auto-score_by_system_and_manual_score_by_reviewers" data-name="Evaluate the candidate on the basis of his test score. Test score&apos;s total sum will be equal to auto-score by system and manual score by reviewers" transform="translate(2361 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Evaluate the candidate on the </tspan><tspan x="0" y="49">basis of his test score. Test </tspan><tspan x="0" y="76">score&apos;s total sum will be equal </tspan><tspan x="0" y="103">to auto-score by system and </tspan><tspan x="0" y="130">manual score by reviewers</tspan></text>
+    <text id="Hiring_manager_expects_that_the_evaluation_system_should_be_fast_enough_so_that_he_can_easily_select_the_shortlisted_candidate_according_to_the_criteria_he_created" data-name="Hiring manager expects that the evaluation system should be fast enough so that he can easily select the shortlisted candidate according to the criteria he created" transform="translate(2361 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager expects that </tspan><tspan x="0" y="49">the evaluation system should </tspan><tspan x="0" y="76">be fast enough so that he can </tspan><tspan x="0" y="103">easily select the shortlisted </tspan><tspan x="0" y="130">candidate according to the </tspan><tspan x="0" y="157">criteria he created</tspan></text>
+    <text id="The_system_then_scores_the_candidate_s_multiple_choice_questions_automatically_as_soon_as_he_submits_it_and_sends_the_open_ended_questions_to_the_assigned_reviewers" data-name="The system then scores the candidate&apos;s multiple choice questions automatically as soon as he submits it and sends the open ended questions to the assigned reviewers" transform="translate(2361 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">The system then scores the </tspan><tspan x="0" y="49">candidate&apos;s multiple choice </tspan><tspan x="0" y="76">questions automatically as </tspan><tspan x="0" y="103">soon as he submits it and </tspan><tspan x="0" y="130">sends the open ended </tspan><tspan x="0" y="157">questions to the assigned </tspan><tspan x="0" y="184">reviewers</tspan></text>
+    <text id="I_wish_that_the_system_will_evaluate_the_candidate_s_answers_instantly_and_filters_out_the_best_candidate_" data-name="I wish that the system will evaluate the candidate&apos;s answers instantly and filters out the best candidate  " transform="translate(2361 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I wish that the system will </tspan><tspan x="0" y="49">evaluate the candidate&apos;s </tspan><tspan x="0" y="76">answers instantly and filters </tspan><tspan x="0" y="103" xml:space="preserve">out the best candidate  </tspan></text>
+    <text id="The_system_should_calculate_the_predefined_score_on_the_basis_of_answers_and_should_compile_a_rapid_report_for_the_reviewers" data-name="The system should calculate the predefined score on the basis of answers and should compile a rapid report for the reviewers" transform="translate(2361 2074)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">The system should calculate </tspan><tspan x="0" y="49">the predefined score on the </tspan><tspan x="0" y="76">basis of answers and should </tspan><tspan x="0" y="103">compile a rapid report for the </tspan><tspan x="0" y="130">reviewers</tspan></text>
+    <text id="My_system_is_scoring_in_wrong_format_and_I_cannot_find_all_the_scores_he_earned" data-name="My system is scoring in wrong format and I cannot find all the scores he earned" transform="translate(2361 1520)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">My system is scoring in wrong </tspan><tspan x="0" y="49">format and I cannot find all </tspan><tspan x="0" y="76">the scores he earned</tspan></text>
+    <text id="Allow_candidate_to_pass_through_designed_hiring_stages_to_reach_hired_stage" data-name="Allow candidate to pass through designed hiring stages to reach hired stage" transform="translate(2697 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Allow candidate to pass </tspan><tspan x="0" y="49">through designed hiring </tspan><tspan x="0" y="76">stages to reach hired stage</tspan></text>
+    <text id="Hiring_manager_expects_that_his_team_should_easily_move_candidate_to_the_defined_hiring_flows_for_fast_and_easy_onboarding" data-name="Hiring manager expects that his team should easily move candidate to the defined hiring flows for fast and easy onboarding" transform="translate(2697 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager expects that </tspan><tspan x="0" y="49">his team should easily move </tspan><tspan x="0" y="76">candidate to the defined </tspan><tspan x="0" y="103">hiring flows for fast and easy </tspan><tspan x="0" y="130">onboarding</tspan></text>
+    <text id="Then_the_hiring_manager_or_other_team_member_puts_the_candidates_to_the_hiring_stages_so_all_the_members_should_see_the_candidate_position_after_shortlisted_by_the_system" data-name="Then the hiring manager or other team member puts the candidates to the hiring stages so all the members should see the candidate position after shortlisted by the system" transform="translate(2697 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Then the hiring manager or </tspan><tspan x="0" y="49">other team member puts the </tspan><tspan x="0" y="76">candidates to the hiring stages </tspan><tspan x="0" y="103">so all the members should see </tspan><tspan x="0" y="130">the candidate position after </tspan><tspan x="0" y="157">shortlisted by the system</tspan></text>
+    <text id="I_look_forward_to_a_comprehensive_hiring_stage_system_where_my_members_can_easily_manage_their_candidate_s_onboarding_process" data-name="I look forward to a comprehensive hiring stage system where my members can easily manage their candidate&apos;s onboarding process" transform="translate(2697 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I look forward to a </tspan><tspan x="0" y="49">comprehensive hiring stage </tspan><tspan x="0" y="76">system where my members </tspan><tspan x="0" y="103">can easily manage their </tspan><tspan x="0" y="130">candidate&apos;s onboarding </tspan><tspan x="0" y="157">process</tspan></text>
+    <text id="Members_of_the_company_can_move_the_candidate_easily_in_their_hiring_flow_so_all_the_relevant_members_can_see_the_candidate_hiring_and_onboarding_process" data-name="Members of the company can move the candidate easily in their hiring flow so all the relevant members can see the candidate hiring and onboarding process" transform="translate(2697 2074)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Members of the company can </tspan><tspan x="0" y="49">move the candidate easily in </tspan><tspan x="0" y="76">their hiring flow so all the </tspan><tspan x="0" y="103">relevant members can see the </tspan><tspan x="0" y="130">candidate hiring and </tspan><tspan x="0" y="157">onboarding process</tspan></text>
+    <g id="Group_1" data-name="Group 1" transform="translate(180 10)">
+      <path id="Path_7" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(180 286)">
+      <path id="Path_7-2" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172-2" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(180 563)">
+      <path id="Path_7-3" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172-3" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <g id="Group_4" data-name="Group 4" transform="translate(180 840)">
+      <path id="Path_7-4" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172-4" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <g id="Group_16" data-name="Group 16" transform="translate(180 1948)">
+      <path id="Path_7-5" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172-5" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <g id="Group_15" data-name="Group 15" transform="translate(180 1394)">
+      <path id="Path_7-6" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172-6" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <g id="Group_13" data-name="Group 13" transform="translate(180 1671)">
+      <path id="Path_7-7" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172-7" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <g id="Group_5" data-name="Group 5" transform="translate(180 1117)">
+      <path id="Path_7-8" data-name="Path 7" d="M.5,379.5V133.29H137.02" transform="translate(327.5 -27.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+      <path id="Path_172-8" data-name="Path 172" d="M.5,133.29H137.02" transform="translate(327.5 218.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.26"/>
+    </g>
+    <path id="Path_173" data-name="Path 173" d="M902,60.79H583l17.25,25.26L583,111.3H902l17.25-25.25Z" transform="translate(1410.5 -17.5)" fill="#2e2e2e"/>
+    <text id="CREATE_HIRING_FLOWS" data-name="CREATE HIRING FLOWS" transform="translate(2044.63 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">CREATE HIRING FLOWS</tspan></text>
+    <g id="Rectangle_25" data-name="Rectangle 25" transform="translate(2009 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_26" data-name="Rectangle 26" transform="translate(2009 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_27" data-name="Rectangle 27" transform="translate(2009 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_32" data-name="Rectangle 32" transform="translate(2009 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_61" data-name="Rectangle 61" transform="translate(2009 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_53" data-name="Rectangle 53" transform="translate(2009 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_40" data-name="Rectangle 40" transform="translate(2009 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <text id="Define_hiring_flows_for_the_company_team_members_for_the_relevant_job_vacancy" data-name="Define hiring flows for the company team members for the relevant job vacancy" transform="translate(2024 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Define hiring flows for the </tspan><tspan x="0" y="49">company team members for </tspan><tspan x="0" y="76">the relevant job vacancy</tspan></text>
+    <text id="Hiring_manager_expects_to_configure_and_design_his_own_hiring_flow_for_his_team_so_the_members_could_use_that_flow_to_onboard_candidate" data-name="Hiring manager expects to configure and design his own hiring flow for his team so the members could use that flow to onboard candidate" transform="translate(2024 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager expects to </tspan><tspan x="0" y="49">configure and design his own </tspan><tspan x="0" y="76">hiring flow for his team so the </tspan><tspan x="0" y="103">members could use that flow </tspan><tspan x="0" y="130">to onboard candidate</tspan></text>
+    <text id="He_then_defines_hiring_flows_for_his_team_who_are_responsible_for_taking_interviews_from_the_candidates_on_different_hiring_stages" data-name="He then defines hiring flows for his team who are responsible for taking interviews from the candidates on different hiring stages" transform="translate(2024 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">He then defines hiring flows </tspan><tspan x="0" y="49">for his team who are </tspan><tspan x="0" y="76">responsible for taking </tspan><tspan x="0" y="103">interviews from the candidates </tspan><tspan x="0" y="130">on different hiring stages</tspan></text>
+    <text id="I_wonder_if_I_define_a_hiring_flow_for_my_team_so_all_my_assigned_members_can_use_that_flow_to_hire_a_candidate" data-name="I wonder if I define a hiring flow for my team so all my assigned members can use that flow to hire a candidate" transform="translate(2024 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I wonder if I define a hiring </tspan><tspan x="0" y="49">flow for my team so all my </tspan><tspan x="0" y="76">assigned members can use </tspan><tspan x="0" y="103">that flow to hire a candidate</tspan></text>
+    <text id="Hiring_manager_can_create_hiring_flows_on_the_go_so_each_job_can_have_different_sets_of_hiring_flows_for_better_hiring_process" data-name="Hiring manager can create hiring flows on the go so each job can have different sets of hiring flows for better hiring process" transform="translate(2024 2074)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager can create </tspan><tspan x="0" y="49">hiring flows on the go so each </tspan><tspan x="0" y="76">job can have different sets of </tspan><tspan x="0" y="103">hiring flows for better hiring </tspan><tspan x="0" y="130">process</tspan></text>
+    <text id="I_really_can_t_properly_define_hiring_flows_for_my_team" data-name="I really can&apos;t properly define hiring flows for my team" transform="translate(2024 1520)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I really can&apos;t properly define </tspan><tspan x="0" y="49">hiring flows for my team</tspan></text>
+    <g id="Group_6" data-name="Group 6" transform="translate(180 10)">
+      <g id="computer-line" transform="translate(860.746 1287.895)">
+        <path id="Path_180" data-name="Path 180" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_181" data-name="Path 181" d="M10.018,55.114h64.14v-44.1H10.018ZM46.1,63.131v8.018H62.131v8.017H22.044V71.149H38.079V63.131H5.977A4,4,0,0,1,2,59.094V7.037A4.036,4.036,0,0,1,5.977,3H78.2a4,4,0,0,1,3.977,4.037V59.094A4.036,4.036,0,0,1,78.2,63.131Z" transform="translate(6.017 9.026)"/>
+      </g>
+      <g id="tablet-line" transform="translate(986.791 1287.895)">
+        <path id="Path_182" data-name="Path 182" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_183" data-name="Path 183" d="M12.017,10.017v64.14h48.1V10.017ZM8.009,2H64.131A4.009,4.009,0,0,1,68.14,6.009V78.166a4.009,4.009,0,0,1-4.009,4.009H8.009A4.009,4.009,0,0,1,4,78.166V6.009A4.009,4.009,0,0,1,8.009,2ZM36.07,62.131a4.009,4.009,0,1,1-4.009,4.009A4.009,4.009,0,0,1,36.07,62.131Z" transform="translate(12.035 6.017)"/>
+      </g>
+    </g>
+    <g id="Group_7" data-name="Group 7" transform="translate(517 10)">
+      <g id="computer-line-2" data-name="computer-line" transform="translate(860.746 1287.895)">
+        <path id="Path_180-2" data-name="Path 180" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_181-2" data-name="Path 181" d="M10.018,55.114h64.14v-44.1H10.018ZM46.1,63.131v8.018H62.131v8.017H22.044V71.149H38.079V63.131H5.977A4,4,0,0,1,2,59.094V7.037A4.036,4.036,0,0,1,5.977,3H78.2a4,4,0,0,1,3.977,4.037V59.094A4.036,4.036,0,0,1,78.2,63.131Z" transform="translate(6.017 9.026)"/>
+      </g>
+      <g id="tablet-line-2" data-name="tablet-line" transform="translate(986.791 1287.895)">
+        <path id="Path_182-2" data-name="Path 182" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_183-2" data-name="Path 183" d="M12.017,10.017v64.14h48.1V10.017ZM8.009,2H64.131A4.009,4.009,0,0,1,68.14,6.009V78.166a4.009,4.009,0,0,1-4.009,4.009H8.009A4.009,4.009,0,0,1,4,78.166V6.009A4.009,4.009,0,0,1,8.009,2ZM36.07,62.131a4.009,4.009,0,1,1-4.009,4.009A4.009,4.009,0,0,1,36.07,62.131Z" transform="translate(12.035 6.017)"/>
+      </g>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(854 10)">
+      <g id="computer-line-3" data-name="computer-line" transform="translate(860.746 1287.895)">
+        <path id="Path_180-3" data-name="Path 180" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_181-3" data-name="Path 181" d="M10.018,55.114h64.14v-44.1H10.018ZM46.1,63.131v8.018H62.131v8.017H22.044V71.149H38.079V63.131H5.977A4,4,0,0,1,2,59.094V7.037A4.036,4.036,0,0,1,5.977,3H78.2a4,4,0,0,1,3.977,4.037V59.094A4.036,4.036,0,0,1,78.2,63.131Z" transform="translate(6.017 9.026)"/>
+      </g>
+      <g id="tablet-line-3" data-name="tablet-line" transform="translate(986.791 1287.895)">
+        <path id="Path_182-3" data-name="Path 182" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_183-3" data-name="Path 183" d="M12.017,10.017v64.14h48.1V10.017ZM8.009,2H64.131A4.009,4.009,0,0,1,68.14,6.009V78.166a4.009,4.009,0,0,1-4.009,4.009H8.009A4.009,4.009,0,0,1,4,78.166V6.009A4.009,4.009,0,0,1,8.009,2ZM36.07,62.131a4.009,4.009,0,1,1-4.009,4.009A4.009,4.009,0,0,1,36.07,62.131Z" transform="translate(12.035 6.017)"/>
+      </g>
+    </g>
+    <g id="Group_9" data-name="Group 9" transform="translate(1190 10)">
+      <g id="computer-line-4" data-name="computer-line" transform="translate(860.746 1287.895)">
+        <path id="Path_180-4" data-name="Path 180" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_181-4" data-name="Path 181" d="M10.018,55.114h64.14v-44.1H10.018ZM46.1,63.131v8.018H62.131v8.017H22.044V71.149H38.079V63.131H5.977A4,4,0,0,1,2,59.094V7.037A4.036,4.036,0,0,1,5.977,3H78.2a4,4,0,0,1,3.977,4.037V59.094A4.036,4.036,0,0,1,78.2,63.131Z" transform="translate(6.017 9.026)"/>
+      </g>
+      <g id="tablet-line-4" data-name="tablet-line" transform="translate(986.791 1287.895)">
+        <path id="Path_182-4" data-name="Path 182" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_183-4" data-name="Path 183" d="M12.017,10.017v64.14h48.1V10.017ZM8.009,2H64.131A4.009,4.009,0,0,1,68.14,6.009V78.166a4.009,4.009,0,0,1-4.009,4.009H8.009A4.009,4.009,0,0,1,4,78.166V6.009A4.009,4.009,0,0,1,8.009,2ZM36.07,62.131a4.009,4.009,0,1,1-4.009,4.009A4.009,4.009,0,0,1,36.07,62.131Z" transform="translate(12.035 6.017)"/>
+      </g>
+    </g>
+    <g id="Group_10" data-name="Group 10" transform="translate(1527 10)">
+      <g id="computer-line-5" data-name="computer-line" transform="translate(860.746 1287.895)">
+        <path id="Path_180-5" data-name="Path 180" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_181-5" data-name="Path 181" d="M10.018,55.114h64.14v-44.1H10.018ZM46.1,63.131v8.018H62.131v8.017H22.044V71.149H38.079V63.131H5.977A4,4,0,0,1,2,59.094V7.037A4.036,4.036,0,0,1,5.977,3H78.2a4,4,0,0,1,3.977,4.037V59.094A4.036,4.036,0,0,1,78.2,63.131Z" transform="translate(6.017 9.026)"/>
+      </g>
+      <g id="tablet-line-5" data-name="tablet-line" transform="translate(986.791 1287.895)">
+        <path id="Path_182-5" data-name="Path 182" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_183-5" data-name="Path 183" d="M12.017,10.017v64.14h48.1V10.017ZM8.009,2H64.131A4.009,4.009,0,0,1,68.14,6.009V78.166a4.009,4.009,0,0,1-4.009,4.009H8.009A4.009,4.009,0,0,1,4,78.166V6.009A4.009,4.009,0,0,1,8.009,2ZM36.07,62.131a4.009,4.009,0,1,1-4.009,4.009A4.009,4.009,0,0,1,36.07,62.131Z" transform="translate(12.035 6.017)"/>
+      </g>
+    </g>
+    <g id="Group_12" data-name="Group 12" transform="translate(1863 10)">
+      <g id="computer-line-6" data-name="computer-line" transform="translate(860.746 1287.895)">
+        <path id="Path_180-6" data-name="Path 180" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_181-6" data-name="Path 181" d="M10.018,55.114h64.14v-44.1H10.018ZM46.1,63.131v8.018H62.131v8.017H22.044V71.149H38.079V63.131H5.977A4,4,0,0,1,2,59.094V7.037A4.036,4.036,0,0,1,5.977,3H78.2a4,4,0,0,1,3.977,4.037V59.094A4.036,4.036,0,0,1,78.2,63.131Z" transform="translate(6.017 9.026)"/>
+      </g>
+      <g id="tablet-line-6" data-name="tablet-line" transform="translate(986.791 1287.895)">
+        <path id="Path_182-6" data-name="Path 182" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_183-6" data-name="Path 183" d="M12.017,10.017v64.14h48.1V10.017ZM8.009,2H64.131A4.009,4.009,0,0,1,68.14,6.009V78.166a4.009,4.009,0,0,1-4.009,4.009H8.009A4.009,4.009,0,0,1,4,78.166V6.009A4.009,4.009,0,0,1,8.009,2ZM36.07,62.131a4.009,4.009,0,1,1-4.009,4.009A4.009,4.009,0,0,1,36.07,62.131Z" transform="translate(12.035 6.017)"/>
+      </g>
+    </g>
+    <text id="INTERVIEW" transform="translate(3055.97 73.9)" fill="#fff" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">INTERVIEW</tspan></text>
+    <g id="Rectangle_44" data-name="Rectangle 44" transform="translate(3021 116)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_45" data-name="Rectangle 45" transform="translate(3021 392)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(3021 669)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_47" data-name="Rectangle 47" transform="translate(3021 946)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_64" data-name="Rectangle 64" transform="translate(3021 2054)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_56" data-name="Rectangle 56" transform="translate(3021 1500)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <g id="Rectangle_48" data-name="Rectangle 48" transform="translate(3021 1223)" fill="#f6f6f6" stroke="#c8c8c8" stroke-width="1">
+      <rect width="306" height="246" stroke="none"/>
+      <rect x="0.5" y="0.5" width="305" height="245" fill="none"/>
+    </g>
+    <text id="HAPPY_SATISFIED" data-name="HAPPY,
+SATISFIED" transform="translate(3031 1853)" font-size="30" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="87.047" y="32">HAPPY,</tspan><tspan x="68.077" y="72">SATISFIED</tspan></text>
+    <text id="Schedule_and_invite_candidate_for_the_video_interview_if_he_is_shortlisted" data-name="Schedule and invite candidate for the video interview if he is shortlisted" transform="translate(3036 136)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Schedule and invite candidate </tspan><tspan x="0" y="49">for the video interview if he is </tspan><tspan x="0" y="76">shortlisted</tspan></text>
+    <text id="Hiring_manager_expects_that_the_interview_stage_must_support_video_interview_so_that_the_candidate_can_be_easily_invited_for_the_interview_with_his_team_members" data-name="Hiring manager expects that the interview stage must support video interview so that the           candidate can be easily invited for the interview with his team members" transform="translate(3036 412)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Hiring manager expects that </tspan><tspan x="0" y="49">the interview stage must </tspan><tspan x="0" y="76">support video interview so </tspan><tspan x="0" y="103" xml:space="preserve">that the           candidate can </tspan><tspan x="0" y="130">be easily invited for the </tspan><tspan x="0" y="157">interview with his team </tspan><tspan x="0" y="184">members</tspan></text>
+    <text id="The_relevant_team_member_then_invites_the_shortlisted_candidate_on_the_basis_of_the_score_he_achieved_via_video_interview" data-name="The relevant team member then invites the shortlisted candidate on the basis of the score he achieved via video interview" transform="translate(3036 689)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">The relevant team member </tspan><tspan x="0" y="49">then invites the shortlisted </tspan><tspan x="0" y="76">candidate on the basis of the </tspan><tspan x="0" y="103">score he achieved via video </tspan><tspan x="0" y="130">interview</tspan></text>
+    <text id="I_assume_that_scheduling_a_video_interview_would_be_fast_and_smooth" data-name="I assume that scheduling a video interview would be fast and smooth" transform="translate(3036 966)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I assume that scheduling a </tspan><tspan x="0" y="49">video interview would be fast </tspan><tspan x="0" y="76">and smooth</tspan></text>
+    <text id="Video_interview_should_have_scheduler_which_can_schedule_meetings_and_generate_alerts_at_meeting_time" data-name="Video interview should have scheduler which can schedule meetings and generate alerts at meeting time" transform="translate(3036 2074)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Video interview should have </tspan><tspan x="0" y="49">scheduler which can schedule </tspan><tspan x="0" y="76">meetings and generate alerts </tspan><tspan x="0" y="103">at meeting time</tspan></text>
+    <text id="I_can_interview_my_candidate_through_video_from_the_system" data-name="I can interview my candidate through video from the system" transform="translate(3036 1520)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">I can interview my candidate </tspan><tspan x="0" y="49">through video from the </tspan><tspan x="0" y="76">system</tspan></text>
+    <g id="Group_14" data-name="Group 14" transform="translate(2202 -38)">
+      <g id="computer-line-7" data-name="computer-line" transform="translate(860.746 1287.895)">
+        <path id="Path_180-7" data-name="Path 180" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_181-7" data-name="Path 181" d="M10.018,55.114h64.14v-44.1H10.018ZM46.1,63.131v8.018H62.131v8.017H22.044V71.149H38.079V63.131H5.977A4,4,0,0,1,2,59.094V7.037A4.036,4.036,0,0,1,5.977,3H78.2a4,4,0,0,1,3.977,4.037V59.094A4.036,4.036,0,0,1,78.2,63.131Z" transform="translate(6.017 9.026)"/>
+      </g>
+      <g id="tablet-line-7" data-name="tablet-line" transform="translate(986.791 1287.895)">
+        <path id="Path_182-7" data-name="Path 182" d="M0,0H96.21V96.21H0Z" fill="none"/>
+        <path id="Path_183-7" data-name="Path 183" d="M12.017,10.017v64.14h48.1V10.017ZM8.009,2H64.131A4.009,4.009,0,0,1,68.14,6.009V78.166a4.009,4.009,0,0,1-4.009,4.009H8.009A4.009,4.009,0,0,1,4,78.166V6.009A4.009,4.009,0,0,1,8.009,2ZM36.07,62.131a4.009,4.009,0,1,1-4.009,4.009A4.009,4.009,0,0,1,36.07,62.131Z" transform="translate(12.035 6.017)"/>
+      </g>
+    </g>
+    <g id="webcam-line" transform="translate(3136.746 1357.745)">
+      <path id="Path_184-2" data-name="Path 184" d="M0,0H73.557V73.557H0Z" fill="none"/>
+      <path id="Path_185" data-name="Path 185" d="M23.389,62.3V59.018A21.46,21.46,0,0,1,5,37.778V22.454a21.454,21.454,0,1,1,42.908,0V37.778a21.46,21.46,0,0,1-18.389,21.24V62.3H41.778v6.13H11.13V62.3ZM26.454,7.13A15.324,15.324,0,0,0,11.13,22.454V37.778a15.324,15.324,0,0,0,30.649,0V22.454A15.324,15.324,0,0,0,26.454,7.13Zm0,18.389a3.065,3.065,0,1,0-3.065-3.065A3.065,3.065,0,0,0,26.454,25.519Zm0,6.13a9.195,9.195,0,1,1,9.195-9.195A9.195,9.195,0,0,1,26.454,31.649Z" transform="translate(10.324 2.065)"/>
+    </g>
+    <g id="Group_17" data-name="Group 17" transform="translate(-19)">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(162 43)" fill="#fff" stroke="#1e1e1e" stroke-width="6">
+        <circle cx="110.5" cy="110.5" r="110.5" stroke="none"/>
+        <circle cx="110.5" cy="110.5" r="107.5" fill="none"/>
+      </g>
+      <g id="user-line" transform="translate(213.219 94.219)">
+        <path id="Path_186" data-name="Path 186" d="M0,0H119.562V119.562H0Z" fill="none"/>
+        <path id="Path_187" data-name="Path 187" d="M4,105.617a39.854,39.854,0,1,1,79.708,0H73.745a29.891,29.891,0,0,0-59.781,0ZM43.854,60.781A29.891,29.891,0,1,1,73.745,30.891,29.882,29.882,0,0,1,43.854,60.781Zm0-9.964A19.927,19.927,0,1,0,23.927,30.891,19.922,19.922,0,0,0,43.854,50.818Z" transform="translate(15.927 3.982)" fill="#1e1e1e"/>
+      </g>
+    </g>
+  </g>
+</svg>

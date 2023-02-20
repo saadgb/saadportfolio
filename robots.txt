@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Disallow: /ux-process.html
-Sitemap: https://saadtariq.com/sitemap.xml
+Sitemap: /sitemap.xml

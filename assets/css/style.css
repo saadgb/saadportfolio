@@ -12216,7 +12216,7 @@ ul.social-icons {
 }
 
 #ux ul {
-  list-style: circle inside;
+  list-style: square;
 }
 
 #ux li {
@@ -12225,7 +12225,7 @@ ul.social-icons {
 }
 
 #ux-skills ul {
-  list-style: circle inside;
+  list-style: square;
 }
 
 #ux-skills li {

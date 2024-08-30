@@ -12366,9 +12366,30 @@ ul.social-icons {
   line-height: 1;
 }
 
-.double-cards .card {
-  height: 246px;
+.double-cards {
+  display: flex;
+  gap: 20px; /* Adjust the gap between cards */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+
+.double-cards .card {
+  flex: 1; /* Allows cards to grow equally */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensures cards stretch to the same height */
+  box-sizing: border-box; /* Include padding and border in the width/height calculations */
+  min-width: 0; /* Prevents overflow issues and ensures flex items behave correctly */
+  background: #fff; /* Optional: background color for visibility */
+  border: 1px solid #ddd; /* Optional: border for visibility */
+  border-radius: 0.25rem; /* Optional: border radius for rounded corners */
+}
+
+.double-cards .card-body {
+  flex: 1; /* Allows the content area to expand and fill available space */
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+
 
 .other-portfolio .card-deck {
   margin-bottom: 25px;

@@ -12067,7 +12067,7 @@ ul.social-icons {
   background-image: linear-gradient(100deg, #f9643d, #E91E63);
   width: 50px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   height: 5px;
 }
 
@@ -12468,9 +12468,11 @@ hr.new3 {
   letter-spacing: 1px;
 }
 
-#ux-skills li::marker
+#ux-skills ul
 {
 
-  color: #494949;
+  list-style-type: none;
+  padding-left: 0px;
+  
 
 }

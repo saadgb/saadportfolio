@@ -12450,3 +12450,27 @@ hr.new3 {
 	
 }
 
+
+
+.gradient-txt
+{
+  background: -webkit-linear-gradient(10deg, #E9134D, #6815CB, #7600F1, #482EE6, #2D49C5, #10D6F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.subtitle-colored
+{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #494949;
+  letter-spacing: 1px;
+}
+
+#ux-skills li::marker
+{
+
+  color: #494949;
+
+}

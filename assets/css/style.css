@@ -80,7 +80,16 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  
 }
+
+h1
+
+{
+
+  color: #32302D;
+}
+
 
 p {
   margin-top: 0;
@@ -452,7 +461,8 @@ h6, .h6 {
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
-  font-family: 'Suez One', serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
     line-height: 1;
 }
 
@@ -11165,13 +11175,14 @@ img {
 
 .hero-banner h1 {
   font-size: 75px;
-  font-family: 'Suez One', serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   line-height: 1;
-  color: #202327;
+  color: #32302D;
 }
 
 .ft-dark {
-  color: #202327;
+  color: #32302D;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -12474,5 +12485,15 @@ hr.new3 {
   list-style-type: none;
   padding-left: 0px;
   
+
+}
+
+
+.hero-bg
+{
+
+
+background-color: #FBF2E4;
+
 
 }

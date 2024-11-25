@@ -12341,7 +12341,7 @@ ul.social-icons {
   display: none;
 }
 
-.speekio-project .list-group-item {
+.smart-talent-system-project .list-group-item {
   border: none;
   padding-bottom: 0.15rem;
   padding-left: 0;
@@ -12373,14 +12373,14 @@ ul.social-icons {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-.speekio-project .display-3 {
+.smart-talent-system-project .display-3 {
   line-height: 1;
 }
 
 .double-cards {
   display: flex;
   gap: 20px; /* Adjust the gap between cards */
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: nowrap; /* Allows wrapping on smaller screens */
 }
 
 .double-cards .card {
@@ -12393,6 +12393,7 @@ ul.social-icons {
   background: #fff; /* Optional: background color for visibility */
   border: 1px solid #ddd; /* Optional: border for visibility */
   border-radius: 0.25rem; /* Optional: border radius for rounded corners */
+  min-height: 250px;
 }
 
 .double-cards .card-body {

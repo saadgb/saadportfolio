@@ -3468,10 +3468,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 1rem;
+  padding: 10px 20px;
   font-size: 0.875rem;
   line-height: 1.5;
-  /* border-radius: 25rem; */
+  border-radius: 99999999px;
 }
 
 .btn-block {

@@ -11203,7 +11203,7 @@ img {
 }
 
 .hero-banner h2 {
-  font-size: 1.9rem;
+  font-size: 1.75rem;
 }
 
 .text-aligner {
@@ -12533,7 +12533,7 @@ color: #fff;
 .responsive-card {
   width: 100%;
   max-width: 460px;
-  height: 550px;
+  
   display: flex;
   flex-direction: column;
   margin: 0 auto;

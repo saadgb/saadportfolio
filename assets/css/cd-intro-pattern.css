@@ -1,0 +1,132 @@
+/* Modern subtle pattern applied to the hero container so it covers larger top area */
+.container.hero-banner{
+  position: relative;
+  overflow: visible;
+}
+
+/* soft layered background: faint gradient + subtle diagonal stripe pattern */
+.container.hero-banner::before{
+  content: "";
+  position: absolute;
+  /* extend beyond the container to cover viewport gutters using centered width (avoids overflow) */
+  top: -8%;
+  bottom: -8%;
+  left: 50%;
+  right: auto;
+  width: calc(100% + 24vw);
+  z-index: -2;
+  border-radius: 0; /* allow full-bleed */
+  /* grayscale background: subtle blacks, whites and greys */
+  background: linear-gradient(135deg, rgba(0,0,0,0.04) 0%, rgba(255,255,255,0.02) 35%, rgba(0,0,0,0.03) 100%),
+              radial-gradient(700px 320px at 8% 18%, rgba(0,0,0,0.12), transparent 28%),
+              radial-gradient(560px 260px at 92% 82%, rgba(255,255,255,0.06), transparent 28%);
+  filter: blur(22px) saturate(110%);
+  transform: translateX(-50%) translateZ(0);
+  pointer-events: none;
+}
+
+/* subtle repeating diagonal stripes for texture */
+.container.hero-banner::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: auto;
+  width: calc(100% + 24vw);
+  z-index: -1;
+  border-radius: 0;
+  background-image: repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 14px);
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* ensure hero content (including .cd-intro) sits above the decorative background */
+.container.hero-banner .cd-intro,
+.container.hero-banner .cd-intro .cd-headline,
+.container.hero-banner .cd-intro h1,
+.container.hero-banner .cd-intro h5{
+  position: relative;
+  z-index: 2;
+  color: #071024;
+}
+
+/* align buttons with the hero text (left-aligned with headline) */
+/* remove the inner container gutters so the buttons line up with the heading */
+.container.hero-banner .cd-intro > .container{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container.hero-banner .cd-intro .container > .row{
+  display: flex;
+  justify-content: flex-start; /* left align with hero text */
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-left: 0; /* neutralize bootstrap row offsets */
+  margin-right: 0;
+}
+
+.container.hero-banner .cd-intro .btn-dark,
+.container.hero-banner .cd-intro .btn-outline-dark{ min-width: 160px; }
+
+/* responsive adjustments */
+@media (max-width: 768px){
+  .container.hero-banner .cd-intro{ padding: 1.5rem 0.6rem; }
+  .container.hero-banner .cd-intro h1{ font-size: 1.6rem; }
+  .container.hero-banner::before{ filter: blur(14px); top: -14%; bottom: -14%; width: calc(100% + 24vw); }
+  .container.hero-banner::after{ opacity: 0.5; }
+  .container.hero-banner .cd-intro .btn-dark,
+  .container.hero-banner .cd-intro .btn-outline-dark{ width: 100%; max-width: 360px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .container.hero-banner::before, .container.hero-banner::after{ transition: none; animation: none; }
+}
+
+/* Full-bleed fallback on the top section to eliminate viewport gutters */
+.home{
+  position: relative;
+  z-index: 0;
+}
+.home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 520px; /* coverage height for the hero area */
+  left: 50%;
+  right: auto;
+  width: calc(100% + 24vw);
+  z-index: -3;
+  /* grayscale background for full-bleed hero */
+  background: linear-gradient(135deg, rgba(0,0,0,0.04) 0%, rgba(255,255,255,0.02) 35%, rgba(0,0,0,0.03) 100%),
+              radial-gradient(700px 320px at 8% 18%, rgba(0,0,0,0.12), transparent 28%),
+              radial-gradient(560px 260px at 92% 82%, rgba(255,255,255,0.06), transparent 28%);
+  filter: blur(26px) saturate(110%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.home::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 520px;
+  left: 50%;
+  right: auto;
+  width: calc(100% + 24vw);
+  z-index: -2;
+  background-image: repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 14px);
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px){
+  .home::before, .home::after{ left: 50%; right: auto; width: calc(100% + 12vw); height: 360px; filter: blur(18px); transform: translateX(-50%); }
+}
+
+/* fallback to prevent any horizontal scroll caused by decorations */
+html, body { overflow-x: hidden; }

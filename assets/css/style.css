@@ -12616,6 +12616,15 @@ margin-bottom: 150px !important;
 }
 }
 
+/* Reduce hero banner height on mobile and tablet views */
+@media only screen and (max-width: 1024px) {
+  .home {
+    min-height: auto;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
 
 
 .badge-light

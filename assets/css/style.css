@@ -12595,7 +12595,7 @@ color: #fff;
   .responsive-card {
     width: 460px;
     max-width: 460px;
-    height: 640px;
+    height: 660px;
     margin: 0 auto;
   }
 
@@ -12704,7 +12704,14 @@ h5.cd-headline.letters.rotate-2 {
 
 
 
-
+/* Material-style project tags - black text and borders, transparent background */
+    .md-tag{display:inline-block;padding:.14rem .45rem;font-size:.70rem;text-transform:uppercase;letter-spacing:.04em;font-weight:600;border-radius:4px;color:#343a40;border:1px solid #343a40; margin-bottom: 5px;}
+    /* transparent primary */
+    .md-tag--primary{background:transparent;color:#343a40;border:1px solid #343a40}
+    /* transparent accent */
+    .md-tag--accent{background:transparent;color:#343a40;border:1px solid #343a40}
+    /* transparent neutral */
+    .md-tag--neutral{background:transparent;color:#343a40;border:1px solid #343a40}
 
 
 

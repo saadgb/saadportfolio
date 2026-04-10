@@ -12826,12 +12826,12 @@ h5.cd-headline.letters.rotate-2 {
 }
 
 .project-description {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #6c757d;
   line-height: 1.6;
   margin-bottom: 18px;
   flex-grow: 1;
-  
+  font-family: "Bitter", serif;
 }
 
 .project-content a {
@@ -13112,6 +13112,15 @@ h5.cd-headline.letters.rotate-2 {
   color: #343a40;
   margin-bottom: 16px;
 }
+
+
+.closing-hook .no-bold {
+  font-weight: normal;
+}
+
+
+
+
 
 .closing-hook p {
   font-family: "Bitter", serif;

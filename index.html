@@ -118,46 +118,49 @@
             </div>
 
             <!-- Trust Bar - Logo Cloud -->
-            <section class="trust-bar" style="background-color: #f8f9fa; border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">
+            <section class="trust-bar" style="background-color: #f8f9fa; border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; padding-top: 40px; padding-bottom: 28px;">
                 <div class="container">
-                    <div class="text-center mb-3">
-                        <p class="trust-label">Enterprise Clients Powered by my Designs</p>
+                    <div class="text-center mb-3 mt-n3">
+                        <p class="trust-label pb-2">Enterprise Clients Powered by my Designs</p>
                     </div>
                     <div class="logo-cloud">
-                        <div class="logo-item">
-                            <a href="https://developer.paypal.com/serversdk/java/getting-started/how-to-get-started" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/img/logos/paypal-logo.svg" alt="PayPal" class="client-logo">
-                            </a>
-                        </div>
-                        <div class="logo-item">
-                            <a href="https://www.verizon.com/business/5g-edge-portal/api-documentation.html#/http/edge-discovery-service/guides/overview" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/img/logos/verizon-logo.svg" alt="Verizon" class="client-logo">
-                            </a>
-                        </div>
-                        <div class="logo-item">
-                            <a href="https://developers.foxitesign.foxit.com/v/1_0_0#/rest/installation-guidelines" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/img/logos/foxit-logo.svg" alt="Foxit" class="client-logo">
-                            </a>
-                        </div>
-                        <div class="logo-item">
-                            <a href="https://developers.maxio.com/http/getting-started/overview" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/img/logos/maxio-logo.svg" alt="Maxio" class="client-logo">
-                            </a>
-                        </div>
-                        <div class="logo-item">
-                            <a href="https://docs.fortis.tech/v/1_0_0.html#/rest/quick-start-guide/overview" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/img/logos/fortispay-logo.svg" alt="FortisPay" class="client-logo">
-                            </a>
-                        </div>
-                        <div class="logo-item">
-                            <a href="https://developer.greenbyte.com/v/2_2-beta#/" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/img/logos/greenbyte-logo.png" alt="GreenByte" class="client-logo">
-                            </a>
-                        </div>
-                        <div class="logo-item">
-                            <a href="https://docs.payquicker.io/v/2020.02.24/#/rest/getting-started/welcome" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/img/logos/payquicker-logo.png" alt="PayQuicker" class="client-logo">
-                            </a>
+                        <div class="logo-track">
+                            <div class="logo-item">
+                                <a href="https://developer.paypal.com/serversdk/java/getting-started/how-to-get-started" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/logos/paypal-logo.svg" alt="PayPal" class="client-logo">
+                                </a>
+                            </div>
+                            <div class="logo-item">
+                                <a href="https://www.verizon.com/business/5g-edge-portal/api-documentation.html#/http/edge-discovery-service/guides/overview" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/logos/verizon-logo.svg" alt="Verizon" class="client-logo">
+                                </a>
+                            </div>
+                            <div class="logo-item">
+                                <a href="https://developers.foxitesign.foxit.com/v/1_0_0#/rest/installation-guidelines" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/logos/foxit-logo.svg" alt="Foxit" class="client-logo">
+                                </a>
+                            </div>
+                            <div class="logo-item">
+                                <a href="https://docs.payquicker.io/v/2020.02.24/#/rest/getting-started/welcome" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/logos/payquicker-logo.png" alt="PayQuicker" class="client-logo">
+                                </a>
+                            </div>
+                            <div class="logo-item">
+                                <a href="https://developers.maxio.com/http/getting-started/overview" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/logos/maxio-logo.svg" alt="Maxio" class="client-logo">
+                                </a>
+                            </div>
+                            <div class="logo-item">
+                                <a href="https://docs.fortis.tech/v/1_0_0.html#/rest/quick-start-guide/overview" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/logos/fortispay-logo.svg" alt="FortisPay" class="client-logo">
+                                </a>
+                            </div>
+                            <div class="logo-item">
+                                <a href="https://developer.greenbyte.com/v/2_2-beta#/" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/logos/greenbyte-logo.png" alt="GreenByte" class="client-logo">
+                                </a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -381,6 +384,71 @@
                     }
                 }
             });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var track = document.querySelector('.logo-track');
+            if (!track) return;
+            var items = Array.from(track.children);
+            if (!items.length) return;
+
+            // Clone all items once for seamless loop
+            items.forEach(function(item) {
+                track.appendChild(item.cloneNode(true));
+            });
+
+            var speed = 30; // pixels per second
+            var paused = false;
+            var lastTime = Date.now();
+            var offset = 0;
+            var loopDistance = 0;
+            var isReady = false;
+
+            function getLoopDistance() {
+                // Half of total width is the loop distance
+                return track.scrollWidth / 2;
+            }
+
+            function animate() {
+                if (!isReady) {
+                    loopDistance = getLoopDistance();
+                    if (loopDistance <= 0) {
+                        requestAnimationFrame(animate);
+                        return;
+                    }
+                    isReady = true;
+                }
+
+                if (!paused) {
+                    var now = Date.now();
+                    var elapsed = (now - lastTime) / 1000;
+                    lastTime = now;
+                    
+                    offset += elapsed * speed;
+                    
+                    // Imperceptible reset: when offset equals loopDistance, jump back to 0
+                    if (offset >= loopDistance) {
+                        offset = 0;
+                    }
+                    
+                    track.style.transform = 'translateX(' + (-offset) + 'px)';
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            track.addEventListener('mouseenter', function() {
+                paused = true;
+            });
+            track.addEventListener('mouseleave', function() {
+                paused = false;
+                lastTime = Date.now();
+            });
+
+            setTimeout(function() {
+                requestAnimationFrame(animate);
+            }, 300);
+        });
     </script>
 </body>
 

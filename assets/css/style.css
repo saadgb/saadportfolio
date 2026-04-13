@@ -12954,15 +12954,24 @@ h5.cd-headline.letters.rotate-2 {
 }
 
 .logo-cloud {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  max-width: none;
   margin: 0;
+  padding: 0;
+}
+
+.logo-track {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.logo-cloud:hover .logo-track,
+.logo-track:hover {
+  cursor: default;
 }
 
 .logo-item {
@@ -12970,11 +12979,14 @@ h5.cd-headline.letters.rotate-2 {
   justify-content: center;
   align-items: center;
   flex: 0 0 auto;
+  min-width: 140px;
+  margin: 0 1rem;
 }
 
 .client-logo {
-  width: 90px;
-  height: 28px;
+  width: auto;
+  max-width: 100%;
+  height: 24px;
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.6;
@@ -12989,24 +13001,17 @@ h5.cd-headline.letters.rotate-2 {
 /* Responsive Logo Cloud */
 @media (max-width: 992px) {
   .logo-cloud {
-    gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 0.75rem;
   }
 }
 
 @media (max-width: 768px) {
   .logo-cloud {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 1.5rem;
+    padding: 0;
   }
-  
-  .client-logo {
-    width: 110px;
-    height: 33px;
+  .logo-item {
+    min-width: 120px;
   }
-  
   .trust-label {
     font-size: 0.75rem;
   }
@@ -13027,15 +13032,11 @@ h5.cd-headline.letters.rotate-2 {
 
 @media (max-width: 576px) {
   .logo-cloud {
-    gap: 1.5rem;
-    padding: 0 1rem;
+    padding: 0;
   }
-  
-  .client-logo {
-    width: 90px;
-    height: 28px;
+  .logo-item {
+    min-width: 100px;
   }
-  
   .trust-bar {
     padding: 3rem 0;
   }

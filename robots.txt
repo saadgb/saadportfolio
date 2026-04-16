@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /ux-process.html
 Disallow: /design-process.html
-Sitemap: /sitemap.xml
+Sitemap: https://www.saadtariq.com/sitemap.xml

@@ -545,8 +545,9 @@
     });
   </script>
   <script>
-    window.addEventListener('DOMContentLoaded', function () {
+    (function () {
       const carousels = document.querySelectorAll('.cs-image-carousel');
+      if (!carousels.length) return;
 
       carousels.forEach((carousel) => {
         const carouselTrack = carousel.querySelector('.cs-carousel-track');
@@ -558,8 +559,10 @@
 
         const slides = carouselTrack.querySelectorAll('.cs-carousel-slide');
         const totalSlides = slides.length;
+        if (totalSlides === 0) return;
+
         let currentIndex = 0;
-        let autoplayInterval;
+        let autoplayInterval = null;
 
         // Create dots
         for (let i = 0; i < totalSlides; i++) {
@@ -576,11 +579,7 @@
           const offset = -currentIndex * 100;
           carouselTrack.style.transform = `translateX(${offset}%)`;
           dots.forEach((dot, index) => {
-            if (index === currentIndex) {
-              dot.classList.add('active');
-            } else {
-              dot.classList.remove('active');
-            }
+            dot.classList.toggle('active', index === currentIndex);
           });
         }
 
@@ -603,9 +602,8 @@
         }
 
         function startAutoplay() {
-          autoplayInterval = setInterval(() => {
-            nextSlide();
-          }, 4000); // Change slide every 4 seconds
+          clearInterval(autoplayInterval);
+          autoplayInterval = setInterval(nextSlide, 4000);
         }
 
         function resetAutoplay() {
@@ -630,7 +628,8 @@
           }
         });
 
-        // Start autoplay
+        // Initialize
+        updateCarousel();
         startAutoplay();
 
         // Pause autoplay on hover
@@ -641,7 +640,7 @@
           startAutoplay();
         });
       });
-    });
+    })();
   </script>
   <script src="zoom.js" defer></script>
 </body>

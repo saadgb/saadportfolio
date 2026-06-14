@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /ux-process.html
-Disallow: /design-process.html
 Sitemap: https://www.saadtariq.com/sitemap.xml

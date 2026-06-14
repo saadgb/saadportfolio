@@ -1,654 +1,682 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- meta.njk -->
-    <meta charset="utf-8">
-    <title>APIMatic Case Study | API Platform & Developer Experience Design – Muhammad Saad</title>
-    <meta name="description" content="Case study on designing APIMatic’s API platform and Developer Experience workflows. Focused on API-first UX, onboarding, developer tooling, and scalable SaaS product design." />
-    <meta name="keywords" content="APIMatic, API Platform UX, Developer Experience Design, DX Designer, API-First UX, Developer Tooling, SaaS Product Design, Technical Onboarding UX, API Documentation Design, Enterprise SaaS UX, Muhammad Saad Portfolio" />
-    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes, shrink-to-fit=no" name="viewport" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,200" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7ca5a4eaa3.js" crossorigin="anonymous"></script>
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/flickity.min.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B8QQ3V6QJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APIMatic Case Study - Muhammad Saad</title>
+  <meta name="description" content="APIMatic: Developer Experience transformation. Data-led redesign of onboarding, portal configuration, and developer workflows.">
+  <meta name="theme-color" content="#070a12">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B8QQ3V6QJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-7B8QQ3V6QJ');
+  </script>
+  <script type="text/javascript">
+    (function(c, l, a, r, i, t, y) {
+      c[a] = c[a] || function() {
+        (c[a].q = c[a].q || []).push(arguments)
+      };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "k7sxjmd1hl");
+  </script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="tech-field" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-7B8QQ3V6QJ');
-    </script>
-    <!-- end meta.njk -->
-    <script type="text/javascript">
-      (function(c, l, a, r, i, t, y) {
-        c[a] = c[a] || function() {
-          (c[a].q = c[a].q || []).push(arguments)
-        };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "k7sxjmd1hl");
-    </script>
-  </head>
-  <body class="" style="">
-    <a href="javascript:" id="return-to-top">
-      <i class="fas fa-chevron-up"></i>
-    </a>
-    <!-- index.njk -->
-    <!-- header.njk -->
-    <header role="banner" class="">
-      <nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top ">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/img/muhammad-saad.svg" width="30" height="30" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">
-                  <i class="fas fa-puzzle-piece"></i>
-                  <p>home</p>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html">
-                  <i class="fas fa-certificate"></i>
-                  <p>about</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- end header.njk -->
-    <section class="smart-talent-system-project">
-      <div class="jumbotron jumbotron-image jumbotron-fluid mt-5 mb-0" style="background-color: #1f253c">
-        <div class="container text-white">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-transparent p-0  pb-3">
-              <li class="breadcrumb-item">
-                <input type="button" class="rounded border-0 bg-transparent text-white mt-n1" value="←  " onclick="history.back(-1)" />
-                <a href="index.html">Home</a>
-              </li>
-              <li class="breadcrumb-item active  text-white" aria-current="page">APIMatic.io</li>
-            </ol>
-          </nav>
-          <h3 class="display-5">APIMatic is a Developer Experience platform focused on enhancing productivity through automatic code generation and a comprehensive suite of tools like SDKs, API portals, and documentation. As the lead for product design, I am dedicated to refining the product and eliminating friction for a seamless user experience.</h3>
-        </div>
-      </div>
-      <div class="container">
-        
-        <div class="row row-cus-mg">
-          <div class="col-md-4 mb-3">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item font-weight-bold">MY ROLE</li>
-              <li class="list-group-item">User Research</li>
-              <li class="list-group-item">User Flows & Mind Mapping</li>
-              <li class="list-group-item">Journey Mapping</li>
-              <li class="list-group-item">Wireframing</li>
-              <li class="list-group-item">Interaction Design</li>
-              <li class="list-group-item">Screen Flows</li>
-              <li class="list-group-item">Visual Design</li>
-              <li class="list-group-item">HTML/CSS | SEO Optimization</li>
-            </ul>
-          </div>
-          <div class="col-md-4 mb-3">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item font-weight-bold">PLATFORMS</li>
-              <li class="list-group-item">Web (Cloud based)</li>
-            </ul>
-          </div>
-          <div class="col-md-4 mb-3">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item font-weight-bold">More Details</li>
-              <li class="list-group-item">
-                <a href="https://www.apimatic.io/" rel=”nofollow” target="_blank">
-                  <i class="fa fa-link mr-1 " aria-hidden="true"></i>Official Website </a>
-              </li>
-              <li class="list-group-item">
-                <a href="https://twitter.com/APIMatic" target="_blank">
-                  <i class="fa fa-link mr-1 " aria-hidden="true"></i>Twitter </a>
-              </li>
-              <li class="list-group-item">
-                <a href="https://www.linkedin.com/company/apimatic-limited" target="_blank">
-                  <i class="fa fa-link mr-1 " aria-hidden="true"></i>LinkedIn </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row row-cus-mg">
-          <div class="col-md-12">
-            <span>
-              <h3 class="font-weight-bold p-heads">Problem</h3>
-              <div class="title-line "></div>
-            </span>
-            <p>How can we enhance the overall API lifecycle management experience by providing a seamless, integrated platform that improves efficiency, user satisfaction, and actionable insights? </p>
-          </div>
-        </div>
-      </div>
-      <div class="bg-gr pt-1 pb-5">
-        <div class="container">
-          <div class="row row-cus-mg mb-5">
-            <div class="col-md-12">
-              <span>
-                <h3 class="font-weight-bold p-heads">Overview</h3>
-                <div class="title-line "></div>
-              </span>
-              <p>APIMatic aims to streamline and enhance the API lifecycle management process for developers and organizations. By offering a comprehensive platform that includes a dashboard, developer experience portal, API CoPilot (AI) and analytics product, we strive to address the critical needs of our users. </p>
-            </div>
-          </div>
-        </div>
-        <div class="container-med">
-          <div class="row">
-            <div class="col-md-3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item font-weight-bold">User's feedback</li>
-                <li class="list-group-item">We collected user feedback directly through interactions with the customer success team, enabling us to extract valuable insights from our users. </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item font-weight-bold">Insight tools</li>
-                <li class="list-group-item">We employed various tools such as MixPanel, Google Analytics, and Clarity to gain a comprehensive understanding of user pain points.</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item font-weight-bold">Competitive analysis</li>
-                <li class="list-group-item">A thorough analysis of competitors' approaches to handling specific use cases and potential enhancements.</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item font-weight-bold">Journey mapping</li>
-                <li class="list-group-item">This approach provided valuable insights into the user flow, aiding our understanding of user behavior.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid ">
-        <img src="assets/img/artwork/apimatic-showcase.png" width="100%">
-      </div>
-      <div class="mt-5 ">
-        <div class="container">
-          <h3 class="font-weight-bold p-heads pt-5 ">Learning About Our Users: Key Findings and Results</h3>
-          <div class="title-line "></div>
-          <p>The user experience of our users is our top priority because any disruptions in their experience can lead to frustration. To understand their pain points, I delve into insights and metrics using various tools.</p>
-          <div class="row mt-5 mb-5 ">
-            <div class="container">
-              <div class="card-deck">
-                <div class="card">
-                  <img src="assets/img/mixpanel-logo.svg" class="mb-2" style="border-radius: 0.5rem 0.5rem 0 0;" alt="mixpanel-logo">
-                  <div class="card-body">
-                    <h5 class="mb-3">
-                      <b>MixPanel Tool</b>
-                    </h5>
-                    <p class="card-text"> I created new funnels and cohorts in my UX Dashboard of Mixpanel as some key filters were missing, causing us to lose many users whose UX we needed to fix. Using Mixpanel, I extracted user flows and usage patterns through these funnels and cohorts. This approach allowed for tailored extraction based on the user's flow and specific use case. The data provided valuable insights, helping our team understand core issues and identify opportunities across different stages. </p>
-                  </div>
-                  <div class="card-footer">
-                    <h5 class="font-weight-bold mt-3">Results:</h5>
-                    <ul>
-                      <li>Increased user retention by <b>
-                          <i class="fas fa-long-arrow-alt-up"></i> 73.33% </b>, demonstrating the effectiveness of our strategies to keep users engaged </li>
-                      <li>Improved onboarding completion rates by <b>
-                          <i class="fas fa-long-arrow-alt-up"></i> 30.38% </b>
-                      </li>
-                      <li>Leveraged data-driven insights from Mixpanel to enhance user engagement</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/microsoft-clarity-logo.svg" class="mb-2" style="border-radius: 0.5rem 0.5rem 0 0;" alt="microsoft-clarity-logo">
-                  <div class="card-body">
-                    <h5 class="mb-3">
-                      <b>Microsoft Clarity Tool</b>
-                    </h5>
-                    <p class="card-text">To conduct further testing on specific options, I utilized Microsoft's Clarity tool. I created new funnels and cohorts in Mixpanel to address missing key filters that were causing us to lose users whose UX needed improvement. I also added smart filters and funnels to capture all user use cases and further enhance UX. The Clarity platform provided a deeper understanding of user behavior, pinpointing pain points and preferences. Its array of tools, including session replays and heatmaps, helped us identify areas of user friction and engagement. Additionally, it supported our efforts in leveraging user research and A/B experimentation. </p>
-                  </div>
-                  <div class="card-footer">
-                    <h5 class="font-weight-bold mt-3">Results:</h5>
-                    <ul>
-                      <li>Identified key user pain points through session replays and heatmaps</li>
-                      <li>Analyzed user interactions to optimize the user journey</li>
-                      <li>Reduced bounce rates by improving navigation and content layout based on user behavior insights</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="card-shadow">
-            <div class="carousel mt-4" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true}'>
-              <img src="assets/img/artwork/research/1.png" />
-              <img src="assets/img/artwork/research/2.png" />
-              <img src="assets/img/artwork/research/3.png" />
-              <img src="assets/img/artwork/research/4.png" />
-              <img src="assets/img/artwork/research/5.png" />
-              <img src="assets/img/artwork/research/6.png" />
-            </div>
-          </div>
-          <br>
-          <br>
-        </div>
-      </div>
-      <div class="bg-gr pt-1 pb-5">
-        <div class="container">
-          <h3 class="font-weight-bold p-heads pt-5 ">Mind Map & User Flows</h3>
-          <div class="title-line "></div>
-          <p>In the initial stages, I utilized a mind map to brainstorm and organize ideas, features, and functionalities, providing a clear, visual structure for the product's scope. Subsequently, I developed user flows to detail the sequential steps users take to accomplish specific tasks within the platform. This method ensured a user-centered design approach, mapping out the user journey and interactions effectively.</p>
-        </div>
-        
-      </div>
-      <div class="container">
-        <h3 class="font-weight-bold p-heads pt-5 ">Journey Mapping</h3>
-        <div class="title-line "></div>
-        <p>Drawing from in-person feedback, surveys, and reviews, I organized the data into a journey map. This process enabled me to pinpoint pain points and areas for improvement across the journey. Furthermore, it facilitated discussions aimed at understanding knowledge gaps and generating ideas among team members and stakeholders.</p>
-      </div>
-      <div class="container-med mt-5 text-center">
-        <img src="assets/img/artwork/journey-map.png" width="50%">
-      </div>
-      <br>
-      <br>
-      <div class="bg-gr pt-5 pb-5">
-        <div class="container ">
-          <h3 class="font-weight-bold p-heads ">Design System</h3>
-          <div class="title-line "></div>
-          <p class="mb-5">To establish a single source of truth, we developed and managed a comprehensive design system. This system enables teams to design, collaborate, implement, and enhance the product seamlessly. Starting with a foundational design system, we continuously evolve and update it over time, including the addition of dark mode theme tokens, to ensure its relevance and effectiveness across all user interfaces. </p>
-        </div>
-        <div class="container">
-          <div class="card-shadow">
-            <div class="carousel mt-4" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true}'>
-              <img src="assets/img/artwork/design-system/1.jpg" />
-            
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="bg-white pt-5 pb-5">
-          <div class="container ">
-            <h3 class="font-weight-bold p-heads ">DX Analytics</h3>
-            <div class="title-line "></div>
-            <p class="mb-5"> DX Analytics stands as a distinctive tool crafted in-house by our engineering and design teams. It empowers users to analyze the performance of their API documentation via the DX Analytics dashboard, offering key metrics such as API Portal page visits, SDK downloads, time to first "Hello World," and more. Leveraging user research, we meticulously implemented all necessary insights to enhance the user experience.</p>
-          </div>
-          <div class="container">
-            <div class="card-shadow">
-              <div class="carousel mt-4" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true}'>
-                <img src="assets/img/artwork/dx-analytics/1.png" />
-                <img src="assets/img/artwork/dx-analytics/2.png" />
-                <img src="assets/img/artwork/dx-analytics/3.png" />
-                <img src="assets/img/artwork/dx-analytics/4.png" />
-                <img src="assets/img/artwork/dx-analytics/5.png" />
-              </div>
-            </div>
-          </div>
-          <br>
-          <br>
-        </div>
-        <div class="container">
-          <h3 class="font-weight-bold p-heads pt-5 ">Email Journeys</h3>
-          <div class="title-line "></div>
-          <p>When users sign up on the APIMatic website, they're prompted to go through a quick walkthrough. However, many users tend to skip this step to quickly dive into the product. To address this, our design and content teams collaborated to develop various email journeys. These journeys deliver customized emails tailored to users' usage patterns and flows, allowing them to learn more about the product at their own pace. Leveraging Autopilot journeys, we meticulously crafted user flows with personalized guides and featured emails to enhance user engagement and understanding. </p>
-        </div>
-        
-        <br>
-        <br>
-        <div class="bg-white pt-5 pb-5">
-          <div class="container">
-            <h3 class="font-weight-bold p-heads ">Project Titan 1.1 (Docs Editor)</h3>
-            <div class="title-line "></div>
-            <p>Numerous enhancements were made to the product, with a significant focus on the Docs Editor. I invested over 100 hours sketching various ideas and collaborating with my team on brainstorming sessions. Together, we developed low-fidelity wireframes and prototypes to test with both users and internal teams. Our efforts encompassed a range of features aimed at enhancing existing flows and improving user experience across the board.</p>
-          </div>
-          <div class="container">
-            <div class="card-shadow">
-              <div class="carousel mt-4" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true}'>
-                <img src="assets/img/artwork/titan/1.png" />
-                <img src="assets/img/artwork/titan/2.png" />
-                <img src="assets/img/artwork/titan/3.png" />
-                <img src="assets/img/artwork/titan/4.png" />
-                <img src="assets/img/artwork/titan/5.png" />
-                <img src="assets/img/artwork/titan/6.png" />
-                <img src="assets/img/artwork/titan/7.png" />
-                <img src="assets/img/artwork/titan/8.png" />
-                <img src="assets/img/artwork/titan/9.png" />
-                <img src="assets/img/artwork/titan/10.png" />
-                <img src="assets/img/artwork/titan/11.png" />
-              </div>
-            </div>
-            <div class="d-flex justify-content-center mt-5">
-              <a href="https://xd.adobe.com/view/e9f8bd65-8202-476d-aa99-015b46338343-bcab/?fullscreen" target="_blank" class="text-decoration-none">
-                <button class=" btn-dark btn-sm">View mockups in high-res </button>
-              </a>
-            </div>
-            <br>
-            <br>
-          </div>
-        </div>
-        <div class="container pt-5">
-          <h3 class="font-weight-bold p-heads ">DX Portal (v3)</h3>
-          <div class="title-line "></div>
-          <p>The DX Portal, or Developer Experience Portal, is a comprehensive, no-code platform designed to elevate developer experiences. It encompasses language-specific API documentation, dynamic code samples, live authenticated API calls in a real-time API playground, downloadable SDKs in all languages, and more. The major features I worked on include the <b>Get SDK</b> UI/UX Design, <b>DX Portal Search</b>, <b>New Language Selector</b>, <b>API CoPilot</b> working as SDK <b>AI</b> Chat Bot, and <b>Multiple Authentication</b>. Collaborating closely with the engineering team, I spearheaded efforts to enhance its user experience by minimizing frictions and introducing numerous new features. This involved extensive hours of wireframing, creating mockups, and conducting thorough user testing to ensure optimal functionality and usability. </p>
-        </div>
-        <div class="container">
-          <div class="card-shadow">
-            <div class="carousel mt-4" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true}'>
-              <img src="assets/img/artwork/dx-portal/1.png" />
-              <img src="assets/img/artwork/dx-portal/2.png" />
-              <img src="assets/img/artwork/dx-portal/3.png" />
-              <img src="assets/img/artwork/dx-portal/4.png" />
-              <img src="assets/img/artwork/dx-portal/5.png" />
-              <img src="assets/img/artwork/dx-portal/6.png" />
-              <img src="assets/img/artwork/dx-portal/7.png" />
-              <img src="assets/img/artwork/dx-portal/8.png" />
-            </div>
-          </div>
-          <div class="d-flex justify-content-center mt-5">
-            <a href="https://www.figma.com/proto/MIBUI1zGHseP0q1vu6wNnF/DX_Portal_1.1?page-id=0%3A1&type=design&node-id=170-19&viewport=2044%2C1676%2C0.05&t=OhfTeviLDUtbfnmA-1&scaling=contain&starting-point-node-id=170%3A19&mode=design" target="_blank" class="text-decoration-none">
-              <button class=" btn-dark btn-sm">View mockups in high-res </button>
-            </a>
-          </div>
-          <br>
-          <br>
-        </div>
-        <div class="bg-white mt-5">
-          <div class="container">
-            <h3 class="font-weight-bold p-heads pt-5 ">API Validator</h3>
-            <div class="title-line "></div>
-            <p>APIMatic tool performs some preliminary checks on the user-provided API specification document to ensure that it meets the basic requirements for generating a valid output during SDK and Portal generation. For that, our transformer team enhanced its capability from basic check to advanced controlled product, in which users can make quick changes in more controlled ways before proceeding. I led its first class concept via wireframes and created mockups with user flows and features.</p>
-          </div>
-          <div class="container  mt-5 pb-5">
-            <div class="card-shadow">
-              <div class="carousel mt-4" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true}'>
-                <img src="assets/img/artwork/validator/0.png" />
-                <img src="assets/img/artwork/validator/1.png" />
-                <img src="assets/img/artwork/validator/2.png" />
-                <img src="assets/img/artwork/validator/3.png" />
-                <img src="assets/img/artwork/validator/4.png" />
-                <img src="assets/img/artwork/validator/5.png" />
-                <img src="assets/img/artwork/validator/6.png" />
-                <img src="assets/img/artwork/validator/7.png" />
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center mt-2">
-            <a href="   https://xd.adobe.com/view/ae5a05f8-722b-4180-aefe-31f94757b943-fb09/?fullscreen" target="_blank" class="text-decoration-none">
-              <button class=" btn-dark btn-sm">View wireframes & mockups in high-res </button>
-            </a>
-          </div>
-          <br>
-          <br>
-        </div>
-        <div class="container pt-5">
-          <h3 class="font-weight-bold p-heads ">APIMatic's Official Website & Blog</h3>
-          <div class="title-line "></div>
-          <p>I took charge of our official APIMatic website, originally designed on HubSpot, after its development by a third-party vendor. Following its deployment, I meticulously managed over 500 components, focusing on <b>UI design</b>, <b>CSS adjustments</b>, and <b>JavaScript</b> enhancements. Additionally, I dedicated efforts to optimizing its SEO performance using Google Analytics, Google Search Console, and ahrefs tools. </p>
-        </div>
-        <div class="container">
-          <div class="card-shadow">
-            <img src="assets/img/artwork/website/1.png" />
-          </div>
-          <div class="d-flex justify-content-center mt-5">
-            <a href="  https://www.apimatic.io/" target="_blank" class="text-decoration-none">
-              <button class=" btn-dark btn-sm">View website & Blog </button>
-            </a>
-          </div>
-          <br>
-          <br>
-        </div>
-        <div class="container-fluid pt-4 pb-5" style="background-image: url(assets/img/artwork/speekio-wide.jpg);">
-          <div class="container mt-5 mb-5">
-            <h3 class="font-weight-bold p-heads pt-5 text-white">TEST DRIVE</h3>
-            <div class="title-line "></div>
-            <p class="text-white">You can get the live experience of the system via official link after <b>Free</b> signup. </p>
-            <div class="d-flex justify-content-start mt-3">
-              <a href="https://apimatic.io/dashboard" target="_blank" class="text-decoration-none">
-                <button class=" btn-dark btn-sm mr-3">Visit Live Product</button>
-              </a>
-              <a href="https://apimatic.io/" target="_blank" class="text-decoration-none">
-                <button class=" btn-primary btn-sm">VISIT APIMatic.io</button>
-              </a>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section id="other-portfolio" class="mt-5 pt-5 bg-gr other-portfolio">
-      <div class="container-med">
-        <div class="row">
-          <div class="container">
-            <h2 class="title text-uppercase mb-1 text-center">Other Projects</h2>
-            <div class="d-flex justify-content-center">
-              <div class="title-line mb-5"></div>
-            </div>
-          </div>
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/classic_school_system_msteams.jpg">
-              <div class="card-body">
-                <h5 class="card-title">School Management System Integrated with Microsoft Teams</h5>
-                <p class="card-text">I worked on a complete UI/UX design project, including markup writing, for a client from Denmark. The client had shared specific pain points they were experiencing with their current, limited system. Given that the scope and requirements were clear and straightforward, I directly began development in markup using Bootstrap, ensuring a smooth and efficient design process.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/classic_school_system.jpg">
-              <div class="card-body">
-                <h5 class="card-title">School Management System Redesigned Portal</h5>
-                <p class="card-text">Complete UI/UX with markup designed for a client from Denmark. Client wanted to upgrade their exisiting portal to new framework and wanted to integrate new components so I designed it using Bootstrap.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top " src="assets/img/artwork/educational-website.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Educational Marketing Website</h5>
-                <p class="card-text">Complete UI/UX with markup designed for Educational Marketing Website</p>
-              </div>              
-            </div>
-          </div>
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/educational-admin-portal.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Educational Admin Portal</h5>
-                <p class="card-text">Complete UI/UX with markup designed for a client from Denmark. Client's requirement and scope was clear and well-defined so I wrote its markup using Bootstrap framework.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/educational-client-portal.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Educational Client Portal</h5>
-                <p class="card-text">Complete UI/UX with markup designed for a client from Denmark. Client's requirement and scope was clear and defined so I wrote its markup using Bootstrap framework.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/educational_web.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Educational Marketing Website</h5>
-                <p class="card-text">Complete UI/UX design with markup for a educational client from Denmark. Client wanted a fresh design of their marketing website so I wrote its markup by using Bootstrap framework.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/android_ios_knot_game.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Knot Game Project (Android & iOS)</h5>
-                <p class="card-text">I entirely designed all the assets by using Photoshop for the game components. Client wanted a new and fresh look of the game.</p>
-              </div>
-              <div class="card-footer bg-transparent">
-                <div class="d-flex justify-content-between">
-                  <a href="https://play.google.com/store/apps/details?id=net.ibexsolutions.flow8" class="text-decoration-none" target="_blank">
-                    <button class="btn-dark btn-sm" type="button">
-                      <i class="fas fa-paper-plane mr-1"></i>App Link </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/umall_ufone_android_app.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Umall App (Android) for Ufone - 2015</h5>
-                <p class="card-text">UI/UX app design for Ufone Pakistan. Client wanted a simple shopping app for their customers so I designed it by using Photoshop because exporting assets for app were required as well.</p>
-              </div>
-              <div class="card-footer bg-transparent">
-                <div class="d-flex justify-content-between">
-                  <a href="https://propakistani.pk/2015/03/17/umall-ufone-to-launch-its-own-online-shopping-portal/" class="text-decoration-none" target="_blank">
-                    <button class="btn-dark btn-sm" type="button">
-                      <i class="fas fa-paper-plane mr-1"></i>App Details </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/data_anonymyzer.jpg">
-              <div class="card-body">
-                <h5 class="card-title">Data Anonymyzer</h5>
-                <p class="card-text">Data anonymyzer app which anonymyze exisitng data according to GDPR policy. I was responsible for UI/UX design at Synergy-IT.</p>
-              </div>
-              <div class="card-footer bg-transparent">
-                <div class="d-flex justify-content-between">
-                  <a href="assets/img/artwork/data_anonymyzer.pdf" class="text-decoration-none" target="_blank">
-                    <button class="btn-dark btn-sm" type="button">
-                      <i class="fas fa-paper-plane mr-1"></i>HIGH-RES PDF </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/food-delivery-min.png">
-              <div class="card-body">
-                <h5 class="card-title">Food Delivery App for UAE Client (Android & iOS)</h5>
-                <p class="card-text">Designed a food delivery app where users can place orders from multiple restaurants in a single transaction.</p>
-              </div>
-              
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="assets/img/artwork/sports-app-min.png">
-              <div class="card-body">
-                <h5 class="card-title">Sports Venue Finder & Booking App for a Saudi Client</h5>
-                <p class="card-text">The app designed to enable users to book, pay, cancel and share (pooling) the rented venues with each other.</p>
-              </div>
-              
-            </div>
-            <div class="card border-0" style="background-color: #F9F9F9; box-shadow: none;"></div>
-          </div>
-        </div>
-        <br>
-      </div>
-    </section>
-    <!-- footer.njk -->
-    <section id="footer">
-      <div class="d-flex justify-content-center">
-        <div class="social">
-          <div class="footer-social-icons">
-            <ul class="social-icons">
-              <li>
-                <a href="https://www.linkedin.com/in/mhsaad" target="_blank" class="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/saad.tariq" target="_blank" class="social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/SaadGB" target="_blank" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/c/SaadTariqGB" target="_blank" class="social-icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <p>
-          <span class="">
-            <a href="about.html">Muhammad Saad</a>
-          </span>
-        </p>
-      </div>
-    </section>
-    <!-- end footer.njk -->
-    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true">&times;</span>
-              <span class="sr-only">Close</span>
-            </button>
-            <img src="" class="imagepreview" style="width: 100%;">
-          </div>
-        </div>
-      </div>
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="index.html" aria-label="Muhammad Saad home">
+        <span class="brand-mark">
+          <!-- SVG brand copied from site -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0"/>
+                <stop offset="1" stop-color="#545454"/>
+              </linearGradient>
+              <clipPath id="b"><rect width="370" height="370" transform="translate(-0.316 -0.316)" fill="url(#a)"/></clipPath>
+              <linearGradient id="c" x1="1" x2="0.392" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#10d6f9"/>
+                <stop offset="0.301" stop-color="#2d49c5"/>
+                <stop offset="0.501" stop-color="#482ee6"/>
+                <stop offset="0.678" stop-color="#7600f1"/>
+                <stop offset="0.823" stop-color="#6815cb"/>
+                <stop offset="1" stop-color="#e9134d"/>
+              </linearGradient>
+              <clipPath id="f"><rect width="370" height="370"/></clipPath>
+            </defs>
+            <g id="e" clip-path="url(#f)">
+              <g transform="translate(0.316 0.316)" clip-path="url(#b)">
+                <g transform="translate(30.526 5.801)">
+                  <g transform="translate(0)">
+                    <path d="M0,0,153.223,92.037,305.727,0V231.735L270.8,209.616s20.664-121.945,0-145.519-82.655,51.223-82.655,51.223,43.655,16.007,58.208,34.924,0,40.745,0,40.745S68.437,79.67,41.464,64.1s-36.671,57.043,0,105.937,146.683,89.64,146.683,89.64l-34.924,24.448L0,190.99Z" transform="translate(0.448)" fill="url(#c)"/>
+                    <path d="M62.566-36.229,307.039,112.783,153.371,209.4-.3,112.783V72.037S116.684,161.7,153.368,165.169s80.3-27.553,81.491-52.386S62.566,8.012,62.566,8.012Z" transform="translate(0.3 148.057)" fill="url(#c)"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </span>
+      </a>
+      <a id="backButton" class="nav-cta" href="index.html#work" aria-label="Go back to previous page"><span style="margin-right: 0.5rem;">← </span> Go Back</a>
+      <a class="nav-cta" href="index.html#contact">Get in touch</a>
     </div>
-    <!--   Core JS Files   -->
-    <script src="./assets/js/jquery-3.4.1.min.js" type="text/javascript"></script>
-    <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./assets/js/flickity.pkgd.min.js" type="text/javascript"></script>
-    <script src="./assets/js/modal-img.js" type="text/javascript"></script>
-    <script>
-      $(function() {
-        var navMain = $(".navbar-collapse"); // avoid dependency on #id
-        // "a:not([data-toggle])" - to avoid issues caused
-        // when you have dropdown inside navbar
-        navMain.on("click", "a:not([data-toggle])", null, function() {
-          navMain.collapse('hide');
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="shell">
+        <div class="cs-hero-content reveal">
+          <span class="cs-project-name">Developer Experience</span>
+          <h1>APIMatic</h1>
+          <p class="cs-hero-subtitle">Developer Experience Transformation</p>
+          <p class="cs-hero-copy">How a data-driven redesign of onboarding, portal configuration, and developer workflows improved retention by <strong>73.33%</strong> and onboarding completion by <strong>30.38%</strong>.</p>
+
+          <div class="cs-hero-grid">
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Role</div>
+              <div class="cs-info-value">Lead Product Designer</div>
+            </div>
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Team</div>
+              <div class="cs-info-value">Sole Product Designer</div>
+            </div>
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Clients</div>
+              <div class="cs-info-value">PayPal • Verizon • Foxit</div>
+            </div>
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Impact</div>
+              <div class="cs-info-value">73.33% Retention ↑</div>
+            </div>
+          </div>
+          <div class="cs-hero-toc reveal">
+            <p><strong>On this page:</strong> <a href="#project-overview">Overview</a> • <a href="#context">Context</a> • <a href="#ecosystem">Ecosystem</a> • <a href="#research">Research</a> • <a href="#problems">Problems</a> • <a href="#principles">Principles</a> • <a href="#design-system">Design System</a> • <a href="#results">Results</a> • <a href="#reflection">Reflection</a></p>
+          </div>
+        </div>
+
+        <div class="cs-hero-image reveal">
+          <span class="cs-placeholder"><img src="assets/img/artwork/apimatic-cover-hero.png" alt="APIMatic Platform"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT SNAPSHOT -->
+    <section id="project-overview">
+      <div class="shell">
+        <span class="cs-section-label">Impact Snapshot</span>
+        <div class="cs-glance-grid">
+          <div class="cs-glance-card reveal">
+            <div class="cs-glance-value">73.33%</div>
+            <div class="cs-glance-label">Retention Improvement</div>
+          </div>
+          <div class="cs-glance-card reveal">
+            <div class="cs-glance-value">30.38%</div>
+            <div class="cs-glance-label">Onboarding Completion</div>
+          </div>
+          <div class="cs-glance-card reveal">
+            <div class="cs-glance-value">Enterprise</div>
+            <div class="cs-glance-label">PayPal • Verizon • Foxit</div>
+          </div>
+          <div class="cs-glance-card reveal">
+            <div class="cs-glance-value">Research-Driven</div>
+            <div class="cs-glance-label">Mixpanel + Clarity</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEXT -->
+    <section id="context">
+      <div class="shell">
+        <span class="cs-section-label">Context</span>
+        <div class="cs-overview-grid">
+          <div class="cs-overview-card reveal">
+            <h3>The Situation</h3>
+            <p>APIMatic shipped v1 with functional features but broken flows that caused enterprise clients to lose developer audiences. The brief: find what is broken, fix it, and keep at-risk clients.</p>
+            <div style="margin-top:8px; padding:10px; border-radius:12px; background: rgba(99,228,255,0.03);">Sole designer hired to identify friction using Mixpanel and Clarity.</div>
+          </div>
+          <div class="cs-overview-card reveal">
+            <h3>Why It Mattered</h3>
+            <p>Developer abandonment cascades: failed integrations → unhappy enterprise clients → churn. Fixing onboarding and Project Titan configuration directly preserved client value.</p>
+            <div style="margin-top:8px; padding:10px; border-radius:12px; background: rgba(167,139,250,0.03);">Business risk: enterprise churn and lost reputation.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM DIAGRAM -->
+    <section id="ecosystem">
+      <div class="shell">
+        <span class="cs-section-label">Understanding The Ecosystem</span>
+        <h2>How users relate across the product</h2>
+        <div class="cs-ia-diagram reveal">
+          <div class="cs-ia-tree" style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+            <div class="cs-ia-item">APIMatic Evaluator</div>
+            <div class="cs-ia-arrow">↓</div>
+            <div class="cs-ia-item">API Provider (Portal Administrator)</div>
+            <div class="cs-ia-arrow">↓</div>
+            <div class="cs-ia-item">Developer Portal (generated)</div>
+            <div class="cs-ia-arrow">↓</div>
+            <div class="cs-ia-item">End Developer</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <div class="shell">
+        <span class="cs-section-label">Research Methodology</span>
+        <div class="cs-ds-grid">
+          <div class="cs-ds-item reveal">
+            <h3>Mixpanel</h3>
+            <p>Funnel analysis identified where users dropped off in onboarding and configuration flows.</p>
+          </div>
+          <div class="cs-ds-item reveal">
+            <h3>Microsoft Clarity</h3>
+            <p>Session recordings and rage-click analysis revealed broken explorer auth handoffs and UI friction points.</p>
+          </div>
+          <div class="cs-ds-item reveal">
+            <h3>A/B Testing</h3>
+            <p>Validated changes at enterprise scale before rolling out broadly; measured retention and onboarding improvements.</p>
+          </div>
+        </div>
+
+        <div class="cs-showcase-container reveal" style="display:grid;grid-template-columns:1fr;gap:0;height:420px;margin-top:18px;">
+          <div class="cs-image-carousel">
+            <div class="cs-carousel-track" id="carouselTrack">
+              <div class="cs-carousel-slide"><img src="assets/img/artwork/research/1.png" alt="Mixpanel Funnel" /></div>
+              <div class="cs-carousel-slide"><img src="assets/img/artwork/research/2.png" alt="Clarity Recording" /></div>
+              <div class="cs-carousel-slide"><img src="assets/img/artwork/research/3.png" alt="Heatmaps" /></div>
+              <div class="cs-carousel-slide"><img src="assets/img/artwork/research/4.png" alt="Session Recording" /></div>
+              <div class="cs-carousel-slide"><img src="assets/img/artwork/research/5.png" alt="Analysis Results" /></div>
+            </div>
+            <button class="cs-carousel-arrow prev" id="prevBtn" aria-label="Previous slide">❮</button>
+            <button class="cs-carousel-arrow next" id="nextBtn" aria-label="Next slide">❯</button>
+            <div class="cs-carousel-nav" id="dotsContainer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMS 2x2 -->
+    <section id="problems">
+      <div class="shell">
+        <span class="cs-section-label">Defining The Real Problems</span>
+        <h2>Four high-impact issues</h2>
+        <div class="cs-problems-grid">
+          <div class="cs-problem-card reveal">
+            <span class="cs-problem-number">01</span>
+            <h3>No Feedback Loop</h3>
+            <p>Portal configuration produced outputs without live validation or preview.</p>
+            <p><strong>Evidence:</strong> Clarity recordings showing broken portals after generation.</p>
+            <p><strong>Impact:</strong> Client escalations and churn risk.</p>
+          </div>
+          <div class="cs-problem-card reveal">
+            <span class="cs-problem-number">02</span>
+            <h3>Value After Forms</h3>
+            <p>Onboarding required too much upfront data before delivering the first portal.</p>
+            <p><strong>Evidence:</strong> Mixpanel funnel cliff mid-form.</p>
+            <p><strong>Impact:</strong> Low onboarding completion.</p>
+          </div>
+          <div class="cs-problem-card reveal">
+            <span class="cs-problem-number">03</span>
+            <h3>Broken Error States</h3>
+            <p>Interactive explorer returned non-actionable errors during authentication handoff.</p>
+            <p><strong>Evidence:</strong> Rage clicks concentrated on explorer auth inputs (Clarity).</p>
+            <p><strong>Impact:</strong> Developers abandoned integration attempts.</p>
+          </div>
+          <div class="cs-problem-card reveal">
+            <span class="cs-problem-number">04</span>
+            <h3>No Design System</h3>
+            <p>Inconsistent components and interactions across product flows reduced credibility.</p>
+            <p><strong>Evidence:</strong> Visual inconsistencies across onboarding and configuration screens.</p>
+            <p><strong>Impact:</strong> Slower delivery and lower client trust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA REVEALED -->
+    <section id="revealed">
+      <div class="shell">
+        <span class="cs-section-label">What The Data Revealed</span>
+        <p>Behavioral analytics and session recordings exposed where users struggled, abandoned workflows, and failed to reach value. These findings directly informed the redesign priorities.</p>
+        <div class="cs-showcase-container reveal" style="display:grid;grid-template-columns:1fr;gap:18px;">
+          <div class="cs-screen-showcase reveal">
+            <div class="cs-placeholder"><img src="assets/img/signup-drop-off.jpg" alt="Onboarding Friction" /></div>
+            <div>
+              <h3 style="margin-top:0;margin-bottom:12px;">Onboarding Drop-Off</h3>
+              <p>Users were abandoning onboarding before experiencing the value of the platform. The process prioritized data collection over product activation, creating friction early in the journey.</p>
+            </div>
+          </div>
+          <div class="cs-screen-showcase reveal">
+            <div class="cs-placeholder"><img src="assets\img\artwork\research\rage.png" alt="Rage Click Analysis" /></div>
+            <div>
+              <h3 style="margin-top:0;margin-bottom:12px;">Session Recording Analysis</h3>
+              <p>Microsoft Clarity recordings revealed repeated confusion around portal configuration and authentication setup. Users frequently retried actions without understanding what was required.</p>
+            </div>
+          </div>
+          <div class="cs-screen-showcase reveal">
+            <div class="cs-placeholder"><img src="assets/img/fail-pattern.png" alt="Explorer Failure Patterns" /></div>
+            <div>
+              <h3 style="margin-top:0;margin-bottom:12px;">Explorer Failure Patterns</h3>
+              <p>Error states provided little context, making it difficult for users to distinguish API issues from configuration mistakes. This often resulted in failed testing and abandonment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN PRINCIPLES -->
+    <section id="principles">
+      <div class="shell">
+        <span class="cs-section-label">Design Principles</span>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;">
+          <div class="cs-overview-card reveal">
+            <h3>Show Output Before Input</h3>
+            <p>Generated portal appears immediately after 3-field spec upload. Users see value before committing to full configuration, increasing onboarding completion.</p>
+          </div>
+          <div class="cs-overview-card reveal">
+            <h3>Earn Commitment Progressively</h3>
+            <p>Minimal upfront data, then reveal additional configuration fields as needed. Progressive disclosure reduces abandonment from form fatigue.</p>
+          </div>
+          <div class="cs-overview-card reveal">
+            <h3>Design Error States</h3>
+            <p>Explorer errors show actionable recovery paths: "Auth failed — reconnect wallet" with a direct button, not silent failures that cause rage clicks.</p>
+          </div>
+          <div class="cs-overview-card reveal">
+            <h3>Maintain Technical Credibility</h3>
+            <p>Consistent typography, component language, and validation messaging across all screens. Enterprise clients equate visual polish with technical reliability.</p>
+          </div>
+          <div class="cs-overview-card reveal" style="grid-column:1/-1;">
+            <h3>Validate Through Data</h3>
+            <p>Every design change validated through A/B testing before broader rollout. Mixpanel and Clarity revealed which fixes moved the needle on retention and completion metrics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION 01 -->
+    <section>
+      <div class="shell">
+        <span class="cs-section-label">Solution 01</span>
+        <h2>Project Titan Redesign</h2>
+        <div class="cs-solution-panel cs-solution-01 reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;">
+          <div class="cs-solution-media">
+            <img src="assets/img/explorer.png" alt="Project Titan Redesign" />
+          </div>
+          <div class="cs-solution-copy">
+            <div class="cs-solution-step">
+              <span class="cs-solution-step-label">Problem</span>
+              <p>Weak feedback loop: users configured portals without knowing if choices were compatible.</p>
+            </div>
+            <div class="cs-solution-step">
+              <span class="cs-solution-step-label">Approach</span>
+              <p>Convert Titan from linear wizard to configuration + live preview with inline validation.</p>
+            </div>
+            <div class="cs-solution-step">
+              <span class="cs-solution-step-label">Tradeoff</span>
+              <p>Engineering cost for preview vs. lower broken outputs.</p>
+            </div>
+            <div class="cs-solution-step">
+              <span class="cs-solution-step-label">Outcome</span>
+              <p>Fewer broken portals and improved enterprise confidence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION 02 -->
+    <section>
+      <div class="shell">
+        <span class="cs-section-label">Solution 02</span>
+        <h2>Onboarding Redesign</h2>
+        <div class="cs-comparison-grid cs-solution-showcase">
+          <div class="cs-comparison-column reveal">
+            <h3 class="cs-comparison-header cs-comparison-before">Before</h3>
+            <div class="cs-comparison-visual"><span class="cs-placeholder"><img src="assets/img/old-form.png" alt="Before"></span></div>
+            <div class="cs-comparison-stack">
+              <span class="cs-comparison-tag">Long form</span>
+              <span class="cs-comparison-tag">High abandonment</span>
+            </div>
+          </div>
+          <div class="cs-comparison-column reveal">
+            <h3 class="cs-comparison-header cs-comparison-after">After</h3>
+            <div class="cs-comparison-visual"><span class="cs-placeholder"><img src="assets/img/new-form.png" alt="After"></span></div>
+            <div class="cs-comparison-stack">
+              <span class="cs-comparison-tag">Minimal path to value</span>
+              <span class="cs-comparison-tag">Spec upload → live portal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION 03 -->
+    <section>
+      <div class="shell">
+        <span class="cs-section-label">Solution 03</span>
+        <h2>Interactive Explorer Fixes</h2>
+        <div class="cs-solution-panel reveal" style="display:grid;grid-template-columns:repeat(2,1fr);gap:38px;align-items:center;">
+          <div class="cs-solution-media">
+            <div class="cs-image-carousel" style="height:320px;">
+              <div class="cs-carousel-track">
+                <div class="cs-carousel-slide"><img src="assets/img/pub1.png" alt="Explorer Fixes screen 1"></div>
+                <div class="cs-carousel-slide"><img src="assets/img/pub2.png" alt="Explorer Fixes screen 2"></div>
+              </div>
+              <button class="cs-carousel-arrow prev" aria-label="Previous slide">❮</button>
+              <button class="cs-carousel-arrow next" aria-label="Next slide">❯</button>
+              <div class="cs-carousel-nav"></div>
+            </div>
+          </div>
+          <div class="cs-solution-copy">
+            <h3>Fixes</h3>
+            <ul>
+              <li>Corrected authentication handoff</li>
+              <li>Clear, actionable error messages</li>
+              <li>Recovery guidance and retry paths</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN SYSTEM -->
+    <section id="design-system">
+      <div class="shell">
+        <span class="cs-section-label">Design System Foundation</span>
+        <h2>Why building a system first mattered</h2>
+<p>Before redesigning onboarding and workflows, I established a scalable design system that unified components, interaction patterns, and visual language across the platform. This foundation enabled faster iteration, consistent user experiences, and more efficient collaboration with engineering.</p><br>
+        <div class="cs-showcase-container reveal" style="display:grid;grid-template-columns:1fr;gap:18px;">
+          <div class="cs-showcase-item cs-design-system-card">
+            <img src="assets/img/apimatic-design-system.jpg" alt="Design System">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALIDATION -->
+    <section>
+      <div class="shell">
+        <span class="cs-section-label">Validation</span>
+        <h2>From research to iteration</h2>
+        <div class="cs-timeline">
+          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">1</div><div class="cs-timeline-label">Research</div></div>
+          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">2</div><div class="cs-timeline-label">Design</div></div>
+          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">3</div><div class="cs-timeline-label">A/B Testing</div></div>
+          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">4</div><div class="cs-timeline-label">Measurement</div></div>
+          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">5</div><div class="cs-timeline-label">Iteration</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results">
+      <div class="shell">
+        <span class="cs-section-label">Results</span>
+        <div class="cs-glance-grid">
+          <div class="cs-glance-card reveal"><div class="cs-glance-value">73.33%</div><div class="cs-glance-label">Retention Increase</div></div>
+          <div class="cs-glance-card reveal"><div class="cs-glance-value">30.38%</div><div class="cs-glance-label">Onboarding Completion</div></div>
+          <div class="cs-glance-card reveal"><div class="cs-glance-value">Reduced</div><div class="cs-glance-label">Portal Failures</div></div>
+          <div class="cs-glance-card reveal"><div class="cs-glance-value">Improved</div><div class="cs-glance-label">Enterprise Retention</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORM ENABLES -->
+    <section>
+      <div class="shell">
+        <span class="cs-section-label">What The Platform Enables</span>
+        <div class="cs-artifacts-grid">
+          <div class="cs-artifact-card reveal"><h3>Enterprise Portal Creation</h3><p>Fast, branded portals without engineering work.</p></div>
+          <div class="cs-artifact-card reveal"><h3>Developer Self-Service</h3><p>Interactive explorers and SDKs that work reliably.</p></div>
+          <div class="cs-artifact-card reveal"><h3>Scalable API Adoption</h3><p>Reduce friction for thousands of developer integrations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section id="reflection">
+      <div class="shell">
+        <span class="cs-section-label">Reflection</span>
+        <h2>Design learnings and next steps for APIMatic</h2>
+        <div class="cs-final-reflection reveal">
+          <div class="cs-reflection-panel cs-reflection-panel--primary">
+            <span class="cs-reflection-tag">Outcome</span>
+            <h4>Product momentum through data-informed design</h4>
+            <p>Data-led fixes and progressive onboarding delivered measurable retention gains while restoring confidence in the developer experience. The work proved that better feedback and clearer flow signals reduce user friction.</p>
+          </div>
+          <div class="cs-reflection-panel">
+            <span class="cs-reflection-tag">Constraint</span>
+            <h4>Bandwidth shaped priority decisions</h4>
+            <p>Sole designer capacity and a tight test cycle meant focusing on the highest-risk flows first. That disciplined prioritization improved core value delivery, but it also left some system-level polish for later phases.</p>
+          </div>
+          <div class="cs-reflection-panel">
+            <span class="cs-reflection-tag">Next step</span>
+            <h4>Scale the design system beyond onboarding</h4>
+            <p>Longer A/B windows and dedicated design resource would enable deeper component consistency across developer tools. Expanding the system to portal configuration and docs would reduce future rework and strengthen enterprise trust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cs-cta">
+      <div class="shell">
+        <h2>Interested in developer experience transformations?</h2>
+        <div class="cs-cta-buttons">
+          <a class="button primary" href="index.html#contact">Discuss your challenge</a>
+          <a class="button secondary" href="atlas.html">View Next Case Study</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a id="scrollTopButton" class="button scroll-top" href="#top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 4.5l-7 7 1.4 1.4L11 8.3V19h2V8.3l4.6 4.6 1.4-1.4z"/>
+    </svg>
+  </a>
+
+  <div id="imageZoomOverlay" class="image-zoom-overlay" aria-hidden="true">
+    <button type="button" class="image-zoom-close" aria-label="Close image zoom">×</button>
+    <div class="image-zoom-content">
+      <img src="" alt="" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>(c) 2026 Muhammad Saad. Senior Product Designer.</span>
+      <span>Designed for performance, clarity, and modern product credibility.</span>
+    </div>
+  </footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var revealItems = document.querySelectorAll(".reveal");
+      var topButton = document.getElementById("scrollTopButton");
+
+      function updateScrollTopVisibility() {
+        if (!topButton) return;
+        var show = window.scrollY > 120;
+        topButton.classList.toggle("visible", show);
+      }
+
+      updateScrollTopVisibility();
+      window.addEventListener("scroll", updateScrollTopVisibility, { passive: true });
+
+      revealItems.forEach(function (item) {
+        item.style.opacity = "1";
+        item.style.removeProperty('transform');
+      });
+
+      var backButton = document.getElementById('backButton');
+      if (backButton) {
+        backButton.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.location.href = 'index.html#work';
+        });
+      }
+    });
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var overlay = document.getElementById('imageZoomOverlay');
+      var overlayImg = overlay && overlay.querySelector('.image-zoom-content img');
+      var closeButton = overlay && overlay.querySelector('.image-zoom-close');
+
+      function showZoom(src, alt) {
+        if (!overlay || !overlayImg) return;
+        overlayImg.src = src;
+        overlayImg.alt = alt || '';
+        overlay.classList.add('visible');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function hideZoom() {
+        if (!overlay || !overlayImg) return;
+        overlay.classList.remove('visible');
+        overlay.setAttribute('aria-hidden', 'true');
+        overlayImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('main img').forEach(function (img) {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function () {
+          showZoom(img.src, img.alt);
         });
       });
-    </script>
-    <script>
-      // ===== Scroll to Top ==== 
-      $(window).scroll(function() {
-        if ($(this).scrollTop() >= 50) {
-          $('#return-to-top').fadeIn(200);
-        } else {
-          $('#return-to-top').fadeOut(200);
+
+      if (closeButton) closeButton.addEventListener('click', hideZoom);
+      if (overlay) overlay.addEventListener('click', function (event) {
+        if (event.target === overlay) hideZoom();
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') hideZoom();
+      });
+
+      // IMAGE CAROUSEL FUNCTIONALITY
+      const carousels = document.querySelectorAll('.cs-image-carousel');
+
+      carousels.forEach((carousel) => {
+        const carouselTrack = carousel.querySelector('.cs-carousel-track');
+        const prevBtn = carousel.querySelector('.cs-carousel-arrow.prev');
+        const nextBtn = carousel.querySelector('.cs-carousel-arrow.next');
+        const dotsContainer = carousel.querySelector('.cs-carousel-nav');
+
+        if (!carouselTrack || !dotsContainer) return;
+
+        const slides = carouselTrack.querySelectorAll('.cs-carousel-slide');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+        let autoplayInterval;
+
+        // Create dots
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('div');
+          dot.classList.add('cs-carousel-dot');
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
         }
+
+        const dots = dotsContainer.querySelectorAll('.cs-carousel-dot');
+
+        function updateCarousel() {
+          const offset = -currentIndex * 100;
+          carouselTrack.style.transform = `translateX(${offset}%)`;
+          dots.forEach((dot, index) => {
+            if (index === currentIndex) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateCarousel();
+          resetAutoplay();
+        }
+
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+          resetAutoplay();
+        }
+
+        function goToSlide(index) {
+          currentIndex = index;
+          updateCarousel();
+          resetAutoplay();
+        }
+
+        function startAutoplay() {
+          autoplayInterval = setInterval(() => {
+            nextSlide();
+          }, 4000); // Change slide every 4 seconds
+        }
+
+        function resetAutoplay() {
+          clearInterval(autoplayInterval);
+          startAutoplay();
+        }
+
+        // Navigation button listeners
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+        // Carousel image zoom support
+        slides.forEach((slide) => {
+          const img = slide.querySelector('img');
+          if (img) {
+            img.addEventListener('click', function (e) {
+              e.stopPropagation();
+              showZoom(img.src, img.alt);
+            });
+          }
+        });
+
+        // Start autoplay
+        startAutoplay();
+
+        // Pause autoplay on hover
+        carousel.addEventListener('mouseenter', () => {
+          clearInterval(autoplayInterval);
+        });
+        carousel.addEventListener('mouseleave', () => {
+          startAutoplay();
+        });
       });
-      $('#return-to-top').click(function() {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 500);
-      });
-    </script>
-    <script>
-      $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true
-      });
-    </script>
-    <!--    
-    
-    <script>  
-     var player = new MediaElementPlayer('#player1',/* Options */);
-     player.play(); 
-</script>
-    
- -->
-  </body>
+    });
+  </script>
+</body>
 </html>

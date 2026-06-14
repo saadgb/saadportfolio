@@ -546,100 +546,110 @@
   </script>
   <script>
     (function () {
-      const carousels = document.querySelectorAll('.cs-image-carousel');
-      if (!carousels.length) return;
+      function initCarousel() {
+        const carousels = document.querySelectorAll('.cs-image-carousel');
+        if (!carousels.length) return;
 
-      carousels.forEach((carousel) => {
-        const carouselTrack = carousel.querySelector('.cs-carousel-track');
-        const prevBtn = carousel.querySelector('.cs-carousel-arrow.prev');
-        const nextBtn = carousel.querySelector('.cs-carousel-arrow.next');
-        const dotsContainer = carousel.querySelector('.cs-carousel-nav');
+        carousels.forEach((carousel) => {
+          const carouselTrack = carousel.querySelector('.cs-carousel-track');
+          const prevBtn = carousel.querySelector('.cs-carousel-arrow.prev');
+          const nextBtn = carousel.querySelector('.cs-carousel-arrow.next');
+          const dotsContainer = carousel.querySelector('.cs-carousel-nav');
 
-        if (!carouselTrack || !dotsContainer) return;
+          if (!carouselTrack || !dotsContainer) return;
 
-        const slides = carouselTrack.querySelectorAll('.cs-carousel-slide');
-        const totalSlides = slides.length;
-        if (totalSlides === 0) return;
+          const slides = carouselTrack.querySelectorAll('.cs-carousel-slide');
+          const totalSlides = slides.length;
+          if (totalSlides === 0) return;
 
-        let currentIndex = 0;
-        let autoplayInterval = null;
+          let currentIndex = 0;
+          let autoplayInterval = null;
 
-        // Create dots
-        for (let i = 0; i < totalSlides; i++) {
-          const dot = document.createElement('div');
-          dot.classList.add('cs-carousel-dot');
-          if (i === 0) dot.classList.add('active');
-          dot.addEventListener('click', () => goToSlide(i));
-          dotsContainer.appendChild(dot);
-        }
+          // Create dots
+          for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('cs-carousel-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+          }
 
-        const dots = dotsContainer.querySelectorAll('.cs-carousel-dot');
+          const dots = dotsContainer.querySelectorAll('.cs-carousel-dot');
 
-        function updateCarousel() {
-          const offset = -currentIndex * 100;
-          carouselTrack.style.transform = `translateX(${offset}%)`;
-          dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
-          });
-        }
-
-        function nextSlide() {
-          currentIndex = (currentIndex + 1) % totalSlides;
-          updateCarousel();
-          resetAutoplay();
-        }
-
-        function prevSlide() {
-          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-          updateCarousel();
-          resetAutoplay();
-        }
-
-        function goToSlide(index) {
-          currentIndex = index;
-          updateCarousel();
-          resetAutoplay();
-        }
-
-        function startAutoplay() {
-          clearInterval(autoplayInterval);
-          autoplayInterval = setInterval(nextSlide, 4000);
-        }
-
-        function resetAutoplay() {
-          clearInterval(autoplayInterval);
-          startAutoplay();
-        }
-
-        // Navigation button listeners
-        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-
-        // Carousel image zoom support
-        slides.forEach((slide) => {
-          const img = slide.querySelector('img');
-          if (img) {
-            img.addEventListener('click', function (e) {
-              e.stopPropagation();
-              if (window.showZoom) {
-                window.showZoom(img.src, img.alt);
-              }
+          function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carouselTrack.style.transform = `translateX(${offset}%)`;
+            dots.forEach((dot, index) => {
+              dot.classList.toggle('active', index === currentIndex);
             });
           }
-        });
 
-        // Initialize
-        updateCarousel();
-        startAutoplay();
+          function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+            resetAutoplay();
+          }
 
-        // Pause autoplay on hover
-        carousel.addEventListener('mouseenter', () => {
-          clearInterval(autoplayInterval);
-        });
-        carousel.addEventListener('mouseleave', () => {
+          function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+            resetAutoplay();
+          }
+
+          function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+            resetAutoplay();
+          }
+
+          function startAutoplay() {
+            clearInterval(autoplayInterval);
+            autoplayInterval = setInterval(nextSlide, 4000);
+          }
+
+          function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+          }
+
+          if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+          if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+          slides.forEach((slide) => {
+            const img = slide.querySelector('img');
+            if (img) {
+              img.addEventListener('click', function (e) {
+                e.stopPropagation();
+                if (window.showZoom) {
+                  window.showZoom(img.src, img.alt);
+                }
+              });
+            }
+          });
+
+          updateCarousel();
+          setTimeout(updateCarousel, 0);
+          requestAnimationFrame(updateCarousel);
           startAutoplay();
+
+          carousel.addEventListener('mouseenter', () => {
+            clearInterval(autoplayInterval);
+          });
+          carousel.addEventListener('mouseleave', () => {
+            startAutoplay();
+          });
         });
-      });
+      }
+
+      function ready() {
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+          initCarousel();
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', ready);
+      window.addEventListener('load', ready);
+      ready();
     })();
   </script>
   <script src="zoom.js" defer></script>

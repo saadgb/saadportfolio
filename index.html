@@ -488,8 +488,7 @@
     </div>
   </footer>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- GSAP CDN removed to avoid CSP 'unsafe-eval' blocking on server; using WAAPI fallback for animations -->
   <script>
     // Ensure hash fragments scroll to the target even if layout shifts or header is fixed
     window.addEventListener('DOMContentLoaded', function () {

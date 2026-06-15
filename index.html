@@ -617,9 +617,11 @@
       (function () {
         function waapiFallback() {
           try {
+            console.info('WAAPI fallback: start');
             var map = document.querySelector('.intel-map');
-            if (!map) return;
+            if (!map) { console.info('WAAPI fallback: .intel-map not found'); return; }
             var nodes = map.querySelectorAll('.node');
+            console.info('WAAPI fallback: nodes found', nodes.length);
             var configs = [
               { x: 0, y: -10, duration: 2800 },
               { x: 0, y: 12, duration: 3200 },
@@ -629,13 +631,32 @@
             ];
             nodes.forEach(function (node, i) {
               var c = configs[i] || configs[0];
+              // Visual debug marker so we can see nodes on live server
+              node.style.outline = '2px dashed lime';
+              node.style.background = 'rgba(0,255,0,0.03)';
+              node.dataset.__waapi_debug = '1';
               if (node.animate) {
-                node.animate(
-                  [ { transform: 'translate(0px, 0px)' }, { transform: 'translate(' + c.x + 'px, ' + c.y + 'px)' } ],
-                  { duration: c.duration, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }
-                );
+                try {
+                  node.animate(
+                    [ { transform: 'translate(0px, 0px)' }, { transform: 'translate(' + c.x + 'px, ' + c.y + 'px)' } ],
+                    { duration: c.duration, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }
+                  );
+                } catch (err) {
+                  console.warn('WAAPI animate call failed for node', i, err);
+                }
+              } else {
+                console.info('WAAPI not supported, using interval fallback for node', i);
+                (function (node, c) {
+                  var dir = 1, pos = 0, max = Math.max(Math.abs(c.x), Math.abs(c.y)) || 10;
+                  setInterval(function () {
+                    pos += dir * 1;
+                    if (Math.abs(pos) >= max) dir *= -1;
+                    node.style.transform = 'translate(' + (c.x ? (pos * c.x / max) : 0) + 'px, ' + (c.y ? (pos * c.y / max) : 0) + 'px)';
+                  }, 50);
+                }(node, c));
               }
             });
+            console.info('WAAPI fallback: animations applied');
           } catch (e) { console.warn('WAAPI fallback failed', e); }
         }
 

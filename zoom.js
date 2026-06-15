@@ -58,24 +58,41 @@ document.addEventListener('DOMContentLoaded', function () {
         nodes.forEach(function (node, i) {
           var c = configs[i] || configs[0];
           if (node.animate) {
-            node.animate(
-              [
-                { transform: 'translate(0px, 0px)' },
-                { transform: 'translate(' + c.x + 'px, ' + c.y + 'px)' }
-              ],
-              { duration: c.duration, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }
-            );
+            try {
+              var endTransform = 'translate(' + c.x + 'px,' + c.y + 'px)';
+              var keyframes = [
+                { transform: 'translate(0px,0px)' },
+                { transform: endTransform }
+              ];
+              var opts = {
+                duration: c.duration,
+                iterations: Infinity,
+                direction: 'alternate',
+                easing: 'ease-in-out'
+              };
+              node.animate(keyframes, opts);
+            } catch (err) {
+              console.warn('WAAPI animate failed for node ' + i, err);
+              // Fallback to CSS animation
+              fallbackToCSS(node, c);
+            }
           } else {
-            var dir = 1;
-            var pos = 0;
-            var max = Math.max(Math.abs(c.x), Math.abs(c.y)) || 10;
-            setInterval(function () {
-              pos += dir * 1;
-              if (Math.abs(pos) >= max) dir *= -1;
-              node.style.transform = 'translate(' + (c.x ? (pos * c.x / max) : 0) + 'px, ' + (c.y ? (pos * c.y / max) : 0) + 'px)';
-            }, 50);
+            fallbackToCSS(node, c);
           }
         });
+
+        function fallbackToCSS(node, c) {
+          var dir = 1;
+          var pos = 0;
+          var max = Math.max(Math.abs(c.x), Math.abs(c.y)) || 10;
+          var animInterval = setInterval(function () {
+            pos += dir * 1;
+            if (Math.abs(pos) >= max) dir *= -1;
+            var x = c.x ? (pos * c.x / max) : 0;
+            var y = c.y ? (pos * c.y / max) : 0;
+            node.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+          }, 50);
+        }
       } catch (err) {
         console.warn('intel-map WAAPI fallback failed', err);
       }

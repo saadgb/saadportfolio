@@ -618,18 +618,16 @@
 
   <script>
     window.addEventListener("DOMContentLoaded", function () {
-      // scroll top button functionality
-      var topButton = document.getElementById("scrollTopButton");
-      function updateScrollTopVisibility() {
-        if (!topButton) return;
-        var show = window.scrollY > 120;
-        topButton.classList.toggle("visible", show);
-      }
-      updateScrollTopVisibility();
-      window.addEventListener("scroll", updateScrollTopVisibility, { passive: true });
-
       // reveal defaults
       document.querySelectorAll('.reveal').forEach(function (item) { item.style.opacity = '1'; item.style.transform = 'none'; });
+
+      var topButton = document.getElementById('scrollTopButton');
+      function updateScrollTopVisibility() {
+        if (!topButton) return;
+        topButton.classList.toggle('hide', window.scrollY <= 80);
+      }
+      updateScrollTopVisibility();
+      window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
 
       // back button
       var backButton = document.getElementById('backButton');

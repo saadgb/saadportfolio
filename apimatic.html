@@ -563,21 +563,19 @@
     window.addEventListener("DOMContentLoaded", function () {
       var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       var revealItems = document.querySelectorAll(".reveal");
-      var topButton = document.getElementById("scrollTopButton");
-
-      function updateScrollTopVisibility() {
-        if (!topButton) return;
-        var show = window.scrollY > 120;
-        topButton.classList.toggle("visible", show);
-      }
-
-      updateScrollTopVisibility();
-      window.addEventListener("scroll", updateScrollTopVisibility, { passive: true });
 
       revealItems.forEach(function (item) {
         item.style.opacity = "1";
         item.style.removeProperty('transform');
       });
+
+      var topButton = document.getElementById('scrollTopButton');
+      function updateScrollTopVisibility() {
+        if (!topButton) return;
+        topButton.classList.toggle('hide', window.scrollY <= 80);
+      }
+      updateScrollTopVisibility();
+      window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
 
       var backButton = document.getElementById('backButton');
       if (backButton) {

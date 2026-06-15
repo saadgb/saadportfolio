@@ -398,12 +398,12 @@
       });
 
       var topButton = document.getElementById('scrollTopButton');
-      function updateScrollTop() {
+      function updateScrollTopVisibility() {
         if (!topButton) return;
-        topButton.classList.toggle('visible', window.scrollY > 120);
+        topButton.classList.toggle('hide', window.scrollY <= 80);
       }
-      updateScrollTop();
-      window.addEventListener('scroll', updateScrollTop, { passive: true });
+      updateScrollTopVisibility();
+      window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
 
       var backButton = document.getElementById('backButton');
       if (backButton) {

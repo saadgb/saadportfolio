@@ -93,7 +93,7 @@
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
+    <section class="hero">
       <div class="shell hero-grid">
         <div>
           <div class="eyebrow reveal"><span class="pulse"></span>  Senior UX/UI Product Designer</div>
@@ -101,7 +101,7 @@
           <p class="hero-copy reveal">Senior Product Designer with 9 years of experience designing enterprise SaaS, developer platforms, intelligence systems, and operational software where clarity, speed, and trust matter.</p>
 
           <div class="hero-actions reveal">
-            <a class="button primary" href="#work">View case studies</a>
+            <a class="button primary" href="#work">See My Work</a>
             <a class="button secondary" href="Muhammad-Saad_Resume.pdf" alt="muhammad saad resume cv">Download Resume</a>
           </div>
 
@@ -577,12 +577,11 @@
 
       function updateScrollTopVisibility() {
         if (!topButton) return;
-        var show = window.scrollY > 120;
-        topButton.classList.toggle("visible", show);
+        topButton.classList.toggle('hide', window.scrollY <= 80);
       }
 
       updateScrollTopVisibility();
-      window.addEventListener("scroll", updateScrollTopVisibility, { passive: true });
+      window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
 
       if (prefersReducedMotion) {
         revealItems.forEach(function (item) {

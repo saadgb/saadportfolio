@@ -617,11 +617,28 @@
       (function () {
         function waapiFallback() {
           try {
+            if (!document.body) return;
+            var debugBadge = document.getElementById('waapi-fallback-debug');
+            if (!debugBadge) {
+              debugBadge = document.createElement('div');
+              debugBadge.id = 'waapi-fallback-debug';
+              debugBadge.style.position = 'fixed';
+              debugBadge.style.top = '8px';
+              debugBadge.style.right = '8px';
+              debugBadge.style.zIndex = '9999';
+              debugBadge.style.padding = '6px 10px';
+              debugBadge.style.background = 'rgba(0, 0, 0, 0.75)';
+              debugBadge.style.color = '#fff';
+              debugBadge.style.fontSize = '12px';
+              debugBadge.textContent = 'WAAPI fallback active';
+              document.body.appendChild(debugBadge);
+            }
             console.info('WAAPI fallback: start');
             var map = document.querySelector('.intel-map');
-            if (!map) { console.info('WAAPI fallback: .intel-map not found'); return; }
+            if (!map) { console.info('WAAPI fallback: .intel-map not found'); debugBadge.textContent = 'WAAPI fallback: .intel-map not found'; return; }
             var nodes = map.querySelectorAll('.node');
             console.info('WAAPI fallback: nodes found', nodes.length);
+            debugBadge.textContent = 'WAAPI fallback: nodes=' + nodes.length;
             var configs = [
               { x: 0, y: -10, duration: 2800 },
               { x: 0, y: 12, duration: 3200 },
@@ -631,9 +648,8 @@
             ];
             nodes.forEach(function (node, i) {
               var c = configs[i] || configs[0];
-              // Visual debug marker so we can see nodes on live server
               node.style.outline = '2px dashed lime';
-              node.style.background = 'rgba(0,255,0,0.03)';
+              node.style.background = 'rgba(0,255,0,0.04)';
               node.dataset.__waapi_debug = '1';
               if (node.animate) {
                 try {
@@ -657,26 +673,35 @@
               }
             });
             console.info('WAAPI fallback: animations applied');
-          } catch (e) { console.warn('WAAPI fallback failed', e); }
+            debugBadge.textContent = 'WAAPI fallback: animations applied';
+          } catch (e) {
+            console.warn('WAAPI fallback failed', e);
+          }
         }
 
-        try {
-          if (window.gsap && window.ScrollTrigger) {
-            try { gsap.registerPlugin(ScrollTrigger); } catch (e) {}
+        function runAnimationInit() {
+          try {
+            if (window.gsap && window.ScrollTrigger) {
+              try { gsap.registerPlugin(ScrollTrigger); } catch (e) {}
 
-            gsap.to(".node.one", { y: -10, duration: 2.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
-            gsap.to(".node.two", { y: 12, duration: 3.2, repeat: -1, yoyo: true, ease: "sine.inOut" });
-            gsap.to(".node.three", { x: 10, duration: 3.6, repeat: -1, yoyo: true, ease: "sine.inOut" });
-            gsap.to(".node.four", { x: -8, y: -8, duration: 3.4, repeat: -1, yoyo: true, ease: "sine.inOut" });
-            gsap.to(".node.five", { x: -18, y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
-          } else {
-            // GSAP not present
+              gsap.to(".node.one", { y: -10, duration: 2.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
+              gsap.to(".node.two", { y: 12, duration: 3.2, repeat: -1, yoyo: true, ease: "sine.inOut" });
+              gsap.to(".node.three", { x: 10, duration: 3.6, repeat: -1, yoyo: true, ease: "sine.inOut" });
+              gsap.to(".node.four", { x: -8, y: -8, duration: 3.4, repeat: -1, yoyo: true, ease: "sine.inOut" });
+              gsap.to(".node.five", { x: -18, y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
+            } else {
+              waapiFallback();
+            }
+          } catch (err) {
+            console.warn('GSAP animations blocked or failed, using WAAPI fallback', err);
             waapiFallback();
           }
-        } catch (err) {
-          // GSAP threw (likely CSP blocking eval); use WAAPI fallback
-          console.warn('GSAP animations blocked or failed, using WAAPI fallback', err);
-          waapiFallback();
+        }
+
+        if (document.readyState === 'loading') {
+          window.addEventListener('DOMContentLoaded', runAnimationInit);
+        } else {
+          runAnimationInit();
         }
       }());
     });

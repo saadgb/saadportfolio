@@ -43,37 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function initIntelMapAnimation() {
-    function setDebugStatus(message) {
-      var badge = document.getElementById('intel-map-debug-badge');
-      if (!badge) {
-        badge = document.createElement('div');
-        badge.id = 'intel-map-debug-badge';
-        badge.style.position = 'fixed';
-        badge.style.top = '8px';
-        badge.style.right = '8px';
-        badge.style.zIndex = '9999';
-        badge.style.padding = '8px 10px';
-        badge.style.background = 'rgba(0, 0, 0, 0.72)';
-        badge.style.color = '#fff';
-        badge.style.fontSize = '12px';
-        badge.style.fontFamily = 'system-ui, sans-serif';
-        badge.style.borderRadius = '6px';
-        badge.style.pointerEvents = 'none';
-        document.body.appendChild(badge);
-      }
-      badge.textContent = message;
-    }
-
     function waapiFallback() {
       try {
-        setDebugStatus('intel-map fallback start');
         var map = document.querySelector('.intel-map');
-        if (!map) {
-          setDebugStatus('.intel-map not found');
-          return;
-        }
+        if (!map) return;
         var nodes = map.querySelectorAll('.node');
-        setDebugStatus('nodes=' + nodes.length);
         var configs = [
           { x: 0, y: -10, duration: 2800 },
           { x: 0, y: 12, duration: 3200 },
@@ -83,9 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
         ];
         nodes.forEach(function (node, i) {
           var c = configs[i] || configs[0];
-          node.style.outline = '2px dashed lime';
-          node.style.background = 'rgba(0,255,0,0.03)';
-          node.dataset.intelMapFallback = 'true';
           if (node.animate) {
             node.animate(
               [
@@ -105,10 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 50);
           }
         });
-        setDebugStatus('intel-map fallback applied');
       } catch (err) {
         console.warn('intel-map WAAPI fallback failed', err);
-        setDebugStatus('intel-map fallback error');
       }
     }
 

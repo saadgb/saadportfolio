@@ -494,14 +494,6 @@
         item.style.transform = 'none';
       });
 
-      var topButton = document.getElementById('scrollTopButton');
-      function updateScrollTopVisibility() {
-        if (!topButton) return;
-        topButton.classList.toggle('show', window.scrollY > 80);
-      }
-      updateScrollTopVisibility();
-      window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
-
       var backButton = document.getElementById('backButton');
       if (backButton) {
         backButton.addEventListener('click', function (e) {
@@ -511,6 +503,7 @@
       }
     });
   </script>
+  <script src="top.js"></script>
   <script src="zoom.js" defer></script>
 </body>
 </html>

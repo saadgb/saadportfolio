@@ -359,12 +359,19 @@
       background: rgba(16, 24, 40, 0.92);
       color: #ffffff;
       text-decoration: none;
-      opacity: 0;
-      transform: translateY(12px);
-      pointer-events: none;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
       transition: opacity 0.22s ease, transform 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
       box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
+    }
+
+    .button.scroll-top.hidden {
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      visibility: hidden;
     }
 
     .button.scroll-top svg {
@@ -373,16 +380,14 @@
       fill: currentColor;
     }
 
-    .button.scroll-top.show {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-
     .button.scroll-top:hover {
       background: rgba(255, 255, 255, 0.14);
       color: #07101f;
       border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .button.scroll-top:hover {
+      background: rgba(255, 255, 255, 0.16);
     }
 
     .button.scroll-top:hover {

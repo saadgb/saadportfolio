@@ -573,15 +573,6 @@
 
       var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       var revealItems = document.querySelectorAll(".reveal");
-      var topButton = document.getElementById("scrollTopButton");
-
-      function updateScrollTopVisibility() {
-        if (!topButton) return;
-        topButton.classList.toggle('show', window.scrollY > 80);
-      }
-
-      updateScrollTopVisibility();
-      window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
 
       if (prefersReducedMotion) {
         revealItems.forEach(function (item) {
@@ -693,6 +684,7 @@
       }());
     });
   </script>
+  <script src="top.js"></script>
   <script src="zoom.js" defer></script>
 </body>
 </html>

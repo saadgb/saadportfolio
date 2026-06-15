@@ -621,14 +621,6 @@
       // reveal defaults
       document.querySelectorAll('.reveal').forEach(function (item) { item.style.opacity = '1'; item.style.transform = 'none'; });
 
-      var topButton = document.getElementById('scrollTopButton');
-      function updateScrollTopVisibility() {
-        if (!topButton) return;
-        topButton.classList.toggle('show', window.scrollY > 80);
-      }
-      updateScrollTopVisibility();
-      window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });
-
       // back button
       var backButton = document.getElementById('backButton');
       if (backButton) {
@@ -639,5 +631,7 @@
       }
     });
   </script>
+  <script src="top.js"></script>
+  <script src="zoom.js" defer></script>
 </body>
 </html>

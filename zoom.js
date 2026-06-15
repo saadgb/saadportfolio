@@ -41,86 +41,116 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') hideZoom();
   });
+});
 
-  function initIntelMapAnimation() {
-    function waapiFallback() {
-      try {
-        var map = document.querySelector('.intel-map');
-        if (!map) return;
-        var nodes = map.querySelectorAll('.node');
-        var configs = [
-          { x: 0, y: -10, duration: 2800 },
-          { x: 0, y: 12, duration: 3200 },
-          { x: 10, y: 0, duration: 3600 },
-          { x: -8, y: -8, duration: 3400 },
-          { x: -18, y: -8, duration: 3800 }
-        ];
-        nodes.forEach(function (node, i) {
-          var c = configs[i] || configs[0];
-          if (node.animate) {
-            try {
-              var endTransform = 'translate(' + c.x + 'px,' + c.y + 'px)';
-              var keyframes = [
-                { transform: 'translate(0px,0px)' },
-                { transform: endTransform }
-              ];
-              var opts = {
-                duration: c.duration,
-                iterations: Infinity,
-                direction: 'alternate',
-                easing: 'ease-in-out'
-              };
-              node.animate(keyframes, opts);
-            } catch (err) {
-              console.warn('WAAPI animate failed for node ' + i, err);
-              // Fallback to CSS animation
-              fallbackToCSS(node, c);
-            }
-          } else {
+function initIntelMapAnimation() {
+  console.log('[INTEL-MAP] Animation init starting...');
+  
+  function waapiFallback() {
+    console.log('[INTEL-MAP] Using WAAPI fallback');
+    try {
+      var map = document.querySelector('.intel-map');
+      if (!map) {
+        console.warn('[INTEL-MAP] Element not found');
+        return;
+      }
+      var nodes = map.querySelectorAll('.node');
+      console.log('[INTEL-MAP] Found ' + nodes.length + ' nodes');
+      
+      var configs = [
+        { x: 0, y: -10, duration: 2800 },
+        { x: 0, y: 12, duration: 3200 },
+        { x: 10, y: 0, duration: 3600 },
+        { x: -8, y: -8, duration: 3400 },
+        { x: -18, y: -8, duration: 3800 }
+      ];
+      
+      nodes.forEach(function (node, i) {
+        var c = configs[i] || configs[0];
+        console.log('[INTEL-MAP] Animating node ' + i + ' with config:', c);
+        
+        if (node.animate) {
+          try {
+            var endTransform = 'translate(' + c.x + 'px,' + c.y + 'px)';
+            var keyframes = [
+              { transform: 'translate(0px,0px)' },
+              { transform: endTransform }
+            ];
+            var opts = {
+              duration: c.duration,
+              iterations: Infinity,
+              direction: 'alternate',
+              easing: 'ease-in-out'
+            };
+            var anim = node.animate(keyframes, opts);
+            console.log('[INTEL-MAP] Node ' + i + ' WAAPI animation created');
+          } catch (err) {
+            console.warn('[INTEL-MAP] WAAPI failed for node ' + i + ':', err.message);
             fallbackToCSS(node, c);
           }
-        });
-
-        function fallbackToCSS(node, c) {
-          var dir = 1;
-          var pos = 0;
-          var max = Math.max(Math.abs(c.x), Math.abs(c.y)) || 10;
-          var animInterval = setInterval(function () {
-            pos += dir * 1;
-            if (Math.abs(pos) >= max) dir *= -1;
-            var x = c.x ? (pos * c.x / max) : 0;
-            var y = c.y ? (pos * c.y / max) : 0;
-            node.style.transform = 'translate(' + x + 'px,' + y + 'px)';
-          }, 50);
+        } else {
+          console.log('[INTEL-MAP] Node ' + i + ' does not support animate()');
+          fallbackToCSS(node, c);
         }
-      } catch (err) {
-        console.warn('intel-map WAAPI fallback failed', err);
-      }
-    }
+      });
 
-    function runIntelMapAnimation() {
-      if (window.gsap) {
-        try {
-          if (window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
-          gsap.to('.node.one', { y: -10, duration: 2.8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-          gsap.to('.node.two', { y: 12, duration: 3.2, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-          gsap.to('.node.three', { x: 10, duration: 3.6, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-          gsap.to('.node.four', { x: -8, y: -8, duration: 3.4, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-          gsap.to('.node.five', { x: -18, y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-          return;
-        } catch (err) {
-          console.warn('intel-map GSAP animation failed', err);
-        }
+      function fallbackToCSS(node, c) {
+        console.log('[INTEL-MAP] Fallback to CSS for node with config:', c);
+        var dir = 1;
+        var pos = 0;
+        var max = Math.max(Math.abs(c.x), Math.abs(c.y)) || 10;
+        setInterval(function () {
+          pos += dir * 1;
+          if (Math.abs(pos) >= max) dir *= -1;
+          var x = c.x ? (pos * c.x / max) : 0;
+          var y = c.y ? (pos * c.y / max) : 0;
+          node.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+        }, 50);
       }
-      waapiFallback();
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', runIntelMapAnimation);
-    } else {
-      runIntelMapAnimation();
+    } catch (err) {
+      console.error('[INTEL-MAP] WAAPI fallback error:', err);
     }
   }
 
+  function runIntelMapAnimation() {
+    console.log('[INTEL-MAP] runIntelMapAnimation called, gsap available:', !!window.gsap);
+    
+    if (window.gsap) {
+      try {
+        console.log('[INTEL-MAP] Attempting GSAP animation');
+        if (window.ScrollTrigger) {
+          gsap.registerPlugin(ScrollTrigger);
+          console.log('[INTEL-MAP] ScrollTrigger registered');
+        }
+        gsap.to('.node.one', { y: -10, duration: 2.8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+        gsap.to('.node.two', { y: 12, duration: 3.2, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+        gsap.to('.node.three', { x: 10, duration: 3.6, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+        gsap.to('.node.four', { x: -8, y: -8, duration: 3.4, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+        gsap.to('.node.five', { x: -18, y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+        console.log('[INTEL-MAP] GSAP animations created successfully');
+        return;
+      } catch (err) {
+        console.warn('[INTEL-MAP] GSAP animation failed:', err.message);
+      }
+    }
+    
+    console.log('[INTEL-MAP] Falling back to WAAPI');
+    waapiFallback();
+  }
+
+  if (document.readyState === 'loading') {
+    console.log('[INTEL-MAP] DOM still loading, waiting for DOMContentLoaded');
+    document.addEventListener('DOMContentLoaded', runIntelMapAnimation);
+  } else {
+    console.log('[INTEL-MAP] DOM already loaded, running now');
+    runIntelMapAnimation();
+  }
+}
+
+// Always run animation init, regardless of when zoom.js loads
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initIntelMapAnimation);
+} else {
+  console.log('[INTEL-MAP] Initializing immediately (defer script loaded after DOM)');
   initIntelMapAnimation();
-});
+}

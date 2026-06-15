@@ -3333,6 +3333,50 @@
       padding-top: 22px;
     }
 
+    .error-screen {
+      min-height: calc(100vh - 68px);
+      display: grid;
+      place-items: center;
+      padding: 48px 0;
+      text-align: center;
+    }
+
+    .error-screen .shell {
+      display: grid;
+      gap: 24px;
+      justify-items: center;
+      max-width: min(860px, 100%);
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .error-screen .eyebrow {
+      margin: 0 auto 18px;
+      max-width: 540px;
+    }
+
+    .error-screen h1 {
+      margin: 0;
+      font-size: clamp(2.75rem, 5vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      max-width: 780px;
+    }
+
+    .error-copy {
+      margin: 24px auto 32px;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .error-screen .button.primary {
+      min-width: 220px;
+      padding: 16px 26px;
+      font-size: 1rem;
+    }
+
     .reveal {
       opacity: 1;
       transform: none;

@@ -697,21 +697,32 @@
       font-size: 12px;
       font-weight: 780;
       box-shadow: 0 0 26px rgba(99, 228, 255, 0.28);
+      will-change: transform;
+      animation-duration: 4.2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
 
     .node.one {
       left: 18%;
       top: 22%;
-       width: fit-content;
+      width: fit-content;
       padding: 0px 14px;
+      animation-name: float-one;
+      animation-duration: 4.2s;
+      animation-delay: 0s;
     }
 
     .node.two {
       right: 18%;
       top: 15%;
       color: var(--violet);
-       width: fit-content;
+      width: fit-content;
       padding: 0px 14px;
+      animation-name: float-two;
+      animation-duration: 4.6s;
+      animation-delay: -0.6s;
     }
 
     .node.three {
@@ -719,7 +730,10 @@
       bottom: 18%;
       color: var(--green);
       padding: 0px 14px;
-       width: fit-content;
+      width: fit-content;
+      animation-name: float-three;
+      animation-duration: 4.8s;
+      animation-delay: -0.9s;
     }
 
     .node.four {
@@ -728,6 +742,9 @@
       color: var(--rose);
       width: fit-content;
       padding: 0px 14px;
+      animation-name: float-four;
+      animation-duration: 4.4s;
+      animation-delay: -0.4s;
     }
 
     .node.five {
@@ -736,6 +753,34 @@
       color: var(--orange);
       width: fit-content;
       padding: 0px 14px;
+      animation-name: float-five;
+      animation-duration: 5s;
+      animation-delay: -0.7s;
+    }
+
+    @keyframes float-one {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    @keyframes float-two {
+      from { transform: translateY(0); }
+      to { transform: translateY(12px); }
+    }
+
+    @keyframes float-three {
+      from { transform: translateX(0); }
+      to { transform: translateX(10px); }
+    }
+
+    @keyframes float-four {
+      from { transform: translate(0, 0); }
+      to { transform: translate(-8px, -8px); }
+    }
+
+    @keyframes float-five {
+      from { transform: translate(0, 0); }
+      to { transform: translate(-12px, -8px); }
     }
 
     .insight-list {

@@ -90,11 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
           gsap.to('.node.three', { x: 10, duration: 3.6, repeat: -1, yoyo: true, ease: 'sine.inOut' });
           gsap.to('.node.four', { x: -8, y: -8, duration: 3.4, repeat: -1, yoyo: true, ease: 'sine.inOut' });
           gsap.to('.node.five', { x: -18, y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-          setDebugStatus('intel-map GSAP animation running');
           return;
         } catch (err) {
           console.warn('intel-map GSAP animation failed', err);
-          setDebugStatus('intel-map GSAP failed');
         }
       }
       waapiFallback();

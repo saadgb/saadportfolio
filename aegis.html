@@ -497,7 +497,7 @@
       var topButton = document.getElementById('scrollTopButton');
       function updateScrollTopVisibility() {
         if (!topButton) return;
-        topButton.classList.toggle('hide', window.scrollY <= 80);
+        topButton.classList.toggle('show', window.scrollY > 80);
       }
       updateScrollTopVisibility();
       window.addEventListener('scroll', updateScrollTopVisibility, { passive: true });

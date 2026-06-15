@@ -359,9 +359,9 @@
       background: rgba(16, 24, 40, 0.92);
       color: #ffffff;
       text-decoration: none;
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
       transition: opacity 0.22s ease, transform 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
       box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
@@ -373,13 +373,7 @@
       fill: currentColor;
     }
 
-    .button.scroll-top.hide {
-      opacity: 0;
-      transform: translateY(12px);
-      pointer-events: none;
-    }
-
-    .button.scroll-top.visible {
+    .button.scroll-top.show {
       opacity: 1;
       transform: translateY(0);
       pointer-events: auto;

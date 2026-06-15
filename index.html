@@ -615,15 +615,50 @@
         });
       }
 
-      if (window.gsap && window.ScrollTrigger) {
-        gsap.registerPlugin(ScrollTrigger);
+      (function () {
+        function waapiFallback() {
+          try {
+            var map = document.querySelector('.intel-map');
+            if (!map) return;
+            var nodes = map.querySelectorAll('.node');
+            var configs = [
+              { x: 0, y: -10, duration: 2800 },
+              { x: 0, y: 12, duration: 3200 },
+              { x: 10, y: 0, duration: 3600 },
+              { x: -8, y: -8, duration: 3400 },
+              { x: -18, y: -8, duration: 3800 }
+            ];
+            nodes.forEach(function (node, i) {
+              var c = configs[i] || configs[0];
+              if (node.animate) {
+                node.animate(
+                  [ { transform: 'translate(0px, 0px)' }, { transform: 'translate(' + c.x + 'px, ' + c.y + 'px)' } ],
+                  { duration: c.duration, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }
+                );
+              }
+            });
+          } catch (e) { console.warn('WAAPI fallback failed', e); }
+        }
 
-        gsap.to(".node.one", { y: -10, duration: 2.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
-        gsap.to(".node.two", { y: 12, duration: 3.2, repeat: -1, yoyo: true, ease: "sine.inOut" });
-        gsap.to(".node.three", { x: 10, duration: 3.6, repeat: -1, yoyo: true, ease: "sine.inOut" });
-        gsap.to(".node.four", { x: -8, y: -8, duration: 3.4, repeat: -1, yoyo: true, ease: "sine.inOut" });
-        gsap.to(".node.five", { x: -18, y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
-      }
+        try {
+          if (window.gsap && window.ScrollTrigger) {
+            try { gsap.registerPlugin(ScrollTrigger); } catch (e) {}
+
+            gsap.to(".node.one", { y: -10, duration: 2.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
+            gsap.to(".node.two", { y: 12, duration: 3.2, repeat: -1, yoyo: true, ease: "sine.inOut" });
+            gsap.to(".node.three", { x: 10, duration: 3.6, repeat: -1, yoyo: true, ease: "sine.inOut" });
+            gsap.to(".node.four", { x: -8, y: -8, duration: 3.4, repeat: -1, yoyo: true, ease: "sine.inOut" });
+            gsap.to(".node.five", { x: -18, y: -8, duration: 3.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
+          } else {
+            // GSAP not present
+            waapiFallback();
+          }
+        } catch (err) {
+          // GSAP threw (likely CSP blocking eval); use WAAPI fallback
+          console.warn('GSAP animations blocked or failed, using WAAPI fallback', err);
+          waapiFallback();
+        }
+      }());
     });
   </script>
   <script src="zoom.js" defer></script>

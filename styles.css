@@ -1643,7 +1643,7 @@
 
     #principles .shell {
       position: relative;
-      padding-left: 32px;
+      /* padding-left: 32px; */
     }
 
     #principles .shell::before {
@@ -1653,7 +1653,7 @@
       top: 50px;
       bottom: 0;
       width: 2px;
-      background: linear-gradient(180deg, rgba(99, 228, 255, 0.3), rgba(99, 228, 255, 0.05));
+      
     }
 
     #principles .cs-overview-card {
@@ -4023,6 +4023,68 @@
   
 
 
-/* SPECTRA PAGE STYLES */
+/* SPECTRA PAGE STYLES - Systems Thinking Narrative */
+
+.page-spectra #principles .cs-principles-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.page-spectra .cs-principle {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 32px;
+  border-left: 3px solid rgba(99, 228, 255, 0.2);
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.page-spectra .cs-principle:hover {
+  border-left-color: rgba(99, 228, 255);
+  padding-left: 40px;
+  background-color: #f0ffff1c;
+}
+
+.page-spectra .cs-principle-number {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--cyan);
+  margin: 0;
+}
+
+.page-spectra .cs-principle h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  color: var(--text);
+}
+
+.page-spectra .cs-principle p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-spectra .cs-principle {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .page-spectra .cs-principle-number {
+    font-size: 48px;
+  }
+
+  .page-spectra .cs-principle:hover {
+    padding-left: 20px;
+  }
+}
 
 

@@ -586,33 +586,31 @@
 
     .domain-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
     }
 
     .domain-chip {
-      min-height: 42px;
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 14px;
-      padding: 10px 10px;
-      background: rgba(255, 255, 255, 0.055);
-      color: #e7edfb;
       font-size: 12px;
-      font-weight: 730;
-      text-align: center;
-      transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+      font-weight: 400;
+      color: rgba(255,255,255,0.55);
+      background: none;
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding: 5px 0;
+    }
+
+    .domain-chip:nth-last-child(-n+2) {
+      border-bottom: none;
     }
 
     .domain-chip:hover {
-      transform: translateY(-3px) !important;
-      border-color: rgba(99, 228, 255, 0.2);
-      background: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.24), 0 0 24px rgba(99, 228, 255, 0.05);
+      color: rgba(255,255,255,0.8);
     }
 
     .intel-map {
       position: relative;
-      min-height: 155px;
+      min-height: 203px;
       overflow: hidden;
       border-radius: 18px;
       background:
@@ -897,6 +895,122 @@
       list-style: none;
     }
 
+    /* About outcome metrics */
+    .about-outcomes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .about-outcome-card {
+      text-align: center;
+      padding: 16px 10px;
+      border-radius: 12px;
+      background: rgba(99,228,255,0.04);
+      border: 1px solid rgba(99,228,255,0.1);
+    }
+    .about-outcome-card strong {
+      display: block;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--cyan);
+      margin-bottom: 5px;
+    }
+    .about-outcome-card span {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* Education */
+    .edu-strip { margin-top: 40px; }
+    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .edu-card { padding: 20px 22px; }
+    .edu-year { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); display: block; margin-bottom: 8px; }
+    .edu-card h3 { font-size: 16px; font-weight: 700; color: var(--text); margin: 0 0 4px; }
+    .edu-card p { font-size: 14px; color: var(--muted); margin: 0; }
+
+    /* Tools strip */
+    .tools-strip {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .tools-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--soft);
+      flex-shrink: 0;
+    }
+    .tools-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tool-chip {
+      font-size: 12px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+      font-weight: 600;
+    }
+    .tool-chip:nth-child(4n+1) { background: rgba(99,228,255,0.08);  border-color: rgba(99,228,255,0.25);  color: #63e4ff; }
+    .tool-chip:nth-child(4n+2) { background: rgba(167,139,250,0.08); border-color: rgba(167,139,250,0.25); color: #a78bfa; }
+    .tool-chip:nth-child(4n+3) { background: rgba(125,240,190,0.08); border-color: rgba(125,240,190,0.25); color: #7df0be; }
+    .tool-chip:nth-child(4n+4) { background: rgba(245,200,66,0.08);  border-color: rgba(245,200,66,0.25);  color: #f5c842; }
+
+    /* Certifications */
+    .cert-block { margin-top: 8px; }
+    .cert-issuer {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 16px;
+    }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px;
+    }
+    .cert-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      text-decoration: none;
+      transition: background 0.18s, border-color 0.18s;
+    }
+    .cert-card:hover {
+      background: rgba(99,228,255,0.06);
+      border-color: rgba(99,228,255,0.2);
+    }
+    .cert-name {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.4;
+      transition: color 0.18s;
+    }
+    .cert-card:hover .cert-name { color: var(--text); }
+    .cert-verify {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(99,228,255,0.5);
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: color 0.18s;
+    }
+    .cert-card:hover .cert-verify { color: var(--cyan); }
+
     .focus-list li {
       display: flex;
       gap: 12px;
@@ -958,14 +1072,17 @@
 
     .timeline-date {
       width: fit-content;
-      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 999px;
-      padding: 5px 10px;
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 720;
+      padding: 3px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
     }
+
+    .timeline-item:nth-child(4n+1) .timeline-date { background: rgba(99,228,255,0.1); border: 1px solid rgba(99,228,255,0.3); color: #63e4ff; }
+    .timeline-item:nth-child(4n+2) .timeline-date { background: rgba(167,139,250,0.1); border: 1px solid rgba(167,139,250,0.3); color: #a78bfa; }
+    .timeline-item:nth-child(4n+3) .timeline-date { background: rgba(125,240,190,0.1); border: 1px solid rgba(125,240,190,0.3); color: #7df0be; }
+    .timeline-item:nth-child(4n+4) .timeline-date { background: rgba(245,200,66,0.1); border: 1px solid rgba(245,200,66,0.3); color: #f5c842; }
 
     .timeline-item h3 {
       margin: 0;
@@ -4001,7 +4118,7 @@
 
       .about-grid,
       .contact-grid {
-        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1fr 1fr;
       }
 
       .summary-highlights {

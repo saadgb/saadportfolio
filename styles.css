@@ -626,23 +626,21 @@
     }
 
     .client-band {
-      grid-column: 1 / -1;
-      order: 2;
       overflow: hidden;
       margin-top: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0;
       background: rgba(255, 255, 255, 0.045);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(18px);
-      transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+      transition: border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
     }
 
     .client-band:hover {
-      transform: translateY(-4px) !important;
       border-color: rgba(99, 228, 255, 0.2);
       background: rgba(255, 255, 255, 0.065);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 20px 60px rgba(0, 0, 0, 0.32), 0 0 32px rgba(99, 228, 255, 0.06);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 0 32px rgba(99, 228, 255, 0.06);
     }
 
     .client-band-header {
@@ -661,8 +659,7 @@
     .client-track {
       display: flex;
       width: max-content;
-      gap: 12px;
-      padding: 13px 12px 14px;
+      padding: 13px 0 14px;
       animation: logo-drift 30s linear infinite;
     }
 
@@ -672,12 +669,14 @@
 
     .client-logo-link {
       display: grid;
+      flex-shrink: 0;
       width: 148px;
       height: 50px;
       place-items: center;
       border: 1px solid rgba(255, 255, 255, 0.09);
       border-radius: 16px;
       background: rgba(255, 255, 255, 0.055);
+      margin-right: 12px;
       transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease;
     }
 
@@ -705,7 +704,7 @@
         transform: translate3d(0, 0, 0);
       }
       to {
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-25%, 0, 0);
       }
     }
 
@@ -1758,6 +1757,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
+	  margin-bottom: 24px;
     }
 
     .cs-ds-item {
@@ -4033,17 +4033,17 @@
 
     @media (min-width: 960px) {
       .hero {
-        padding: 52px 0 24px;
+        padding: 52px 0 0;
+        display: flex;
+        flex-direction: column;
+        max-height: 960px;
       }
 
       .hero-grid {
+        flex: 1;
         grid-template-columns: 1.08fr 0.92fr;
         align-items: center;
-      }
-
-      .hero-visual,
-      .client-band {
-        order: 0;
+        padding-bottom: 24px;
       }
 
       .project-card.featured {
@@ -4098,7 +4098,7 @@
       }
 
       section.hero {
-        padding: 52px 0 24px;
+        padding: 52px 0 0;
       }
     }
   

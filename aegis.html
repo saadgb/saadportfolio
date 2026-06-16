@@ -31,6 +31,7 @@
       y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "k7sxjmd1hl");
   </script>
+
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
@@ -79,13 +80,14 @@
   </header>
 
   <main id="main">
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
     <section class="cs-hero">
       <div class="shell">
         <div class="cs-hero-content reveal">
           <span class="cs-project-name">Command & Control</span>
           <h1>AEGIS</h1>
           <p class="cs-hero-subtitle">Real-time counter-drone command interface</p>
-          <p class="cs-hero-copy">Designed the complete C2 interface for a counter-drone platform deployed across military installations, airports, and critical infrastructure. The product keeps the map at the center, while hardware control, threat tracking, and countermeasure activation stay accessible in seconds.</p>
+          <p class="reveal">Designed the complete C2 interface for a counter-drone platform deployed across military installations, airports, and critical infrastructure. The product keeps the map at the center, while hardware control, threat tracking, and countermeasure activation stay accessible in seconds.</p>
           <div class="cs-hero-grid">
             <div class="cs-info-card reveal">
               <div class="cs-info-label">Role</div>
@@ -109,7 +111,7 @@
             </div>
           </div>
           <div class="cs-hero-toc reveal">
-            <p><strong>On this page:</strong> <a href="#project-overview">Overview</a> • <a href="#discovery-constraints">Discovery & Constraints</a> • <a href="#opening">Opening</a> • <a href="#brief">Brief</a> • <a href="#users">Users</a> • <a href="#journeys">Journeys</a> • <a href="#problems">Problems</a> • <a href="#ia">IA</a> • <a href="#reflection">Reflection</a> • <a href="#outcomes">Impact & Outcomes</a></p>
+            <p><strong>On this page:</strong> <a href="#project-overview">Overview</a> • <a href="#operational-lifecycle">Lifecycle</a> • <a href="#brief">Brief</a> • <a href="#users">Command Hierarchy</a> • <a href="#journeys">Response Timelines</a> • <a href="#problems">Threat Framework</a> • <a href="#ia">IA</a> • <a href="#decisions">Decision Ledger</a> • <a href="#reflection">After-Action Review</a> • <a href="#outcomes">Outcomes</a></p>
           </div>
         </div>
 
@@ -119,6 +121,7 @@
       </div>
     </section>
 
+    <!-- ── Project Snapshot ──────────────────────────────────────────────── -->
     <section id="project-overview">
       <div class="shell">
         <span class="cs-section-label">Project Snapshot</span>
@@ -143,159 +146,323 @@
       </div>
     </section>
 
+    <!-- ── Opening ───────────────────────────────────────────────────────── -->
     <section id="opening">
       <div class="shell">
         <span class="cs-section-label">Opening</span>
         <h2>A platform designed for seconds, not minutes</h2>
-        <p class="cs-hero-copy reveal">When a hostile UAV appears in the airspace, the operator has seconds to classify the threat, select a countermeasure, and activate it. The design needed to keep the map as the permanent primary interface while making every hardware control and threat action immediately accessible.</p>
+        <p class="reveal">When a hostile UAV appears in the airspace, the operator has seconds to classify the threat, select a countermeasure, and activate it. The design needed to keep the map as the permanent primary interface while making every hardware control and threat action immediately accessible.</p>
       </div>
     </section>
 
-    <section id="discovery-constraints">
+    <!-- ── Operational Lifecycle Diagram ─────────────────────────────────── -->
+    <section id="operational-lifecycle">
       <div class="shell">
         <span class="cs-section-label">Discovery & Constraints</span>
-        <div class="cs-overview-grid">
-          <div class="cs-overview-card reveal">
-            <h3>Research context</h3>
-            <p>No formal personas or generative interviews were possible under the hardware-led timeline. The product was designed in an environment that prioritized operational delivery over a separate research phase.</p>
+        <h2>The operational lifecycle that shaped every decision</h2>
+        <div class="a-lifecycle reveal">
+          <div class="a-lifecycle-phase">
+            <div class="a-lifecycle-num">01</div>
+            <div class="a-lifecycle-title">Detect</div>
+            <div class="a-lifecycle-body">Radar, RF scanner, EO/IR, and ADS-B sensors pick up airspace activity. Every unknown object triggers an alert on the live map.</div>
+            <div class="a-lifecycle-tags">
+              <span class="a-lifecycle-tag">Radar</span>
+              <span class="a-lifecycle-tag">RF</span>
+              <span class="a-lifecycle-tag">EO/IR</span>
+            </div>
+            <div class="a-lifecycle-arrow">›</div>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>Discovery inputs</h3>
-            <p>Inputs came from hardware manuals, operator procedure summaries, domain expert conversations, and program leadership alignment. Support ticket themes and live equipment constraints were also part of the discovery lens.</p>
+          <div class="a-lifecycle-phase">
+            <div class="a-lifecycle-num">02</div>
+            <div class="a-lifecycle-title">Track</div>
+            <div class="a-lifecycle-body">The system maintains continuous flight tracks, feeds threat scoring, and displays movement on the operational map without replacing the operator's view.</div>
+            <div class="a-lifecycle-tags">
+              <span class="a-lifecycle-tag">Flight Track</span>
+              <span class="a-lifecycle-tag">Scoring</span>
+            </div>
+            <div class="a-lifecycle-arrow">›</div>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>Assumptions & checks</h3>
-            <p>We worked with the assumption that the map must remain the primary interface and that urgent actions should be accessible within one interaction. This was validated via rapid design reviews and client feedback loops during the proof-of-concept phase.</p>
+          <div class="a-lifecycle-phase">
+            <div class="a-lifecycle-num">03</div>
+            <div class="a-lifecycle-title">Assess</div>
+            <div class="a-lifecycle-body">Operators classify the object — hostile, whitelist, or unknown — and select a response. Classification is one-panel, never requiring navigation away from the map.</div>
+            <div class="a-lifecycle-tags">
+              <span class="a-lifecycle-tag">Classification</span>
+              <span class="a-lifecycle-tag">Whitelist</span>
+            </div>
+            <div class="a-lifecycle-arrow">›</div>
+          </div>
+          <div class="a-lifecycle-phase">
+            <div class="a-lifecycle-num">04</div>
+            <div class="a-lifecycle-title">Respond</div>
+            <div class="a-lifecycle-body">Countermeasure activation — jammer, spoofer, or interceptor — is executed with intent confirmation, logged for incident records, and visible on the map in real time.</div>
+            <div class="a-lifecycle-tags">
+              <span class="a-lifecycle-tag">Jammer</span>
+              <span class="a-lifecycle-tag">Spoofer</span>
+              <span class="a-lifecycle-tag">Log</span>
+            </div>
+            <div class="a-lifecycle-arrow">›</div>
+          </div>
+        </div>
+
+        <div class="a-context-grid">
+          <div class="a-context-card a-glass reveal">
+            <div class="a-context-label">Research context</div>
+            <div class="a-context-body">No formal personas or generative interviews were possible under the hardware-led timeline. The product was designed in an environment that prioritized operational delivery over a separate research phase.</div>
+          </div>
+          <div class="a-context-card a-glass reveal">
+            <div class="a-context-label">Discovery inputs</div>
+            <div class="a-context-body">Hardware manuals, operator procedure summaries, domain expert conversations, and program leadership alignment. Support ticket themes and live equipment constraints were part of the discovery lens.</div>
+          </div>
+          <div class="a-context-card a-glass reveal">
+            <div class="a-context-label">Assumptions & checks</div>
+            <div class="a-context-body">The map must remain the primary interface and urgent actions must be accessible within one interaction. Validated via rapid design reviews and client feedback loops during proof-of-concept.</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Mission Brief ─────────────────────────────────────────────────── -->
     <section id="brief">
       <div class="shell">
         <span class="cs-section-label">The Brief</span>
-        <div class="cs-overview-grid">
-          <div class="cs-overview-card reveal">
-            <h3>What was asked</h3>
-            <p>Translate existing counter-drone hardware capabilities into a usable command and control platform for both single-operator and multi-workstation deployments.</p>
+        <h2>Mission parameters</h2>
+        <div class="a-brief reveal">
+          <div class="a-brief-header">
+            <span class="a-brief-header-label">Brief</span>
+            <span class="a-brief-header-title">AEGIS Counter-Drone C2 Platform</span>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>Key constraint</h3>
-            <p>The UI had to scale from a single workstation to a multi-site command center without becoming too sparse or too cluttered.</p>
+          <div class="a-brief-rows">
+            <div class="a-brief-row">
+              <div class="a-brief-key">Objective</div>
+              <div class="a-brief-val">Translate existing counter-drone hardware capabilities into a usable command and control platform for both single-operator and multi-workstation deployments.</div>
+            </div>
+            <div class="a-brief-row">
+              <div class="a-brief-key">Constraint</div>
+              <div class="a-brief-val">The UI had to scale from a single workstation to a multi-site command center without becoming too sparse or too cluttered.</div>
+            </div>
+            <div class="a-brief-row">
+              <div class="a-brief-key">Non-negotiable</div>
+              <div class="a-brief-val">Map must remain the primary operational workspace at all times. No panel or workflow may replace the live map view.</div>
+            </div>
+            <div class="a-brief-row">
+              <div class="a-brief-key">Delivery</div>
+              <div class="a-brief-val">Hardware-led timeline. Design reviews ran in parallel with development, not before it.</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Command Hierarchy Map ─────────────────────────────────────────── -->
     <section id="users">
       <div class="shell">
-        <span class="cs-section-label">Understanding the Users</span>
-        <h2>The three roles that shaped the system</h2>
-        <div class="cs-personas-grid">
-          <div class="cs-persona-card reveal">
-            <span class="cs-persona-role">Tactical Operator</span>
-            <h3>Threat response</h3>
-            <p>Needs the map, threat state, and hardware activation in one glance. Active mode is high-stress and time-critical.</p>
+        <span class="cs-section-label">Command Hierarchy</span>
+        <h2>Three roles across the command structure</h2>
+        <div class="a-hierarchy reveal">
+          <div class="a-hierarchy-system">
+            <div class="a-hierarchy-system-label">Platform</div>
+            <div class="a-hierarchy-system-name">AEGIS C2</div>
           </div>
-          <div class="cs-persona-card reveal">
-            <span class="cs-persona-role">Operations Supervisor</span>
-            <h3>Health and awareness</h3>
-            <p>Needs multi-site device health and incident status without digging into device-level detail.</p>
+          <div class="a-hierarchy-connector"></div>
+        </div>
+        <div class="a-hierarchy-roles reveal">
+          <div class="a-role-card a-glass">
+            <div class="a-role-badge a-role-badge--operator">Tactical Operator</div>
+            <div class="a-role-title">Threat Response</div>
+            <div class="a-role-mission">Mission: neutralize in &lt;45 seconds</div>
+            <div class="a-role-body">Operates under high-stress, time-critical conditions. Needs the map, threat state, and hardware activation in one glance without navigating away from the operational picture.</div>
+            <div class="a-role-needs">
+              <div class="a-role-need">Live map with threat overlay always visible</div>
+              <div class="a-role-need">One-panel hardware activation</div>
+              <div class="a-role-need">Instant countermeasure controls</div>
+            </div>
           </div>
-          <div class="cs-persona-card reveal">
-            <span class="cs-persona-role">Super Admin</span>
-            <h3>Hardware integration</h3>
-            <p>Needs precise device configuration and spatial placement, with parameters expressed in the operational context.</p>
+          <div class="a-role-card a-glass">
+            <div class="a-role-badge a-role-badge--supervisor">Operations Supervisor</div>
+            <div class="a-role-title">Health & Awareness</div>
+            <div class="a-role-mission">Mission: situational awareness across all sites</div>
+            <div class="a-role-body">Monitors multi-site device health and incident status without digging into device-level detail. Routes escalations and tracks resolution across workstations.</div>
+            <div class="a-role-needs">
+              <div class="a-role-need">Compact multi-site dashboard</div>
+              <div class="a-role-need">Critical alert visibility without detail overhead</div>
+              <div class="a-role-need">Escalation routing to tactical operators</div>
+            </div>
+          </div>
+          <div class="a-role-card a-glass">
+            <div class="a-role-badge a-role-badge--admin">Super Admin</div>
+            <div class="a-role-title">Hardware Integration</div>
+            <div class="a-role-mission">Mission: configure hardware with spatial context</div>
+            <div class="a-role-body">Configures device placement, detection ranges, and system parameters. Needs all configuration expressed in the operational context — not abstract data forms.</div>
+            <div class="a-role-needs">
+              <div class="a-role-need">Device management with map-visible placement</div>
+              <div class="a-role-need">Coverage zone visualization on configuration</div>
+              <div class="a-role-need">Workstation and device group hierarchy</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Response Timelines ────────────────────────────────────────────── -->
     <section id="journeys">
       <div class="shell">
-        <span class="cs-section-label">User Journeys</span>
-        <h2>How each role navigates the system</h2>
-        <div style="display:grid;grid-template-columns:1fr;gap:12px;">
-          <div class="cs-artifact-card reveal">
-            <h3>Tactical Operator</h3>
-            <div style="margin-top:12px; padding:12px; background:rgba(99,228,255,0.05); border-radius:8px; font-size:0.95rem;">
-              <strong>Goal:</strong> Threat response in under 45 seconds
+        <span class="cs-section-label">Response Timelines</span>
+        <h2>How each role moves through the system</h2>
+        <div class="a-timelines">
+
+          <div class="a-timeline-card a-glass reveal">
+            <div class="a-timeline-header">
+              <span class="a-timeline-role">Tactical Operator</span>
+              <span class="a-timeline-goal">Threat response</span>
+              <span class="a-timeline-sla">Target: &lt;45 seconds</span>
             </div>
-            <div style="margin-top:8px; display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-size:0.9rem; color:var(--muted);">
-              <span>Detection</span> → <span>Identification</span> → <span>Action</span> → <span>Countermeasure</span>
+            <div class="a-timeline-steps">
+              <div class="a-timeline-sequence">
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Detection</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Identification</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Assessment</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Countermeasure</span></div>
+              </div>
+              <div class="a-timeline-narrative">Sees hostile drone on map → opens Drone panel (map stays visible) → selects target and jammer → presses START JAM. No navigation away from operational picture.</div>
             </div>
-            <p style="margin-top:12px;">Sees hostile drone on map → opens Drone panel (map stays visible) → selects target and jammer → presses START JAM. No navigation away from operational picture.</p>
           </div>
-          <div class="cs-artifact-card reveal">
-            <h3>Operations Supervisor</h3>
-            <div style="margin-top:12px; padding:12px; background:rgba(167,139,250,0.05); border-radius:8px; font-size:0.95rem;">
-              <strong>Goal:</strong> Health awareness across all sites in under 5 minutes
+
+          <div class="a-timeline-card a-glass reveal">
+            <div class="a-timeline-header">
+              <span class="a-timeline-role">Operations Supervisor</span>
+              <span class="a-timeline-goal">Health awareness across all sites</span>
+              <span class="a-timeline-sla">Target: &lt;5 minutes</span>
             </div>
-            <div style="margin-top:8px; display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-size:0.9rem; color:var(--muted);">
-              <span>System status</span> → <span>Alert review</span> → <span>Escalation</span> → <span>Resolution</span>
+            <div class="a-timeline-steps">
+              <div class="a-timeline-sequence">
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">System status</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Alert review</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Escalation</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Resolution</span></div>
+              </div>
+              <div class="a-timeline-narrative">Opens System Monitoring → reviews device health at all 8 workstations → identifies critical threat → routes alert to tactical operator at affected site → logs escalation. All visible in one compact dashboard.</div>
             </div>
-            <p style="margin-top:12px;">Opens System Monitoring → reviews device health at all 8 workstations → identifies critical threat → routes alert to tactical operator at affected site → logs escalation. All visible in one compact dashboard.</p>
           </div>
-          <div class="cs-artifact-card reveal">
-            <h3>Super Admin</h3>
-            <div style="margin-top:12px; padding:12px; background:rgba(236,72,153,0.05); border-radius:8px; font-size:0.95rem;">
-              <strong>Goal:</strong> Add hardware with spatial context immediately visible
+
+          <div class="a-timeline-card a-glass reveal">
+            <div class="a-timeline-header">
+              <span class="a-timeline-role">Super Admin</span>
+              <span class="a-timeline-goal">Hardware onboarding with spatial context</span>
+              <span class="a-timeline-sla">Configuration is spatial, not abstract</span>
             </div>
-            <div style="margin-top:8px; display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-size:0.9rem; color:var(--muted);">
-              <span>Device info</span> → <span>Position</span> → <span>Configuration</span> → <span>Visualization</span>
+            <div class="a-timeline-steps">
+              <div class="a-timeline-sequence">
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Device info</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Position</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Configuration</span><span class="a-timeline-step-arrow">→</span></div>
+                <div class="a-timeline-step"><div class="a-timeline-step-dot"></div><span class="a-timeline-step-label">Visualization</span></div>
+              </div>
+              <div class="a-timeline-narrative">Opens Device Management → selects workstation and device group → enters device name, IP, position coordinates → sets detection range and azimuth → new device appears on map at correct position with coverage zone visible.</div>
             </div>
-            <p style="margin-top:12px;">Opens Device Management → selects workstation and device group → enters device name, IP, position coordinates → sets detection range and azimuth → new device appears on map at correct position with coverage zone visible. Configuration becomes spatial, not abstract.</p>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── Threat-Management Framework ──────────────────────────────────── -->
     <section id="problems">
       <div class="shell">
-        <span class="cs-section-label">Defining the Real Design Problems</span>
-        <div class="cs-problems-grid">
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">01</span>
-            <h3>The map must never be replaced</h3>
-            <p>All controls and panels must appear as layers, not full-screen replacements, so spatial awareness is preserved.</p>
+        <span class="cs-section-label">Threat-Management Framework</span>
+        <h2>Five design problems rooted in operational risk</h2>
+        <div class="a-threat-framework reveal">
+          <div class="a-threat-header">
+            <div class="a-threat-header-col">#</div>
+            <div class="a-threat-header-col">Design Problem</div>
+            <div class="a-threat-header-col">Constraint Type</div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">02</span>
-            <h3>Hardware control without context switching</h3>
-            <p>Jammer, radar, and countermeasure actions must be accessible while the operator still sees the threat movement.</p>
+          <div class="a-threat-row">
+            <div class="a-threat-num">01</div>
+            <div class="a-threat-content">
+              <div class="a-threat-title">The map must never be replaced</div>
+              <div class="a-threat-body">All controls and panels must appear as layers, not full-screen replacements, so spatial awareness is preserved.</div>
+            </div>
+            <div class="a-threat-col--constraint">
+              <span class="a-threat-constraint-tag a-threat-constraint-tag--spatial">Spatial</span>
+            </div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">03</span>
-            <h3>Autopilot must prevent accidental activation</h3>
-            <p>A clear persistent state and explicit confirmation are required to protect against dangerous mode changes.</p>
+          <div class="a-threat-row">
+            <div class="a-threat-num">02</div>
+            <div class="a-threat-content">
+              <div class="a-threat-title">Hardware control without context switching</div>
+              <div class="a-threat-body">Jammer, radar, and countermeasure actions must be accessible while the operator still sees the threat movement.</div>
+            </div>
+            <div class="a-threat-col--constraint">
+              <span class="a-threat-constraint-tag a-threat-constraint-tag--temporal">Temporal</span>
+            </div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">04</span>
-            <h3>Multi-device architecture must not create overhead</h3>
-            <p>Supervisor and admin views need hierarchical grouping to avoid scrolling through 85+ devices.</p>
+          <div class="a-threat-row">
+            <div class="a-threat-num">03</div>
+            <div class="a-threat-content">
+              <div class="a-threat-title">Autopilot must prevent accidental activation</div>
+              <div class="a-threat-body">A clear persistent state and explicit confirmation are required to protect against dangerous mode changes.</div>
+            </div>
+            <div class="a-threat-col--constraint">
+              <span class="a-threat-constraint-tag a-threat-constraint-tag--safety">Safety</span>
+            </div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">05</span>
-            <h3>Threat classification must be instant</h3>
-            <p>Track, whitelist, blacklist, or ignore must be actionable from a single panel view.</p>
+          <div class="a-threat-row">
+            <div class="a-threat-num">04</div>
+            <div class="a-threat-content">
+              <div class="a-threat-title">Multi-device architecture must not create overhead</div>
+              <div class="a-threat-body">Supervisor and admin views need hierarchical grouping to avoid scrolling through 85+ devices.</div>
+            </div>
+            <div class="a-threat-col--constraint">
+              <span class="a-threat-constraint-tag a-threat-constraint-tag--scale">Scale</span>
+            </div>
+          </div>
+          <div class="a-threat-row">
+            <div class="a-threat-num">05</div>
+            <div class="a-threat-content">
+              <div class="a-threat-title">Threat classification must be instant</div>
+              <div class="a-threat-body">Track, whitelist, blacklist, or ignore must be actionable from a single panel view.</div>
+            </div>
+            <div class="a-threat-col--constraint">
+              <span class="a-threat-constraint-tag a-threat-constraint-tag--speed">Speed</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Operational Doctrine ──────────────────────────────────────────── -->
     <section>
       <div class="shell">
-        <span class="cs-section-label">Design Principles</span>
-        <div class="cs-principles-grid">
-          <div class="cs-principle reveal"><h3>The map is the interface</h3></div>
-          <div class="cs-principle reveal"><h3>Threat state drives priority</h3></div>
-          <div class="cs-principle reveal"><h3>Hardware activation requires intent</h3></div>
-          <div class="cs-principle reveal"><h3>System health is always visible</h3></div>
-          <div class="cs-principle reveal"><h3>Configuration is spatial</h3></div>
+        <span class="cs-section-label">Operational Doctrine</span>
+        <h2>Five principles that governed every screen decision</h2>
+        <div class="a-doctrine reveal">
+          <div class="a-doctrine-header">Design Doctrine — AEGIS C2</div>
+          <div class="a-doctrine-row">
+            <div class="a-doctrine-principle">The map is the interface</div>
+            <div class="a-doctrine-rationale">Every control, panel, and status indicator is layered over the live map. The operational picture is never replaced, only augmented.</div>
+          </div>
+          <div class="a-doctrine-row">
+            <div class="a-doctrine-principle">Threat state drives priority</div>
+            <div class="a-doctrine-rationale">Visual hierarchy is dynamic. Hostile classifications surface above all other information automatically, requiring no manual re-sorting.</div>
+          </div>
+          <div class="a-doctrine-row">
+            <div class="a-doctrine-principle">Hardware activation requires intent</div>
+            <div class="a-doctrine-rationale">Countermeasure actions carry explicit confirmation steps. Accidental activation is architecturally prevented, not just warned against.</div>
+          </div>
+          <div class="a-doctrine-row">
+            <div class="a-doctrine-principle">System health is always visible</div>
+            <div class="a-doctrine-rationale">Device status and site health are persistent elements of the interface. Supervisors are never more than one click from a degraded state.</div>
+          </div>
+          <div class="a-doctrine-row">
+            <div class="a-doctrine-principle">Configuration is spatial</div>
+            <div class="a-doctrine-rationale">Hardware setup is expressed in the operational map context. Coverage zones, azimuth, and position all render geographically during configuration.</div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Information Architecture ──────────────────────────────────────── -->
     <section id="ia">
       <div class="shell">
         <span class="cs-section-label">Information Architecture</span>
@@ -368,6 +535,7 @@
       </div>
     </section>
 
+    <!-- ── Design System ─────────────────────────────────────────────────── -->
     <section>
       <div class="shell">
         <span class="cs-section-label">Design System</span>
@@ -380,71 +548,201 @@
       </div>
     </section>
 
-    <section>
+    <!-- ── Decision Ledger ───────────────────────────────────────────────── -->
+    <section id="decisions">
       <div class="shell">
-        <span class="cs-section-label">Key Decisions</span>
-        <div class="cs-timeline">
-          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">01</div><div class="cs-timeline-label">Floating panels over map</div></div>
-          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">02</div><div class="cs-timeline-label">Persistent Autopilot indicator</div></div>
-          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">03</div><div class="cs-timeline-label">Dual EO/IR feed panel</div></div>
-          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">04</div><div class="cs-timeline-label">Hierarchical device tree</div></div>
-          <div class="cs-timeline-item reveal"><div class="cs-timeline-number">05</div><div class="cs-timeline-label">Offline map tile confirmation</div></div>
+        <span class="cs-section-label">Decision Ledger</span>
+        <h2>Five architectural choices and their operational reasoning</h2>
+        <div class="a-ledger">
+
+          <div class="a-ledger-entry a-glass reveal">
+            <div class="a-ledger-entry-header">
+              <span class="a-ledger-num">01</span>
+              <span class="a-ledger-decision-title">Floating panels over map</span>
+            </div>
+            <div class="a-ledger-body">
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Context</div>
+                <div class="a-ledger-field-value">Operators needed hardware and threat controls without losing the live operational picture.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Decision</div>
+                <div class="a-ledger-field-value">All control panels float as overlay layers — the map never goes below the interaction layer.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Outcome</div>
+                <div class="a-ledger-field-value">Spatial awareness is maintained during every hardware interaction.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="a-ledger-entry a-glass reveal">
+            <div class="a-ledger-entry-header">
+              <span class="a-ledger-num">02</span>
+              <span class="a-ledger-decision-title">Persistent Autopilot indicator</span>
+            </div>
+            <div class="a-ledger-body">
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Context</div>
+                <div class="a-ledger-field-value">Mode confusion in Autopilot could lead to accidental engagement or missed manual overrides.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Decision</div>
+                <div class="a-ledger-field-value">Autopilot state is always visible in the top bar, color-coded, and requires a confirmed toggle to change.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Outcome</div>
+                <div class="a-ledger-field-value">Eliminates mode confusion risk; operators always know the system's current engagement state.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="a-ledger-entry a-glass reveal">
+            <div class="a-ledger-entry-header">
+              <span class="a-ledger-num">03</span>
+              <span class="a-ledger-decision-title">Dual EO/IR feed panel</span>
+            </div>
+            <div class="a-ledger-body">
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Context</div>
+                <div class="a-ledger-field-value">Operators needed visual confirmation alongside electronic detection data to classify threats accurately.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Decision</div>
+                <div class="a-ledger-field-value">A resizable dual-feed panel shows EO and IR simultaneously as a floating overlay.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Outcome</div>
+                <div class="a-ledger-field-value">Supports rapid visual classification without leaving the map workspace.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="a-ledger-entry a-glass reveal">
+            <div class="a-ledger-entry-header">
+              <span class="a-ledger-num">04</span>
+              <span class="a-ledger-decision-title">Hierarchical device tree</span>
+            </div>
+            <div class="a-ledger-body">
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Context</div>
+                <div class="a-ledger-field-value">Deployments can include 85+ devices across multiple workstations and sites.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Decision</div>
+                <div class="a-ledger-field-value">Device management uses a collapsible site → workstation → device group → device hierarchy.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Outcome</div>
+                <div class="a-ledger-field-value">Supervisors and admins can navigate large deployments without scrolling through flat lists.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="a-ledger-entry a-glass reveal">
+            <div class="a-ledger-entry-header">
+              <span class="a-ledger-num">05</span>
+              <span class="a-ledger-decision-title">Offline map tile confirmation</span>
+            </div>
+            <div class="a-ledger-body">
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Context</div>
+                <div class="a-ledger-field-value">Operational sites may be in low-connectivity environments where live map tiles are unavailable.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Decision</div>
+                <div class="a-ledger-field-value">Admins can pre-cache tile sets for specific geographic areas with a clear confirmation and status indicator.</div>
+              </div>
+              <div class="a-ledger-field">
+                <div class="a-ledger-field-label">Outcome</div>
+                <div class="a-ledger-field-value">Map-first control is preserved even in fully offline or air-gapped deployments.</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── What the System Enables ───────────────────────────────────────── -->
     <section>
       <div class="shell">
         <span class="cs-section-label">What the System Enables</span>
-        <div class="cs-artifacts-grid">
-          <div class="cs-artifact-card reveal"><h3>Single-screen threat response</h3><p>Operators manage live airspace, tracking, and countermeasures without leaving the map.</p></div>
-          <div class="cs-artifact-card reveal"><h3>Multi-site health awareness</h3><p>Supervisors see device health and alerts across multiple workstations in a compact view.</p></div>
-          <div class="cs-artifact-card reveal"><h3>Spatial device setup</h3><p>Admins configure hardware with geographic placement and coverage visualization, avoiding abstract forms.</p></div>
+        <div class="a-enables-grid">
+          <div class="a-enables-card a-glass reveal">
+            <div class="a-enables-tag">Operator</div>
+            <div class="a-enables-title">Single-screen threat response</div>
+            <div class="a-enables-body">Operators manage live airspace, tracking, and countermeasures without leaving the map.</div>
+          </div>
+          <div class="a-enables-card a-glass reveal">
+            <div class="a-enables-tag">Supervisor</div>
+            <div class="a-enables-title">Multi-site health awareness</div>
+            <div class="a-enables-body">Supervisors see device health and alerts across multiple workstations in a compact view.</div>
+          </div>
+          <div class="a-enables-card a-glass reveal">
+            <div class="a-enables-tag">Admin</div>
+            <div class="a-enables-title">Spatial device setup</div>
+            <div class="a-enables-body">Admins configure hardware with geographic placement and coverage visualization, avoiding abstract forms.</div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ── After-Action Review ────────────────────────────────────────────── -->
     <section id="reflection">
       <div class="shell">
-        <span class="cs-section-label">Reflection</span>
+        <span class="cs-section-label">After-Action Review</span>
         <h2>Operational learnings and next steps for AEGIS</h2>
-        <div class="cs-final-reflection reveal">
-          <div class="cs-reflection-panel cs-reflection-panel--primary">
-            <span class="cs-reflection-tag">Outcome</span>
-            <h4>Operational success with map-first control</h4>
-            <p>Map-first control preserved spatial awareness while exposing critical hardware controls in the flow. The operator can act quickly without losing sight of the live threat picture.</p>
+        <div class="a-aar reveal">
+          <div class="a-aar-header">
+            <span class="a-aar-header-tag">AAR</span>
+            <span class="a-aar-header-title">AEGIS C2 — Post-Delivery Review</span>
           </div>
-          <div class="cs-reflection-panel reveal">
-            <span class="cs-reflection-tag">Challenge</span>
-            <h4>Visual hierarchy under operational load</h4>
-            <p>Layered panels needed a clearer hierarchy and lighter visual states to avoid overwhelming operators during high-intensity threat response.</p>
-          </div>
-          <div class="cs-reflection-panel reveal">
-            <span class="cs-reflection-tag">Next step</span>
-            <h4>Docking, search, and filter support</h4>
-            <p>Introduce docking zones and search/filter controls for deployments with many workstations, reducing friction and making large-scale monitoring more manageable.</p>
+          <div class="a-aar-rows">
+            <div class="a-aar-row">
+              <div class="a-aar-row-label a-aar-row-label--outcome">Outcome</div>
+              <div class="a-aar-row-content">
+                <div class="a-aar-row-title">Operational success with map-first control</div>
+                <div class="a-aar-row-body">Map-first control preserved spatial awareness while exposing critical hardware controls in the flow. The operator can act quickly without losing sight of the live threat picture.</div>
+              </div>
+            </div>
+            <div class="a-aar-row">
+              <div class="a-aar-row-label a-aar-row-label--challenge">Challenge</div>
+              <div class="a-aar-row-content">
+                <div class="a-aar-row-title">Visual hierarchy under operational load</div>
+                <div class="a-aar-row-body">Layered panels needed a clearer hierarchy and lighter visual states to avoid overwhelming operators during high-intensity threat response.</div>
+              </div>
+            </div>
+            <div class="a-aar-row">
+              <div class="a-aar-row-label a-aar-row-label--followon">Follow-on</div>
+              <div class="a-aar-row-content">
+                <div class="a-aar-row-title">Docking, search, and filter support</div>
+                <div class="a-aar-row-body">Introduce docking zones and search/filter controls for deployments with many workstations, reducing friction and making large-scale monitoring more manageable.</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Impact & Outcomes ─────────────────────────────────────────────── -->
     <section id="outcomes">
       <div class="shell">
         <span class="cs-section-label">Impact & Outcomes</span>
-        <div class="cs-artifacts-grid reveal">
-          <div class="cs-artifact-card reveal">
+        <div class="cs-impact-grid reveal">
+          <div class="cs-impact-card reveal">
             <h3>Designed for live operations</h3>
             <p>Built a map-first control interface that keeps threat context visible while operators act.</p>
           </div>
-          <div class="cs-artifact-card reveal">
+          <div class="cs-impact-card reveal">
             <h3>Hardware-aware delivery</h3>
             <p>Aligned UI design with real device and workflow constraints to reduce implementation risk.</p>
           </div>
-          <div class="cs-artifact-card reveal">
+          <div class="cs-impact-card reveal">
             <h3>Internal reference pattern</h3>
             <p>Established a visual and interaction model for future counter-drone deployments.</p>
           </div>
-          <div class="cs-artifact-card reveal">
+          <div class="cs-impact-card reveal">
             <h3>Stakeholder confidence</h3>
             <p>Refined decisions through direct operational review rather than a separate discovery phase.</p>
           </div>
@@ -452,13 +750,13 @@
       </div>
     </section>
 
+    <!-- ── CTA ───────────────────────────────────────────────────────────── -->
     <section class="cs-cta">
       <div class="shell">
         <h2>Interested in command interfaces for mission-critical systems?</h2>
         <div class="cs-cta-buttons">
-              <a class="button primary" href="index.html#contact">Discuss your challenge</a>
-          <a class="button secondary " href="apimatic.html">View Next Case Study</a>
-        
+          <a class="button primary" href="index.html#contact">Discuss your challenge</a>
+          <a class="button secondary" href="apimatic.html">View Next Case Study</a>
         </div>
       </div>
     </section>
@@ -491,7 +789,7 @@
       var reveals = document.querySelectorAll('.reveal');
       reveals.forEach(function (item) {
         item.style.opacity = '1';
-        item.style.transform = 'none';
+        item.style.transform = '';
       });
 
       var backButton = document.getElementById('backButton');

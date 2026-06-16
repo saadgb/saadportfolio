@@ -9,28 +9,21 @@
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B8QQ3V6QJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-7B8QQ3V6QJ');
   </script>
   <script type="text/javascript">
-    (function(c, l, a, r, i, t, y) {
-      c[a] = c[a] || function() {
-        (c[a].q = c[a].q || []).push(arguments)
-      };
-      t = l.createElement(r);
-      t.async = 1;
-      t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "k7sxjmd1hl");
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","k7sxjmd1hl");
   </script>
+
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
@@ -46,8 +39,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370" aria-hidden="true" focusable="false">
             <defs>
               <linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                <stop offset="0"/>
-                <stop offset="1" stop-color="#545454"/>
+                <stop offset="0"/><stop offset="1" stop-color="#545454"/>
               </linearGradient>
               <clipPath id="b"><rect width="370" height="370" transform="translate(-0.316 -0.316)" fill="url(#a)"/></clipPath>
               <linearGradient id="c" x1="1" x2="0.392" y2="1" gradientUnits="objectBoundingBox">
@@ -79,13 +71,15 @@
   </header>
 
   <main id="main">
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
     <section class="cs-hero">
       <div class="shell">
         <div class="cs-hero-content reveal">
           <span class="cs-project-name">Decentralized Finance</span>
           <h1>Atlas DEX</h1>
           <p class="cs-hero-subtitle">Cross-chain DEX aggregator built on Solana</p>
-          <p class="cs-hero-copy">Designed the full product experience for Atlas DEX — from swap and bridge to pools, staking, farms, dashboard, and the design system. Delivered a credible interface that supported the platform's launch and helped the product raise $6M from Jump Capital and Huobi Ventures.</p>
+          <p class="reveal">Designed the full product experience for Atlas DEX — from swap and bridge to pools, staking, farms, dashboard, and the design system. Delivered a credible interface that supported the platform's launch and helped the product raise $6M from Jump Capital and Huobi Ventures.</p>
           <div class="cs-hero-grid">
             <div class="cs-info-card reveal">
               <div class="cs-info-label">Role</div>
@@ -113,7 +107,7 @@
             </div>
           </div>
           <div class="cs-hero-toc reveal">
-            <p><strong>On this page:</strong> <a href="#project-overview">Overview</a> • <a href="#discovery-constraints">Discovery & Constraints</a> • <a href="#brief">Brief</a> • <a href="#users">Users</a> • <a href="#process">Process</a> • <a href="#decisions">Decisions</a> • <a href="#solutions">Solutions</a> • <a href="#outcome">Outcome</a> • <a href="#reflection">Reflection</a> • <a href="#outcomes">Impact & Outcomes</a></p>
+            <p><strong>On this page:</strong> <a href="#project-overview">Overview</a> • <a href="#insight-journey">Research Insights</a> • <a href="#users">Journey Rails</a> • <a href="#philosophy">Product Philosophy</a> • <a href="#decisions">Workflow Transformations</a> • <a href="#enables">What it Enables</a> • <a href="#reflection">Product Learnings</a> • <a href="#outcomes">Impact & Outcomes</a></p>
           </div>
         </div>
 
@@ -123,6 +117,7 @@
       </div>
     </section>
 
+    <!-- ── Project Snapshot ──────────────────────────────────────────────── -->
     <section id="project-overview">
       <div class="shell">
         <span class="cs-section-label">Project Snapshot</span>
@@ -144,224 +139,429 @@
             <div class="cs-glance-value">UX, UI, Design System</div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="brief">
-      <div class="shell">
-        <span class="cs-section-label">The Brief</span>
-        <h2>Build a credible cross-chain DEX experience from scratch</h2>
-        <div class="cs-overview-grid">
-          <div class="cs-overview-card reveal">
-            <h3>Opening</h3>
-            <p>DeFi users have zero tolerance for ambiguity: bad slippage warnings, confusing confirmations, and unclear wallet flows can cost real money. Atlas DEX needed an end-to-end experience that felt trustworthy, legible, and fast.</p>
+        <!-- Story arc -->
+        <div class="at-arc reveal">
+          <div class="at-arc-step">
+            <div class="at-arc-label">01</div>
+            <div class="at-arc-title">Complexity</div>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>The Challenge</h3>
-            <p>The client had market research and a vision for a cross-chain aggregator, but no product design. The product needed to make complex cross-chain routing readable and reliable across Solana, Ethereum, and BSC.</p>
+          <div class="at-arc-step">
+            <div class="at-arc-label">02</div>
+            <div class="at-arc-title">Simplification</div>
+          </div>
+          <div class="at-arc-step">
+            <div class="at-arc-label">03</div>
+            <div class="at-arc-title">Confidence</div>
+          </div>
+          <div class="at-arc-step">
+            <div class="at-arc-label">04</div>
+            <div class="at-arc-title">Adoption</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="discovery-constraints">
+    <!-- ── Insight Journey ────────────────────────────────────────────────── -->
+    <section id="insight-journey">
       <div class="shell">
-        <span class="cs-section-label">Discovery & Constraints</span>
-        <div class="cs-overview-grid">
-          <div class="cs-overview-card reveal">
-            <h3>Research frame</h3>
-            <p>Formal generative research was not part of this launch-phase work. The client needed design progress immediately, so we built understanding from existing market context and technical constraints.</p>
+        <span class="cs-section-label">Research & Discovery</span>
+        <h2>What we learned before designing anything</h2>
+
+        <div class="at-insight-journey reveal">
+          <div class="at-insight-cell">
+            <div class="at-insight-tag">Starting point</div>
+            <div class="at-insight-headline">No time for a formal research phase</div>
+            <div class="at-insight-body">The client needed immediate design progress. Formal generative research wasn't part of the launch-phase mandate — so discovery had to move fast without cutting corners on understanding.</div>
+            <div class="at-insight-finding">"The product was live in competitors' hands. Every week without a design was a week of lost positioning."</div>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>Discovery inputs</h3>
-            <p>Discovery combined a competitive audit, cross-chain flow review, wallet pattern inspection, and direct conversations with crypto experts. Existing product documentation and client feedback loops were central to the effort.</p>
+          <div class="at-insight-cell">
+            <div class="at-insight-tag">Inputs</div>
+            <div class="at-insight-headline">Competitive audit, flow review, expert conversations</div>
+            <div class="at-insight-body">Discovery combined a competitive audit of existing DEX and bridge experiences, cross-chain flow review, wallet pattern inspection, and direct conversations with crypto experts. Product documentation and client feedback loops were central.</div>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>Assumptions & validation</h3>
-            <p>The design started from the assumption that trust and clarity would be the highest priorities. That assumption was refined through ongoing design feedback and by checking against established DeFi interaction patterns.</p>
+          <div class="at-insight-cell">
+            <div class="at-insight-tag">Core assumption</div>
+            <div class="at-insight-headline">Trust and clarity outrank feature density</div>
+            <div class="at-insight-body">DeFi users have zero tolerance for ambiguity. Bad slippage warnings, confusing confirmations, and unclear wallet flows can cost real money. The assumption: clarity is the product.</div>
+            <div class="at-insight-finding">Validated through design reviews and by checking against established DeFi interaction patterns throughout the proof-of-concept phase.</div>
+          </div>
+          <div class="at-insight-cell">
+            <div class="at-insight-tag">The challenge</div>
+            <div class="at-insight-headline">Make cross-chain routing readable and reliable</div>
+            <div class="at-insight-body">The client had market research and a vision — but no product design. The platform needed to make complex routing across Solana, Ethereum, and BSC feel trustworthy, legible, and fast for all three user types.</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Journey Rails ──────────────────────────────────────────────────── -->
     <section id="users">
       <div class="shell">
-        <span class="cs-section-label">Understanding the Users</span>
-        <h2>Three audiences shaped the interface</h2>
-        <div class="cs-personas-grid">
-          <div class="cs-persona-card reveal">
-            <span class="cs-persona-role">Active DeFi Trader</span>
-            <h3>Expert execution</h3>
-            <p>Needs route transparency, price impact detail, and the best output value without unnecessary friction.</p>
+        <span class="cs-section-label">User Journeys</span>
+        <h2>Three audiences, three distinct paths through the product</h2>
+
+        <div class="at-rails reveal">
+          <div class="at-rail">
+            <div class="at-rail-identity">
+              <div class="at-rail-role at-rail-role--trader">Active DeFi Trader</div>
+              <div class="at-rail-goal">Expert execution with full route visibility</div>
+            </div>
+            <div class="at-rail-steps">
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Select tokens</span>
+                  <span class="at-rail-step-sub">Input / output pair</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Review route</span>
+                  <span class="at-rail-step-sub">Chain + pool path</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Check impact</span>
+                  <span class="at-rail-step-sub">Slippage + price</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Execute</span>
+                  <span class="at-rail-step-sub">Confirm + track</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cs-persona-card reveal">
-            <span class="cs-persona-role">Liquidity Provider</span>
-            <h3>Clear yield decisions</h3>
-            <p>Needs legible APY, total value locked, position balance, and reward status without overload.</p>
+
+          <div class="at-rail">
+            <div class="at-rail-identity">
+              <div class="at-rail-role at-rail-role--provider">Liquidity Provider</div>
+              <div class="at-rail-goal">Clear yield decisions without data overload</div>
+            </div>
+            <div class="at-rail-steps">
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">View pools</span>
+                  <span class="at-rail-step-sub">APY + TVL</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Enter position</span>
+                  <span class="at-rail-step-sub">Token deposit</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Monitor yield</span>
+                  <span class="at-rail-step-sub">Balance + rewards</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Withdraw</span>
+                  <span class="at-rail-step-sub">Claim + exit</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cs-persona-card reveal">
-            <span class="cs-persona-role">New DeFi User</span>
-            <h3>Actionable clarity</h3>
-            <p>Needs a low-friction path to swap and bridge with simple language and clear confirmation states.</p>
+
+          <div class="at-rail">
+            <div class="at-rail-identity">
+              <div class="at-rail-role at-rail-role--new">New DeFi User</div>
+              <div class="at-rail-goal">Actionable clarity, no DeFi prerequisites</div>
+            </div>
+            <div class="at-rail-steps">
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Connect wallet</span>
+                  <span class="at-rail-step-sub">Single step</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Choose swap</span>
+                  <span class="at-rail-step-sub">Simple inputs</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Confirm</span>
+                  <span class="at-rail-step-sub">Plain language</span>
+                </div>
+              </div>
+              <span class="at-rail-step-arrow">→</span>
+              <div class="at-rail-step">
+                <div class="at-rail-step-dot"></div>
+                <div>
+                  <span class="at-rail-step-label">Track progress</span>
+                  <span class="at-rail-step-sub">Step count visible</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="process">
+    <!-- ── Product Philosophy Stack ───────────────────────────────────────── -->
+    <section id="philosophy">
       <div class="shell">
-        <span class="cs-section-label">Design Process</span>
-        <h2>Research, wireframes, and system-first execution</h2>
-        <div class="cs-ds-grid">
-          <div class="cs-ds-item reveal">
-            <h3>Competitive analysis</h3>
-            <p>Reviewed existing DEX and bridge experiences to identify conventions and points of confusion.</p>
+        <span class="cs-section-label">Product Philosophy</span>
+        <h2>Three principles that governed every screen</h2>
+
+        <div class="at-philosophy reveal">
+          <div class="at-philosophy-item">
+            <div class="at-philosophy-num">01</div>
+            <div class="at-philosophy-principle">System-first, screen-second</div>
+            <div class="at-philosophy-rationale">The design system was built before the screens. Button states, inputs, warnings, wallet selectors, and modal patterns were established first — so every screen that followed was consistent by default, not by revision.</div>
           </div>
-          <div class="cs-ds-item reveal">
-            <h3>Wireframes</h3>
-            <p>Aligned stakeholders on structure for swap, bridge, staking, pools, farms, and dashboard before visual design.</p>
+          <div class="at-philosophy-item">
+            <div class="at-philosophy-num">02</div>
+            <div class="at-philosophy-principle">Transparency earns trust</div>
+            <div class="at-philosophy-rationale">Showing the full routing path, price impact, and step-by-step progress adds visual complexity but removes doubt. In DeFi, doubt costs money. Every additional piece of information is a piece of confidence, not clutter.</div>
           </div>
-          <div class="cs-ds-item reveal">
-            <h3>Design system</h3>
-            <p>Built the full component library first: button states, inputs, warnings, wallet selector, and modal patterns.</p>
+          <div class="at-philosophy-item">
+            <div class="at-philosophy-num">03</div>
+            <div class="at-philosophy-principle">Respect both audiences simultaneously</div>
+            <div class="at-philosophy-rationale">Expert traders need proof that aggregation logic is working. New users need a path that doesn't require reading a whitepaper. Good DeFi design makes the same information serve both — routes are readable for experts and ignorable for newcomers.</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Workflow Transformations (Before / After) ──────────────────────── -->
     <section id="decisions">
       <div class="shell">
-        <span class="cs-section-label">Key Design Decisions</span>
-        <div class="cs-problems-grid">
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">01</span>
-            <h3>Show routing path</h3>
-            <p>Users see every chain and pool step in the swap route, not just input and output.</p>
+        <span class="cs-section-label">Workflow Transformations</span>
+        <h2>Five complexity problems. Five simplification decisions.</h2>
+
+        <div class="at-transforms reveal">
+
+          <div class="at-transform">
+            <div class="at-transform-header">
+              <span class="at-transform-num">01</span>
+              <span class="at-transform-title">Routing transparency</span>
+            </div>
+            <div class="at-transform-label-row">
+              <div class="at-transform-col-label at-transform-col-label--before">Before — Complexity</div>
+              <div class="at-transform-col-label at-transform-col-label--after">After — Simplification</div>
+            </div>
+            <div class="at-transform-body">
+              <div class="at-transform-before">
+                <div class="at-transform-state">Users see only input and output tokens. The aggregation logic running underneath is invisible — which means there's no basis for trust and no way to verify the trade is optimal.</div>
+              </div>
+              <div class="at-transform-after">
+                <div class="at-transform-state">Every chain and pool step in the swap route is shown. Experts get proof the aggregator is working. New users can read only the result and ignore the path. Both are served by the same screen.</div>
+              </div>
+            </div>
+            <div class="at-transform-tradeoff"><strong>Tradeoff accepted:</strong> More visual complexity in the swap panel — justified because route transparency is the primary trust signal that differentiates an aggregator from a simple swap.</div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">02</span>
-            <h3>Contextual price impact</h3>
-            <p>Warning banners inform without blocking expert action for high-impact trades.</p>
+
+          <div class="at-transform">
+            <div class="at-transform-header">
+              <span class="at-transform-num">02</span>
+              <span class="at-transform-title">Price impact communication</span>
+            </div>
+            <div class="at-transform-label-row">
+              <div class="at-transform-col-label at-transform-col-label--before">Before — Complexity</div>
+              <div class="at-transform-col-label at-transform-col-label--after">After — Simplification</div>
+            </div>
+            <div class="at-transform-body">
+              <div class="at-transform-before">
+                <div class="at-transform-state">High-impact trades either go unwarned — or are blocked entirely. Neither works. Unwarned risks burn users; blocked trades send expert traders straight to competitors.</div>
+              </div>
+              <div class="at-transform-after">
+                <div class="at-transform-state">Warning banners surface the risk clearly and prominently, but don't block the action. Experienced traders who accept the risk proceed. New users get the information they need to reconsider.</div>
+              </div>
+            </div>
+            <div class="at-transform-tradeoff"><strong>Tradeoff accepted:</strong> Informing without blocking is a deliberate choice not to be paternalistic — preserving user agency while removing ignorance as a risk factor.</div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">03</span>
-            <h3>Step-based progress</h3>
-            <p>Transaction progress uses explicit step counts so users know cross-chain swaps are working.</p>
+
+          <div class="at-transform">
+            <div class="at-transform-header">
+              <span class="at-transform-num">03</span>
+              <span class="at-transform-title">Cross-chain progress feedback</span>
+            </div>
+            <div class="at-transform-label-row">
+              <div class="at-transform-col-label at-transform-col-label--before">Before — Complexity</div>
+              <div class="at-transform-col-label at-transform-col-label--after">After — Simplification</div>
+            </div>
+            <div class="at-transform-body">
+              <div class="at-transform-before">
+                <div class="at-transform-state">A loading spinner with no context. Cross-chain transactions take 30–90 seconds. Without feedback, users assume the transaction failed and retry — creating duplicate submissions and lost funds.</div>
+              </div>
+              <div class="at-transform-after">
+                <div class="at-transform-state">Explicit step counts with chain labels show exactly where the transaction is in the process. Users know whether to wait, whether something failed, and what comes next — without needing to understand the protocol.</div>
+              </div>
+            </div>
+            <div class="at-transform-tradeoff"><strong>Tradeoff accepted:</strong> More engineering work to surface step state — justified because clear progress is the most important communication the interface can provide during confirmation.</div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">04</span>
-            <h3>Dual-wallet flow</h3>
-            <p>Displayed source and destination wallets together for cross-chain swaps, removing hidden requirements.</p>
+
+          <div class="at-transform">
+            <div class="at-transform-header">
+              <span class="at-transform-num">04</span>
+              <span class="at-transform-title">Multi-wallet bridge flow</span>
+            </div>
+            <div class="at-transform-label-row">
+              <div class="at-transform-col-label at-transform-col-label--before">Before — Complexity</div>
+              <div class="at-transform-col-label at-transform-col-label--after">After — Simplification</div>
+            </div>
+            <div class="at-transform-body">
+              <div class="at-transform-before">
+                <div class="at-transform-state">The requirement for a destination chain wallet is discovered mid-transaction. Users have already committed intent and are then interrupted by an unexpected requirement — one of the highest-friction moments in DeFi UX.</div>
+              </div>
+              <div class="at-transform-after">
+                <div class="at-transform-state">Source and destination wallets are displayed together at the start of the bridge flow, making the two-wallet requirement explicit before any action is taken. No hidden prerequisites surface mid-transaction.</div>
+              </div>
+            </div>
+            <div class="at-transform-tradeoff"><strong>Tradeoff accepted:</strong> The bridge entry screen has more elements than a simple swap — but the alternative is worse: users who discover the second wallet requirement mid-flow abandon the transaction at high rates.</div>
           </div>
-          <div class="cs-problem-card reveal">
-            <span class="cs-problem-number">05</span>
-            <h3>Staking clarity</h3>
-            <p>Minimal staking view surfaced APY, balance, and rewards only; removed technical noise.</p>
+
+          <div class="at-transform">
+            <div class="at-transform-header">
+              <span class="at-transform-num">05</span>
+              <span class="at-transform-title">Staking and pool clarity</span>
+            </div>
+            <div class="at-transform-label-row">
+              <div class="at-transform-col-label at-transform-col-label--before">Before — Complexity</div>
+              <div class="at-transform-col-label at-transform-col-label--after">After — Simplification</div>
+            </div>
+            <div class="at-transform-body">
+              <div class="at-transform-before">
+                <div class="at-transform-state">Liquidity provider screens expose raw protocol data — contract addresses, epoch counters, technical parameters — alongside the metrics providers actually use to make decisions. The signal is buried in noise.</div>
+              </div>
+              <div class="at-transform-after">
+                <div class="at-transform-state">Staking surfaces only APY, current balance, and pending rewards. Pools surface APY, TVL, and position status. Everything else is removed. The decisions providers need to make drive the information hierarchy.</div>
+              </div>
+            </div>
+            <div class="at-transform-tradeoff"><strong>Tradeoff accepted:</strong> Technical data is deprioritized in favor of decision-relevant data — acknowledging that liquidity providers don't need more controls, they need more clarity on the metrics that actually matter.</div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <section id="solutions">
-      <div class="shell">
-        <span class="cs-section-label">Solutions & Tradeoffs</span>
-        <h2>How each decision addressed the core challenge</h2>
-        <div style="display:grid;grid-template-columns:1fr;gap:18px;">
-          <div class="cs-overview-card reveal">
-            <h3>Transparency over simplicity</h3>
-            <p>Showing the full routing path adds visual complexity but builds trust. Expert traders need proof that the aggregation logic is working. New users can ignore the path and just read the result. This decision respects both audiences simultaneously.</p>
-          </div>
-          <div class="cs-overview-card reveal">
-            <h3>Warn, don't block</h3>
-            <p>High-impact trades carry real risk, but experienced traders sometimes choose them deliberately. Blocking the transaction would be paternalistic and would lose users to competitors. A prominent warning surfaces the risk without removing agency.</p>
-          </div>
-          <div class="cs-overview-card reveal">
-            <h3>Progress over speed</h3>
-            <p>Cross-chain transactions can take 30–90 seconds. Without explicit step feedback, users assume failure and retry—which creates duplicate transactions and lost funds. Clear progress state is the most important communication the interface can provide during confirmation.</p>
-          </div>
-          <div class="cs-overview-card reveal">
-            <h3>Multi-chain context upfront</h3>
-            <p>Showing source and destination wallets together forces the connection model to be explicit rather than discovered mid-transaction. This eliminates one of the highest-friction points in bridge UX: realizing mid-flow that a second wallet is required.</p>
-          </div>
-          <div class="cs-overview-card reveal">
-            <h3>Data over features</h3>
-            <p>Liquidity providers don't need more controls—they need more clarity on the metrics that drive decisions. APY, current balance, and pending rewards are the only numbers that matter. Everything else adds cognitive load without adding value.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="outcome">
+    <!-- ── What the Product Enables ───────────────────────────────────────── -->
+    <section id="enables">
       <div class="shell">
         <span class="cs-section-label">What the Product Enables</span>
-        <div class="cs-artifacts-grid">
-          <div class="cs-artifact-card reveal">
-            <h3>Cross-chain swaps</h3>
-            <p>Users can swap across Solana, Ethereum, and BSC with route transparency and trusted confirmations.</p>
+        <h2>Three workflows made trustworthy</h2>
+
+        <div class="at-workflow-strips reveal">
+          <div class="at-workflow-strip">
+            <div class="at-workflow-label">
+              <div class="at-workflow-tag">Swap + Bridge</div>
+              <div class="at-workflow-name">Cross-chain swaps</div>
+            </div>
+            <div class="at-workflow-desc">Users swap across Solana, Ethereum, and BSC with route transparency and trusted confirmations. Step-based progress eliminates the fear of lost transactions during the 30–90 second cross-chain window.</div>
           </div>
-          <div class="cs-artifact-card reveal">
-            <h3>Bridge flows</h3>
-            <p>Clear bridge paths and wallet context reduce the risk of chain mismatches and unknown errors.</p>
+          <div class="at-workflow-strip">
+            <div class="at-workflow-label">
+              <div class="at-workflow-tag">Bridge</div>
+              <div class="at-workflow-name">Bridge flows</div>
+            </div>
+            <div class="at-workflow-desc">Clear bridge paths and upfront wallet context reduce the risk of chain mismatches and unknown errors. The dual-wallet display removes the most common mid-flow abandonment point in cross-chain UX.</div>
           </div>
-          <div class="cs-artifact-card reveal">
-            <h3>Liquidity and staking</h3>
-            <p>Providers can manage pools and stake ATS tokens with concise yield and reward information.</p>
+          <div class="at-workflow-strip">
+            <div class="at-workflow-label">
+              <div class="at-workflow-tag">Pools + Staking</div>
+              <div class="at-workflow-name">Liquidity and staking</div>
+            </div>
+            <div class="at-workflow-desc">Providers manage pools and stake ATS tokens with concise yield and reward information. The simplified view removes technical noise and surfaces only the numbers that drive provider decisions.</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Product Learnings ───────────────────────────────────────────────── -->
     <section id="reflection">
       <div class="shell">
-        <span class="cs-section-label">Reflection</span>
-        <div class="cs-final-reflection reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
-          <div>
-            <h4>What worked</h4>
-            <p>Designing a system-first product enabled consistent routing, wallet connectivity, and risk communication across the entire DEX experience.</p>
+        <span class="cs-section-label">Product Learnings</span>
+        <h2>What this project taught about designing for DeFi</h2>
+
+        <div class="at-learnings reveal">
+          <div class="at-learning">
+            <div class="at-learning-num">01</div>
+            <div class="at-learning-content">
+              <div class="at-learning-tag at-learning-tag--worked">What worked</div>
+              <div class="at-learning-title">System-first design compresses consistency cost to zero</div>
+              <div class="at-learning-body">Designing the component library before the screens meant consistency was structural, not a review step. Routing panels, wallet selectors, and risk banners all followed the same component logic from day one. That foundation is what made the full DEX experience feel coherent across six distinct product surfaces.</div>
+            </div>
           </div>
-          <div>
-            <h4>Constraints</h4>
-            <p>The cross-chain nature required balancing expert detail with a simpler path for less experienced DeFi users.</p>
+          <div class="at-learning">
+            <div class="at-learning-num">02</div>
+            <div class="at-learning-content">
+              <div class="at-learning-tag at-learning-tag--tension">Productive tension</div>
+              <div class="at-learning-title">The expert-novice split is a real design constraint</div>
+              <div class="at-learning-body">Designing for a cross-chain aggregator means navigating two audiences with opposite needs on the same screen. Traders need the route. New users need the result. The solution was information that layers — visible to experts, ignorable by newcomers — rather than two separate UIs. That approach held, but it requires constant calibration of what's shown by default.</div>
+            </div>
           </div>
-          <div>
-            <h4>Next iteration</h4>
-            <p>I would validate the bridge flow with real users and evolve the dashboard to surface actionable portfolio insights.</p>
+          <div class="at-learning">
+            <div class="at-learning-num">03</div>
+            <div class="at-learning-content">
+              <div class="at-learning-tag at-learning-tag--next">Next iteration</div>
+              <div class="at-learning-title">The bridge flow deserves user validation before scaling</div>
+              <div class="at-learning-body">The dual-wallet bridge design solves a known drop-off problem — but it was built on expert assumptions, not observed behaviour. The next iteration would validate that flow with real users and use the dashboard to surface actionable portfolio insights that go beyond balance and reward status.</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── Impact & Outcomes ─────────────────────────────────────────────── -->
     <section id="outcomes">
       <div class="shell">
         <span class="cs-section-label">Impact & Outcomes</span>
-        <div class="cs-glance-grid reveal">
-          <div class="cs-glance-card reveal">
-            <div class="cs-glance-label">Product shipped</div>
-            <div class="cs-glance-value">Launched the initial DEX experience ahead of the funding milestone.</div>
+        <div class="cs-impact-grid reveal">
+          <div class="cs-impact-card reveal">
+            <h3>Product shipped</h3>
+            <p>Launched the initial DEX experience ahead of the funding milestone.</p>
           </div>
-          <div class="cs-glance-card reveal">
-            <div class="cs-glance-label">Design confidence</div>
-            <div class="cs-glance-value">Created a trusted cross-chain flow model for traders and liquidity providers.</div>
+          <div class="cs-impact-card reveal">
+            <h3>$6M raised</h3>
+            <p>The design supported the product's raise from Jump Capital and Huobi Ventures.</p>
           </div>
-          <div class="cs-glance-card reveal">
-            <div class="cs-glance-label">System foundation</div>
-            <div class="cs-glance-value">Established reusable UI patterns across swaps, bridges, staking, and dashboard screens.</div>
+          <div class="cs-impact-card reveal">
+            <h3>Design confidence</h3>
+            <p>Created a trusted cross-chain flow model for traders and liquidity providers.</p>
           </div>
-          <div class="cs-glance-card reveal">
-            <div class="cs-glance-label">Launch readiness</div>
-            <div class="cs-glance-value">Delivered a polished interface aligned with the client’s go-to-market launch plan.</div>
+          <div class="cs-impact-card reveal">
+            <h3>System foundation</h3>
+            <p>Established reusable UI patterns across swaps, bridges, staking, and dashboard screens.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── CTA ───────────────────────────────────────────────────────────── -->
     <section class="cs-cta">
       <div class="shell">
         <h2>Interested in product design for complex financial systems?</h2>
         <div class="cs-cta-buttons">
-             <a class="button primary" href="index.html#contact">Discuss your Challenge</a>
+          <a class="button primary" href="index.html#contact">Discuss your Challenge</a>
           <a class="button secondary" href="index.html">Back to Portfolio</a>
-         
         </div>
       </div>
     </section>
@@ -394,7 +594,7 @@
       var reveals = document.querySelectorAll('.reveal');
       reveals.forEach(function (item) {
         item.style.opacity = '1';
-        item.style.transform = 'none';
+        item.style.transform = '';
       });
 
       var backButton = document.getElementById('backButton');

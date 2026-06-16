@@ -151,12 +151,12 @@
           <div class="cs-overview-card reveal">
             <h3>The Situation</h3>
             <p>APIMatic shipped v1 with functional features but broken flows that caused enterprise clients to lose developer audiences. The brief: find what is broken, fix it, and keep at-risk clients.</p>
-            <div style="margin-top:8px; padding:10px; border-radius:12px; background: rgba(99,228,255,0.03);">Sole designer hired to identify friction using Mixpanel and Clarity.</div>
+            <div class="cs-note cs-note--cyan">Sole designer hired to identify friction using Mixpanel and Clarity.</div>
           </div>
           <div class="cs-overview-card reveal">
             <h3>Why It Mattered</h3>
             <p>Developer abandonment cascades: failed integrations → unhappy enterprise clients → churn. Fixing onboarding and Project Titan configuration directly preserved client value.</p>
-            <div style="margin-top:8px; padding:10px; border-radius:12px; background: rgba(167,139,250,0.03);">Business risk: enterprise churn and lost reputation.</div>
+            <div class="cs-note cs-note--violet">Business risk: enterprise churn and lost reputation.</div>
           </div>
         </div>
       </div>
@@ -188,7 +188,7 @@
         <span class="cs-section-label">Understanding The Ecosystem</span>
         <h2>How users relate across the product</h2>
         <div class="cs-ia-diagram reveal">
-          <div class="cs-ia-tree" style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+          <div class="cs-ia-tree cs-ia-tree--vertical">
             <div class="cs-ia-item">APIMatic Evaluator</div>
             <div class="cs-ia-arrow">↓</div>
             <div class="cs-ia-item">API Provider (Portal Administrator)</div>
@@ -220,7 +220,7 @@
           </div>
         </div>
 
-        <div class="cs-showcase-container reveal" style="display:grid;grid-template-columns:1fr;gap:0;height:420px;margin-top:18px;">
+        <div class="cs-showcase-container reveal">
           <div class="cs-image-carousel">
             <div class="cs-carousel-track" id="carouselTrack">
               <div class="cs-carousel-slide"><img src="assets/img/artwork/research/1.png" alt="Mixpanel Funnel" /></div>
@@ -283,21 +283,21 @@
         <div class="cs-screen-showcase reveal">
           <div class="cs-placeholder"><img src="assets/img/signup-drop-off.jpg" alt="Onboarding Friction" /></div>
           <div>
-            <h3 style="margin-top:0;margin-bottom:12px;">Onboarding Drop-Off</h3>
+            <h3>Onboarding Drop-Off</h3>
             <p>Users were abandoning onboarding before experiencing the value of the platform. The process prioritized data collection over product activation, creating friction early in the journey.</p>
           </div>
         </div>
         <div class="cs-screen-showcase reveal">
           <div class="cs-placeholder"><img src="assets/img/artwork/research/rage.png" alt="Rage Click Analysis" /></div>
           <div>
-            <h3 style="margin-top:0;margin-bottom:12px;">Session Recording Analysis</h3>
+            <h3>Session Recording Analysis</h3>
             <p>Microsoft Clarity recordings revealed repeated confusion around portal configuration and authentication setup. Users frequently retried actions without understanding what was required.</p>
           </div>
         </div>
         <div class="cs-screen-showcase reveal">
           <div class="cs-placeholder"><img src="assets/img/fail-pattern.png" alt="Explorer Failure Patterns" /></div>
           <div>
-            <h3 style="margin-top:0;margin-bottom:12px;">Explorer Failure Patterns</h3>
+            <h3>Explorer Failure Patterns</h3>
             <p>Error states provided little context, making it difficult for users to distinguish API issues from configuration mistakes. This often resulted in failed testing and abandonment.</p>
           </div>
         </div>
@@ -308,7 +308,7 @@
     <section id="principles">
       <div class="shell">
         <span class="cs-section-label">Design Principles</span>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;">
+        <div class="cs-overview-grid">
           <div class="cs-overview-card reveal">
             <h3>Show Output Before Input</h3>
             <p>Generated portal appears immediately after 3-field spec upload. Users see value before committing to full configuration, increasing onboarding completion.</p>
@@ -338,7 +338,7 @@
       <div class="shell">
         <span class="cs-section-label">Solution 01</span>
         <h2>Project Titan Redesign</h2>
-        <div class="cs-solution-panel cs-solution-01 reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;">
+        <div class="cs-solution-panel cs-solution-01 reveal">
           <div class="cs-solution-media">
             <img src="assets/img/explorer.png" style="    object-fit: fill;" alt="Project Titan Redesign" />
           </div>
@@ -395,8 +395,8 @@
       <div class="shell">
         <span class="cs-section-label">Solution 03</span>
         <h2>Interactive Explorer Fixes</h2>
-        <div class="cs-solution-panel reveal" style="display:grid;grid-template-columns:repeat(2,1fr);gap:38px;align-items:center;">
-          <div class="cs-solution-media" style="min-height: auto;">
+        <div class="cs-solution-panel reveal">
+          <div class="cs-solution-media">
             <div class="cs-image-carousel" style="height:320px;">
               <div class="cs-carousel-track">
                 <div class="cs-carousel-slide"><img src="assets/img/pub1.png" alt="Explorer Fixes screen 1"></div>
@@ -424,8 +424,8 @@
       <div class="shell">
         <span class="cs-section-label">Design System Foundation</span>
         <h2>Why building a system first mattered</h2>
-<p>Before redesigning onboarding and workflows, I established a scalable design system that unified components, interaction patterns, and visual language across the platform. This foundation enabled faster iteration, consistent user experiences, and more efficient collaboration with engineering.</p><br>
-        <div class="cs-showcase-container reveal" style="display:grid;grid-template-columns:1fr;gap:18px;min-height: 0px;">
+        <p class="cs-section-intro">Before redesigning onboarding and workflows, I established a scalable design system that unified components, interaction patterns, and visual language across the platform. This foundation enabled faster iteration, consistent user experiences, and more efficient collaboration with engineering.</p>
+        <div class="cs-showcase-container reveal">
           <div class="cs-showcase-item cs-design-system-card">
             <img src="assets/img/apimatic-design-system.jpg" alt="Design System">
           </div>
@@ -688,3 +688,4 @@
   <script src="zoom.js" defer></script>
 </body>
 </html>
+                                                                                                                                                                       

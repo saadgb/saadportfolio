@@ -108,14 +108,14 @@
               <div class="cs-info-value">Active Deployment</div>
             </div>
           </div>
-          <div style="margin-top:28px; padding:16px; border-radius:12px; background:rgba(99,228,255,0.03); border:1px solid rgba(99,228,255,0.1);">
-            <p style="font-size:0.85rem; color:var(--muted); margin:0;"><strong>On this page:</strong> <a href="#project-overview" style="color:inherit; text-decoration:underline;">Overview</a> • <a href="#discovery-constraints" style="color:inherit; text-decoration:underline;">Discovery & Constraints</a> • <a href="#challenge" style="color:inherit; text-decoration:underline;">Challenge</a> • <a href="#users" style="color:inherit; text-decoration:underline;">Users</a> • <a href="#problems" style="color:inherit; text-decoration:underline;">Problems</a> • <a href="#principles" style="color:inherit; text-decoration:underline;">Principles</a> • <a href="#ia" style="color:inherit; text-decoration:underline;">IA</a> • <a href="#design-system" style="color:inherit; text-decoration:underline;">Design System</a> • <a href="#outcomes" style="color:inherit; text-decoration:underline;">Impact & Outcomes</a></p>
+          <div class="cs-hero-toc">
+            <p><strong>On this page:</strong> <a href="#project-overview">Overview</a> • <a href="#discovery-constraints">Discovery & Constraints</a> • <a href="#challenge">Challenge</a> • <a href="#users">Users</a> • <a href="#problems">Problems</a> • <a href="#principles">Principles</a> • <a href="#ia">IA</a> • <a href="#design-system">Design System</a> • <a href="#outcomes">Impact & Outcomes</a></p>
           </div>
         </div>
         <div class="cs-hero-image reveal">
           <span class="cs-placeholder"> <video autoplay muted loop playsinline height="auto" width="100%">
   <source src="assets/img/spectra-hero.webm" type="video/webm" autoplay="true" />
-            </div></span>
+            </video></span>
         </div>
       </div>
     </section>
@@ -391,42 +391,67 @@
       <div class="shell">
         <span class="cs-section-label">Design Principles</span>
         <h2>Five core operational principles</h2>
-        <div class="cs-principles-grid">
-          <div class="cs-principle reveal">
-            <span class="cs-principle-number">1</span>
-            <div>
+        <div class="cs-principles-timeline">
+
+          <div class="cs-pt-item reveal">
+            <div class="cs-pt-spine">
+              <div class="cs-pt-node">01</div>
+              <div class="cs-pt-line"></div>
+            </div>
+            <div class="cs-pt-card">
+              <span class="cs-pt-tag">Hierarchy</span>
               <h3>Status First, Detail Second</h3>
               <p>Every screen opens with critical status information visible before interaction. An operator with 10 seconds gets essential context.</p>
             </div>
           </div>
-          <div class="cs-principle reveal">
-            <span class="cs-principle-number">2</span>
-            <div>
+
+          <div class="cs-pt-item reveal">
+            <div class="cs-pt-spine">
+              <div class="cs-pt-node">02</div>
+              <div class="cs-pt-line"></div>
+            </div>
+            <div class="cs-pt-card">
+              <span class="cs-pt-tag">Persistence</span>
               <h3>The Right Panel Never Leaves</h3>
               <p>Persistent right column showing live alerts and operational picture on every screen. The operator's peripheral vision is always active.</p>
             </div>
           </div>
-          <div class="cs-principle reveal">
-            <span class="cs-principle-number">3</span>
-            <div>
+
+          <div class="cs-pt-item reveal">
+            <div class="cs-pt-spine">
+              <div class="cs-pt-node">03</div>
+              <div class="cs-pt-line"></div>
+            </div>
+            <div class="cs-pt-card">
+              <span class="cs-pt-tag">Semantics</span>
               <h3>Color Means Operational Status</h3>
               <p>Red = critical threat. Amber = high/suspect. Cyan = monitoring. Green = safe. This semantic system is fixed across the entire platform.</p>
             </div>
           </div>
-          <div class="cs-principle reveal">
-            <span class="cs-principle-number">4</span>
-            <div>
+
+          <div class="cs-pt-item reveal">
+            <div class="cs-pt-spine">
+              <div class="cs-pt-node">04</div>
+              <div class="cs-pt-line"></div>
+            </div>
+            <div class="cs-pt-card">
+              <span class="cs-pt-tag">Actionability</span>
               <h3>Every Data Point Has Action</h3>
               <p>Nothing is pure observation. Every threat has Investigate and Acknowledge. Every intercept has Analyze and Record. The interface is a decision instrument.</p>
             </div>
           </div>
-          <div class="cs-principle reveal">
-            <span class="cs-principle-number">5</span>
-            <div>
+
+          <div class="cs-pt-item reveal">
+            <div class="cs-pt-spine">
+              <div class="cs-pt-node">05</div>
+            </div>
+            <div class="cs-pt-card">
+              <span class="cs-pt-tag">Integration</span>
               <h3>AI as an Instrument</h3>
               <p>The AI terminal feels like a command interface integrated into operations—not a chatbot. Structured responses, classification labels, authority.</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -439,7 +464,7 @@
         <div class="cs-ia-diagram reveal">
           <div class="cs-ia-root">
             <div class="cs-ia-root-title">SPECTRA</div>
-            <p style="color: var(--muted); margin: 0;">Single unified intelligence operations platform</p>
+            <p>Single unified intelligence operations platform</p>
           </div>
           <div class="cs-ia-tree">
             <div class="cs-ia-branch">
@@ -929,7 +954,7 @@
             <div class="cs-timeline-label">Design System</div>
           </div>
         </div>
-        <p style="color: var(--muted); font-size: 15px; line-height: 1.7;">
+        <p class="cs-section-intro">
           Requirements arrived as operational briefs written in military domain language. Translated into design problems and presented back to stakeholders as annotated wireframes before moving to high fidelity. Client stakeholders validated structure before visual decisions were locked. Maintained living Figma component library for development handoff with exact specifications for spacing, color tokens, interaction states, and responsive breakpoints.
         </p>
       </div>
@@ -1096,7 +1121,7 @@
 
       revealItems.forEach(function (item) {
         item.style.opacity = "1";
-        item.style.transform = "none";
+        item.style.transform = "";
       });
 
       // Back button: prefer history.back(), fallback to index with contact hash

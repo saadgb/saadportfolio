@@ -9,27 +9,21 @@
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B8QQ3V6QJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-7B8QQ3V6QJ');
   </script>
   <script type="text/javascript">
-    (function(c, l, a, r, i, t, y) {
-      c[a] = c[a] || function() {
-        (c[a].q = c[a].q || []).push(arguments)
-      };
-      t = l.createElement(r);
-      t.async = 1;
-      t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "k7sxjmd1hl");
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;
+      t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","k7sxjmd1hl");
   </script>
 </head>
 <body id="top">
@@ -45,8 +39,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370" aria-hidden="true" focusable="false">
             <defs>
               <linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                <stop offset="0"/>
-                <stop offset="1" stop-color="#545454"/>
+                <stop offset="0"/><stop offset="1" stop-color="#545454"/>
               </linearGradient>
               <clipPath id="b"><rect width="370" height="370" transform="translate(-0.316 -0.316)" fill="url(#a)"/></clipPath>
               <linearGradient id="c" x1="1" x2="0.392" y2="1" gradientUnits="objectBoundingBox">
@@ -78,6 +71,8 @@
   </header>
 
   <main id="main">
+
+    <!-- ── HERO ── -->
     <section class="cs-hero meridian-hero">
       <div class="shell">
         <div class="cs-hero-content reveal">
@@ -95,18 +90,17 @@
           <div class="cs-hero-toc reveal">
             <p><strong>On this page:</strong> <a href="#project-overview">Overview</a> • <a href="#discovery-constraints">Discovery & Constraints</a> • <a href="#opening">Opening</a> • <a href="#brief">Brief</a> • <a href="#design-thinking">Design Thinking</a> • <a href="#users">Users</a> • <a href="#journeys">Journeys</a> • <a href="#problems">Problems</a> • <a href="#ia">IA</a> • <a href="#screens">Screens</a> • <a href="#design-system">Design System</a> • <a href="#outcomes">Impact & Outcomes</a></p>
           </div>
+        </div>
 
         <div class="cs-hero-image reveal">
           <video class="cs-hero-video" autoplay muted loop playsinline>
             <source src="assets/img/meridian-hero.webm" type="video/webm">
-           
-    
-           
           </video>
         </div>
       </div>
     </section>
 
+    <!-- ── PROJECT SNAPSHOT ── -->
     <section id="project-overview">
       <div class="shell">
         <span class="cs-section-label">Project Snapshot</span>
@@ -119,175 +113,310 @@
       </div>
     </section>
 
+    <!-- ── OPENING ── -->
     <section id="opening">
       <div class="shell">
         <span class="cs-section-label">Opening</span>
         <h2>One platform, multiple institutional realities</h2>
-        <p class="cs-hero-copy reveal">Most enterprise platforms are built for one type of user, one workflow, and one organizational context. MERIDIAN needed to feel purpose-built for civil intelligence, military command, law enforcement, and cyber investigation without fragmenting into four separate products.</p>
+        <p class="reveal">Most enterprise platforms are built for one type of user, one workflow, and one organizational context. MERIDIAN needed to feel purpose-built for civil intelligence, military command, law enforcement, and cyber investigation without fragmenting into four separate products.</p>
       </div>
     </section>
 
+    <!-- ── DISCOVERY & CONSTRAINTS — Evidence Chain ── -->
     <section id="discovery-constraints">
       <div class="shell">
         <span class="cs-section-label">Discovery & Constraints</span>
-        <div class="cs-overview-grid">
-          <div class="cs-overview-card reveal">
-            <h3>Research approach</h3>
-            <p>Formal generative research was not part of this fast-moving delivery. The team moved directly from program alignment into design, using existing operational context rather than fresh interview cycles.</p>
+
+        <div class="m-evidence-chain reveal">
+
+          <div class="m-evidence-node">
+            <div class="m-evidence-tag">Research approach</div>
+            <div class="m-evidence-title">Constrained discovery</div>
+            <p class="m-evidence-body">Formal generative research was not part of this fast-moving delivery. The team moved directly from program alignment into design, using existing operational context rather than fresh interview cycles.<br><br></p>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>Alternative inputs</h3>
-            <p>Discovery relied on stakeholder alignment sessions, reviews of legacy system documentation, operator procedures, and assessments of current workflows. Expert consultation and internal mission context filled the gap left by a formal research phase.</p>
+
+          <div class="m-evidence-arrow">→</div>
+
+          <div class="m-evidence-node">
+            <div class="m-evidence-tag">Alternative inputs</div>
+            <div class="m-evidence-title">Operational sources</div>
+            <p class="m-evidence-body">Discovery relied on stakeholder alignment sessions, reviews of legacy system documentation, operator procedures, and assessments of current workflows. Expert consultation and internal mission context filled the gap left by a formal research phase.</p>
           </div>
-          <div class="cs-overview-card reveal">
-            <h3>Assumptions & validation</h3>
-            <p>We assumed the product needed a clear distinction between command, investigation, and compliance views. Those assumptions were tested through iterative sketches and stakeholder review rounds as the design matured.</p>
+
+          <div class="m-evidence-arrow">→</div>
+
+          <div class="m-evidence-node">
+            <div class="m-evidence-tag">Assumptions & validation</div>
+            <div class="m-evidence-title">Design insight</div>
+            <p class="m-evidence-body">We assumed the product needed a clear distinction between command, investigation, and compliance views. Those assumptions were tested through iterative sketches and stakeholder review rounds as the design matured.</p>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── THE BRIEF — Mission Brief ── -->
     <section id="brief">
       <div class="shell">
         <span class="cs-section-label">The Brief</span>
-        <p class="reveal">The client required a single unified intelligence platform replacing a fragmented ecosystem of case management systems, geospatial tools, analyst workstations, and reporting applications. The platform had to preserve procedural and legal differences between deployments while enabling shared technical infrastructure.</p>
+        <div class="m-mission-brief reveal">
+          <p>The client required a single unified intelligence platform replacing a fragmented ecosystem of case management systems, geospatial tools, analyst workstations, and reporting applications. The platform had to preserve procedural and legal differences between deployments while enabling shared technical infrastructure.</p>
+        </div>
       </div>
     </section>
 
+    <!-- ── DESIGN THINKING — Investigation Journey ── -->
     <section id="design-thinking">
       <div class="shell">
         <span class="cs-section-label">Design Thinking</span>
-        <div class="cs-ds-grid reveal">
-          <div class="cs-ds-item">
-            <h3>Research</h3>
-            <p>User and organizational research established divergent workflows, legal constraints, and decision authorities across four personas—this framed persona-driven IA and feature priorities.</p>
-          </div>
-          <div class="cs-ds-item">
-            <h3>Synthesis</h3>
-            <p>Affinity mapping and task analysis surfaced shared patterns and unique needs, guiding which modules would be persona-conditional versus universally available.</p>
-          </div>
-          <div class="cs-ds-item">
-            <h3>Ideation</h3>
-            <p>Sketches and low-fi flows explored persona-first navigation, login persona selector concepts, and the Reality Canvas mental model for persistent investigation.</p>
-          </div>
-          <div class="cs-ds-item">
-            <h3>Prototyping</h3>
-            <p>Interactive prototypes validated map-first interactions, Agent Theater layouts, and Why-Trace layered disclosure for AI explainability.</p>
-          </div>
-          <div class="cs-ds-item">
-            <h3>Testing</h3>
-            <p>Iterative usability tests refined persona flows, clarified compliance visibility, and tuned density for long analytic sessions.</p>
-          </div>
-          <div class="cs-ds-item">
-            <h3>Delivery</h3>
-            <p>Component handoffs and detailed interaction specs supported engineering implementation of persona-conditional rendering and complex canvas interactions.</p>
+
+        <div class="m-inv-journey reveal">
+          <div class="m-inv-track">
+
+            <div class="m-inv-step">
+              <div class="m-inv-step-dot">01</div>
+              <div class="m-inv-step-title">Research</div>
+              <p class="m-inv-step-body">User and organizational research established divergent workflows, legal constraints, and decision authorities across four personas — this framed persona-driven IA and feature priorities.</p>
+            </div>
+
+            <div class="m-inv-step">
+              <div class="m-inv-step-dot">02</div>
+              <div class="m-inv-step-title">Synthesis</div>
+              <p class="m-inv-step-body">Affinity mapping and task analysis surfaced shared patterns and unique needs, guiding which modules would be persona-conditional versus universally available.</p>
+            </div>
+
+            <div class="m-inv-step">
+              <div class="m-inv-step-dot">03</div>
+              <div class="m-inv-step-title">Ideation</div>
+              <p class="m-inv-step-body">Sketches and low-fi flows explored persona-first navigation, login persona selector concepts, and the Reality Canvas mental model for persistent investigation.</p>
+            </div>
+
+            <div class="m-inv-step">
+              <div class="m-inv-step-dot">04</div>
+              <div class="m-inv-step-title">Prototyping</div>
+              <p class="m-inv-step-body">Interactive prototypes validated map-first interactions, Agent Theater layouts, and Why-Trace layered disclosure for AI explainability.</p>
+            </div>
+
+            <div class="m-inv-step">
+              <div class="m-inv-step-dot">05</div>
+              <div class="m-inv-step-title">Testing</div>
+              <p class="m-inv-step-body">Iterative usability tests refined persona flows, clarified compliance visibility, and tuned density for long analytic sessions.</p>
+            </div>
+
+            <div class="m-inv-step">
+              <div class="m-inv-step-dot">06</div>
+              <div class="m-inv-step-title">Delivery</div>
+              <p class="m-inv-step-body">Component handoffs and detailed interaction specs supported engineering implementation of persona-conditional rendering and complex canvas interactions.</p>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── USERS — Intelligence Relationship Network ── -->
     <section id="users">
       <div class="shell">
         <span class="cs-section-label">Understanding the Users</span>
-        <div class="cs-ds-grid reveal">
-          <div class="cs-ds-item">
-            <h3>Director General / J2 Chief</h3>
-            <p>Requires synthesized national situational awareness, decision queue visibility, and concise authorization flow. Needs answers in under a few minutes without digging into operational detail.</p>
+
+        <div class="m-intel-network reveal">
+
+          <div class="m-network-node m-network-node-top">
+            <div class="m-network-role">Director General / J2 Chief</div>
+            <div class="m-network-title">Strategic command</div>
+            <p class="m-network-desc">Requires synthesized national situational awareness, decision queue visibility, and concise authorization flow. Needs answers in under a few minutes without digging into operational detail.</p>
           </div>
-          <div class="cs-ds-item">
-            <h3>Senior Intelligence Analyst</h3>
-            <p>Core power user who builds cases, runs AI agents, constructs patterns, and authors briefs. Needs a persistent investigative workspace that supports long sessions.</p>
+
+          <div class="m-network-node m-network-node-left">
+            <div class="m-network-role">System Administrator</div>
+            <div class="m-network-title">Governance & access</div>
+            <p class="m-network-desc">Manages users, approvals, and audit logs. Needs governance tools that prioritize operational hygiene and prevent compliance gaps.</p>
           </div>
-          <div class="cs-ds-item">
-            <h3>Intelligence Officer</h3>
-            <p>Handles assigned cases, validates matches, and escalates findings. Requires clear clearance boundaries and inline compliance visibility.</p>
+
+          <div class="m-network-center">
+            <div class="m-network-center-label">MERIDIAN</div>
+            <div class="m-network-center-sub">Collection → Correlation → Investigation → Insight</div>
           </div>
-          <div class="cs-ds-item">
-            <h3>System Administrator</h3>
-            <p>Manages users, approvals, and audit logs. Needs governance tools that prioritize operational hygiene and prevent compliance gaps.</p>
+
+          <div class="m-network-node m-network-node-right">
+            <div class="m-network-role">Senior Intelligence Analyst</div>
+            <div class="m-network-title">Investigation & analysis</div>
+            <p class="m-network-desc">Core power user who builds cases, runs AI agents, constructs patterns, and authors briefs. Needs a persistent investigative workspace that supports long sessions.</p>
           </div>
+
+          <div class="m-network-node m-network-node-bottom">
+            <div class="m-network-role">Intelligence Officer</div>
+            <div class="m-network-title">Case handling</div>
+            <p class="m-network-desc">Handles assigned cases, validates matches, and escalates findings. Requires clear clearance boundaries and inline compliance visibility.</p>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── USER JOURNEYS — Investigation Sequences ── -->
     <section id="journeys">
       <div class="shell">
         <span class="cs-section-label">User Journeys</span>
-        <div class="cs-timeline reveal">
-          <div class="cs-timeline-item"><div class="cs-timeline-number">DG</div><div class="cs-timeline-label"><strong>Morning threat assessment</strong> — Strategic Overview, authorize decisions, review Agent Theater summary. Total time: under 4 minutes.</div></div>
-          <div class="cs-timeline-item"><div class="cs-timeline-number">Analyst</div><div class="cs-timeline-label"><strong>Building a case</strong> — Reality Canvas, Pattern Lab, Graph view, Why-Trace and Brief Composer — end-to-end without external tools.</div></div>
-          <div class="cs-timeline-item"><div class="cs-timeline-number">IO</div><div class="cs-timeline-label"><strong>Processing assigned cases</strong> — Alerts, Case Library, verify agent matches, update entities, maintain RBAC compliance.</div></div>
+
+        <div class="m-inv-sequence reveal">
+
+          <div class="m-seq-item">
+            <div class="m-seq-badge">DG</div>
+            <div class="m-seq-body">
+              <div class="m-seq-role">Director General</div>
+              <div class="m-seq-objective"><strong>Morning threat assessment</strong> — Strategic Overview, authorize decisions, review Agent Theater summary. Total time: under 4 minutes.</div>
+              <div class="m-seq-flow">
+                <span class="m-seq-flow-step">Strategic Overview</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Authorize decisions</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Agent Theater summary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-seq-item">
+            <div class="m-seq-badge">SIA</div>
+            <div class="m-seq-body">
+              <div class="m-seq-role">Senior Intelligence Analyst</div>
+              <div class="m-seq-objective"><strong>Building a case</strong> — Reality Canvas, Pattern Lab, Graph view, Why-Trace and Brief Composer — end-to-end without external tools.</div>
+              <div class="m-seq-flow">
+                <span class="m-seq-flow-step">Reality Canvas</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Pattern Lab</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Graph view</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Why-Trace</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Brief Composer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-seq-item">
+            <div class="m-seq-badge">IO</div>
+            <div class="m-seq-body">
+              <div class="m-seq-role">Intelligence Officer</div>
+              <div class="m-seq-objective"><strong>Processing assigned cases</strong> — Alerts, Case Library, verify agent matches, update entities, maintain RBAC compliance.</div>
+              <div class="m-seq-flow">
+                <span class="m-seq-flow-step">Alerts</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Case Library</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Verify matches</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">Update entities</span>
+                <span class="m-seq-flow-arrow">→</span>
+                <span class="m-seq-flow-step">RBAC compliance</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── DESIGN PROBLEMS — Problem Case Files ── -->
     <section id="problems">
       <div class="shell">
-        <span class="cs-section-label">Defining the Real Design Problems</span><br>
-        <div class="cs-problem-flow reveal">
-          <div class="cs-problem-step">
-            <div class="cs-problem-step-number">01</div>
-            <div class="cs-problem-step-body">
-              <h3>One platform, four institutional cultures</h3>
-              <p>Navigation, terminology, and permissions must adapt per persona without fragmenting the product.</p>
+        <span class="cs-section-label">Defining the Real Design Problems</span>
+
+        <div class="m-problem-files reveal">
+
+          <div class="m-problem-file">
+            <div class="m-problem-num">01</div>
+            <div class="m-problem-body">
+              <div class="m-problem-title">One platform, four institutional cultures</div>
+              <p class="m-problem-desc">Navigation, terminology, and permissions must adapt per persona without fragmenting the product.</p>
             </div>
           </div>
-          <div class="cs-problem-step">
-            <div class="cs-problem-step-number">02</div>
-            <div class="cs-problem-step-body">
-              <h3>AI explainability as a legal requirement</h3>
-              <p>Every AI claim must surface a traceable reasoning chain with source citations and compliance context.</p>
+
+          <div class="m-problem-file">
+            <div class="m-problem-num">02</div>
+            <div class="m-problem-body">
+              <div class="m-problem-title">AI explainability as a legal requirement</div>
+              <p class="m-problem-desc">Every AI claim must surface a traceable reasoning chain with source citations and compliance context.</p>
             </div>
           </div>
-          <div class="cs-problem-step">
-            <div class="cs-problem-step-number">03</div>
-            <div class="cs-problem-step-body">
-              <h3>Persistent investigative workspace</h3>
-              <p>Analysts need multi-session continuity: live agents, persistent context, and non-destructive exploration tools.</p>
+
+          <div class="m-problem-file">
+            <div class="m-problem-num">03</div>
+            <div class="m-problem-body">
+              <div class="m-problem-title">Persistent investigative workspace</div>
+              <p class="m-problem-desc">Analysts need multi-session continuity: live agents, persistent context, and non-destructive exploration tools.</p>
             </div>
           </div>
-          <div class="cs-problem-step">
-            <div class="cs-problem-step-number">04</div>
-            <div class="cs-problem-step-body">
-              <h3>Compliance is inline, not an afterthought</h3>
-              <p>Legal and clearance indicators must be visible at the point of action, not appended as modal checks.</p>
+
+          <div class="m-problem-file">
+            <div class="m-problem-num">04</div>
+            <div class="m-problem-body">
+              <div class="m-problem-title">Compliance is inline, not an afterthought</div>
+              <p class="m-problem-desc">Legal and clearance indicators must be visible at the point of action, not appended as modal checks.</p>
             </div>
           </div>
-          <div class="cs-problem-step">
-            <div class="cs-problem-step-number">05</div>
-            <div class="cs-problem-step-body">
-              <h3>Pattern building for domain experts</h3>
-              <p>Visual pattern tools must translate to plain language and run at scale without requiring data science skills.</p>
+
+          <div class="m-problem-file">
+            <div class="m-problem-num">05</div>
+            <div class="m-problem-body">
+              <div class="m-problem-title">Pattern building for domain experts</div>
+              <p class="m-problem-desc">Visual pattern tools must translate to plain language and run at scale without requiring data science skills.</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── DESIGN PRINCIPLES — Analyst Playbook ── -->
     <section>
       <div class="shell">
         <span class="cs-section-label">Design Principles</span>
-        <div class="cs-impact-grid reveal">
-          <div class="cs-impact-card">
-            <h3>Role determines reality</h3>
-            <p>Persona-driven views make each role feel purpose-built while sharing underlying infrastructure.</p>
+
+        <div class="m-playbook reveal">
+          <div class="m-playbook-header">
+            <span class="m-playbook-header-label">Analyst Playbook</span>
+            <div class="m-playbook-header-divider"></div>
+            <span style="font-size:11px;color:var(--muted);letter-spacing:1px;">4 DIRECTIVES</span>
           </div>
-          <div class="cs-impact-card">
-            <h3>The AI works for the analyst</h3>
-            <p>AI outputs are transparent and require human gating for high-impact decisions.</p>
+
+          <div class="m-playbook-entry">
+            <div class="m-playbook-num">01</div>
+            <div class="m-playbook-content">
+              <div class="m-playbook-directive">Role determines reality</div>
+              <p class="m-playbook-rationale">Persona-driven views make each role feel purpose-built while sharing underlying infrastructure.</p>
+            </div>
           </div>
-          <div class="cs-impact-card">
-            <h3>Compliance is context</h3>
-            <p>Inline legal signals and clearance badges reduce accidental authorization errors.</p>
+
+          <div class="m-playbook-entry">
+            <div class="m-playbook-num">02</div>
+            <div class="m-playbook-content">
+              <div class="m-playbook-directive">The AI works for the analyst</div>
+              <p class="m-playbook-rationale">AI outputs are transparent and require human gating for high-impact decisions.</p>
+            </div>
           </div>
-          <div class="cs-impact-card">
-            <h3>Investigation has depth</h3>
-            <p>Persistent canvases, low visual-noise design, and session continuity support long investigations.</p>
+
+          <div class="m-playbook-entry">
+            <div class="m-playbook-num">03</div>
+            <div class="m-playbook-content">
+              <div class="m-playbook-directive">Compliance is context</div>
+              <p class="m-playbook-rationale">Inline legal signals and clearance badges reduce accidental authorization errors.</p>
+            </div>
+          </div>
+
+          <div class="m-playbook-entry">
+            <div class="m-playbook-num">04</div>
+            <div class="m-playbook-content">
+              <div class="m-playbook-directive">Investigation has depth</div>
+              <p class="m-playbook-rationale">Persistent canvases, low visual-noise design, and session continuity support long investigations.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ── INFORMATION ARCHITECTURE ── -->
     <section id="ia">
       <div class="shell">
         <span class="cs-section-label">Information Architecture</span>
@@ -328,18 +457,19 @@
                 <div class="cs-ia-item">Operational Metrics</div>
               </div>
             </div>
-          </div>
+          </div><br>
           <p class="reveal">These screens are the operational expression of the IA hierarchy above. They show how the four core zones — Command, Investigate, Operate, and Manage — translate into the product workflows users rely on.</p>
         </div>
       </div>
     </section>
 
-    <!-- OPERATIONAL SCREENS / KEY SHOWCASE -->
+    <!-- ── OPERATIONAL SCREENS ── -->
     <section id="screens" class="cs-showcase-section">
       <div class="shell">
         <span class="cs-section-label">Operational Screens</span>
         <h2>Key screens that define MERIDIAN</h2>
         <div class="cs-screens-container">
+
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
               <span class="cs-placeholder"><img src="assets/img/strategic-overview.jpg" alt="Strategic Overview"></span>
@@ -364,7 +494,7 @@
             </div>
           </div>
 
-          <div class="cs-screen-showcase  reveal">
+          <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
               <span class="cs-placeholder"><img src="assets/img/reality-canvas.jpg" alt="Reality Canvas"></span>
             </div>
@@ -412,7 +542,7 @@
             </div>
           </div>
 
-          <div class="cs-screen-showcase  reveal">
+          <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
               <span class="cs-placeholder"><img src="assets/img/agent.jpg" alt="Agent Theater"></span>
             </div>
@@ -435,10 +565,12 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── DESIGN SYSTEM ── -->
     <section id="design-system">
       <div class="shell">
         <span class="cs-section-label">Design System</span>
@@ -446,61 +578,49 @@
           <div class="cs-screen-content" style="width:100%;">
             <h3>Component System & Tokens</h3>
             <p>Dark base, persona accent tokens, clearance typographic treatments, confidence bars, and rating badges form the visual language across modules.</p>
-            <div class="cs-ds-preview" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:18px 18px;align-items:start">
+            <div class="cs-ds-preview" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:18px;align-items:start">
               <div style="display:flex;flex-direction:column;gap:12px;">
-                <div style="font-size:9px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Buttons</div>
+                <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Buttons</div>
                 <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
-                  <button style="padding:5px 12px;border-radius:8px;font-size:11px;font-weight:500;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:var(--text);cursor:pointer;">Default</button>
-                  <button style="padding:5px 12px;border-radius:8px;font-size:11px;font-weight:600;border:none;background:var(--blue);color:#fff;cursor:pointer;">Primary</button>
-                  <button style="padding:4px 10px;border-radius:8px;font-size:10px;font-weight:500;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:var(--text);cursor:pointer;">Small</button>
-                  <button style="padding:5px 12px;border-radius:8px;font-size:11px;font-weight:500;border:1px solid transparent;background:transparent;color:#94A3B8;cursor:pointer;">Ghost</button>
+                  <button style="padding:5px 12px;border-radius:8px;font-size:12px;font-weight:500;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;">Default</button>
+                  <button style="padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600;border:none;background:var(--blue);color:#fff;cursor:pointer;">Primary</button>
+                  <button style="padding:4px 10px;border-radius:8px;font-size:11px;font-weight:500;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;">Small</button>
+                  <button style="padding:5px 12px;border-radius:8px;font-size:12px;font-weight:500;border:1px solid rgba(255,255,255,.1);background:transparent;color:var(--muted);cursor:pointer;">Ghost</button>
                 </div>
               </div>
               <div style="display:flex;flex-direction:column;gap:12px;">
-                <div style="font-size:9px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Tags & Badges</div>
+                <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Tags & Badges</div>
                 <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:600;padding:3px 8px;border-radius:999px;background:rgba(79,142,247,.12);color:#93C5FD">Blue</span>
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:600;padding:3px 8px;border-radius:999px;background:rgba(168,85,247,.12);color:#C084FC">Purple</span>
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:600;padding:3px 8px;border-radius:999px;background:rgba(34,197,94,.12);color:#4ADE80">Green</span>
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:600;padding:3px 8px;border-radius:999px;background:rgba(245,158,11,.12);color:#FCD34D">Amber</span>
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:600;padding:3px 8px;border-radius:999px;background:rgba(239,68,68,.12);color:#FCA5A5">Red</span>
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:600;padding:3px 8px;border-radius:999px;background:rgba(34,211,238,.12);color:#67E8F9">Cyan</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(116,168,255,.12);color:var(--blue)">Blue</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(167,139,250,.12);color:var(--violet)">Violet</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(125,240,190,.12);color:var(--green)">Green</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(255,158,100,.12);color:var(--orange)">Orange</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(255,111,159,.12);color:var(--rose)">Rose</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(99,228,255,.12);color:var(--cyan)">Cyan</span>
                 </div>
                 <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:700;padding:3px 8px;border-radius:999px;background:rgba(245,158,11,.14);color:#F59E0B;border:1px solid rgba(245,158,11,.28)">Alert</span>
-                  <span style="display:inline-flex;align-items:center;font-size:9px;font-weight:700;padding:3px 8px;border-radius:999px;background:rgba(239,68,68,.15);color:#EF4444;border:1px solid rgba(239,68,68,.28)">Critical</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:rgba(255,158,100,.14);color:var(--orange);border:1px solid rgba(255,158,100,.28)">Alert</span>
+                  <span style="display:inline-flex;align-items:center;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:rgba(255,111,159,.14);color:var(--rose);border:1px solid rgba(255,111,159,.28)">Critical</span>
                 </div>
               </div>
               <div style="display:flex;flex-direction:column;gap:12px;">
-                <div style="font-size:9px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Color Tokens</div>
+                <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Color Tokens</div>
                 <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;">
-                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)"><div style="width:28px;height:28px;border-radius:6px;background:var(--blue);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:8px;color:var(--muted)">Blue</div></div>
-                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)"><div style="width:28px;height:28px;border-radius:6px;background:var(--brand);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:8px;color:var(--muted)">Brand</div></div>
-                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)"><div style="width:28px;height:28px;border-radius:6px;background:var(--cyan);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:8px;color:var(--muted)">Cyan</div></div>
-                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)"><div style="width:28px;height:28px;border-radius:6px;background:var(--green);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:8px;color:var(--muted)">Green</div></div>
-                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)"><div style="width:28px;height:28px;border-radius:6px;background:var(--amber);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:8px;color:var(--muted)">Amber</div></div>
-                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)"><div style="width:28px;height:28px;border-radius:6px;background:var(--red);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:8px;color:var(--muted)">Red</div></div>
+                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)"><div style="width:28px;height:28px;border-radius:6px;background:var(--blue);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:11px;color:var(--muted)">Blue</div></div>
+                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)"><div style="width:28px;height:28px;border-radius:6px;background:var(--violet);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:11px;color:var(--muted)">Violet</div></div>
+                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)"><div style="width:28px;height:28px;border-radius:6px;background:var(--cyan);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:11px;color:var(--muted)">Cyan</div></div>
+                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)"><div style="width:28px;height:28px;border-radius:6px;background:var(--green);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:11px;color:var(--muted)">Green</div></div>
+                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)"><div style="width:28px;height:28px;border-radius:6px;background:var(--orange);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:11px;color:var(--muted)">Orange</div></div>
+                  <div style="text-align:center;padding:8px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)"><div style="width:28px;height:28px;border-radius:6px;background:var(--rose);margin:0 auto 6px;border:1px solid rgba(255,255,255,.1)"></div><div style="font-size:11px;color:var(--muted)">Rose</div></div>
                 </div>
               </div>
               <div style="display:flex;flex-direction:column;gap:12px;">
-                <div style="font-size:9px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">System Tokens</div>
+                <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px">System Tokens</div>
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:10px;text-align:center;">
-                    <div style="font-size:10px;font-weight:700;color:#fff;">Panel</div>
-                    <div style="font-size:8px;color:#94A3B8;margin-top:4px;">#0E1223</div>
-                  </div>
-                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:10px;text-align:center;">
-                    <div style="font-size:10px;font-weight:700;color:#fff;">Border</div>
-                    <div style="font-size:8px;color:#94A3B8;margin-top:4px;">#1A2140</div>
-                  </div>
-                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:10px;text-align:center;">
-                    <div style="font-size:10px;font-weight:700;color:#fff;">Text</div>
-                    <div style="font-size:8px;color:#94A3B8;margin-top:4px;">#CBD5E1</div>
-                  </div>
-                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:10px;text-align:center;">
-                    <div style="font-size:10px;font-weight:700;color:#fff;">Muted</div>
-                    <div style="font-size:8px;color:#94A3B8;margin-top:4px;">#94A3B8</div>
-                  </div>
+                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:10px;text-align:center;"><div style="font-size:12px;font-weight:700;color:var(--text)">BG</div><div style="font-size:11px;color:var(--muted);margin-top:4px;">#070a12</div></div>
+                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:10px;text-align:center;"><div style="font-size:12px;font-weight:700;color:var(--text)">Line</div><div style="font-size:11px;color:var(--muted);margin-top:4px;">rgba(255,255,255,.13)</div></div>
+                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:10px;text-align:center;"><div style="font-size:12px;font-weight:700;color:var(--text)">Text</div><div style="font-size:11px;color:var(--muted);margin-top:4px;">#f7f8fb</div></div>
+                  <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:10px;text-align:center;"><div style="font-size:12px;font-weight:700;color:var(--text)">Muted</div><div style="font-size:11px;color:var(--muted);margin-top:4px;">#aeb7c8</div></div>
                 </div>
               </div>
             </div>
@@ -509,45 +629,77 @@
       </div>
     </section>
 
+    <!-- ── KEY DECISIONS — Case-File Decision Record ── -->
     <section>
       <div class="shell">
         <span class="cs-section-label">Key Decisions & Tradeoffs</span>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;" class="reveal">
-          <div class="cs-decision-card">
-            <div class="cs-decision-label">Decision</div>
-            <div class="cs-decision-content">
-              <h4>Login persona selector</h4>
+
+        <div class="m-case-file reveal">
+          <div class="m-case-file-header">
+            <span class="m-case-file-id">Decision Record · DEC-001</span>
+            <span class="m-case-file-title">Login persona selector</span>
+            <span class="m-case-file-tag">Access Control</span>
+          </div>
+          <div class="m-case-file-body">
+            <div class="m-case-field">
+              <div class="m-case-field-label">Decision</div>
               <p>We chose explicit persona selection at login to avoid ambiguous context inference — improves safety and reduces accidental cross-persona actions.</p>
             </div>
+            <div class="m-case-field">
+              <div class="m-case-field-label">Rationale</div>
+              <p>Implicit role inference risks showing a DG the wrong workspace or exposing IO-level data to admin-only actions. An explicit persona gate makes the security boundary visible at the right moment.</p>
+            </div>
+            <div class="m-case-file-media">
+            <img src="assets/img/login-meridian.jpg" alt="Login Screen">
           </div>
-          <div class="cs-screen-image" style="min-height:320px;">
-            <span class="cs-placeholder"><img src="assets/img/login-meridian.jpg" alt="Login Screen"></span>
           </div>
+          
         </div>
+
       </div>
     </section>
 
+    <!-- ── COLLABORATION & DELIVERY — Intelligence Debrief ── -->
     <section>
       <div class="shell">
         <span class="cs-section-label">Collaboration & Delivery</span>
-        <div class="cs-reflection-grid reveal">
-          <div class="cs-reflection-card">
-            <h3>Artifacts</h3>
-            <p>Persona matrices, IA specs, interaction flows, component library, prototype links, and test scripts were delivered alongside design tokens.</p>
+
+        <div class="m-debrief reveal">
+          <div class="m-debrief-header">
+            <span class="m-debrief-header-title">Post-Engagement Debrief</span>
+            <span class="m-debrief-header-meta">MERIDIAN · Design Delivery Summary</span>
           </div>
-          <div class="cs-reflection-card">
-            <h3>Handoff</h3>
-            <p>Component handoffs included interaction specs for Pattern Lab, Why-Trace, and Reality Canvas to ensure consistent behavior across implementations.</p>
+
+          <div class="m-debrief-row">
+            <div class="m-debrief-label-col">
+              <span class="m-debrief-label">Artifacts</span>
+            </div>
+            <div class="m-debrief-content">
+              <div class="m-debrief-finding-title">Deliverable package</div>
+              <p class="m-debrief-finding-body">Persona matrices, IA specs, interaction flows, component library, prototype links, and test scripts were delivered alongside design tokens.</p>
+            </div>
           </div>
+
+          <div class="m-debrief-row">
+            <div class="m-debrief-label-col">
+              <span class="m-debrief-label">Handoff</span>
+            </div>
+            <div class="m-debrief-content">
+              <div class="m-debrief-finding-title">Engineering handoff</div>
+              <p class="m-debrief-finding-body">Component handoffs included interaction specs for Pattern Lab, Why-Trace, and Reality Canvas to ensure consistent behavior across implementations.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── IMPACT & OUTCOMES ── -->
     <section id="outcomes">
       <div class="shell">
         <span class="cs-section-label">Impact & Outcomes</span>
         <div class="cs-impact-grid reveal">
-           <div class="cs-impact-card">
+          <div class="cs-impact-card">
             <h3>Unified platform delivery</h3>
             <p>Enabled a single intelligence interface system to support multiple operational cultures without splitting the product.</p>
           </div>
@@ -563,40 +715,24 @@
             <h3>Faster investigations</h3>
             <p>Persistent canvases and live agents shortened time-to-insight across common case workflows.</p>
           </div>
- <div class="cs-impact-card">
+          <div class="cs-impact-card">
             <h3>Stakeholder-aligned delivery</h3>
             <p>Design decisions were validated through direct client and operational feedback rather than separate generative research.</p>
           </div>
-        </div><br><br>
-      
-      </div>
-    </section>
-
-
-
-
-
-
- <!-- CTA -->
-    <section class="cs-cta">
-      <div class="shell">
-        <h2>Interested in complex operational design?</h2>
-        <div class="cs-cta-buttons">
-                   <a class="button primary " href="index.html#contact">Discuss your challenge</a>
-          <a class="button secondary" href="aegis.html">View Next Case Study</a>
-   
         </div>
       </div>
     </section>
 
-
-
-
-
-
-
-
-
+    <!-- ── CTA ── -->
+    <section class="cs-cta">
+      <div class="shell">
+        <h2>Interested in complex operational design?</h2>
+        <div class="cs-cta-buttons">
+          <a class="button primary" href="index.html#contact">Discuss your challenge</a>
+          <a class="button secondary" href="aegis.html">View Next Case Study</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -618,10 +754,8 @@
 
   <script>
     window.addEventListener("DOMContentLoaded", function () {
-      // reveal defaults
-      document.querySelectorAll('.reveal').forEach(function (item) { item.style.opacity = '1'; item.style.transform = 'none'; });
+      document.querySelectorAll('.reveal').forEach(function (item) { item.style.opacity = '1'; item.style.transform = ''; });
 
-      // back button
       var backButton = document.getElementById('backButton');
       if (backButton) {
         backButton.addEventListener('click', function (e) {

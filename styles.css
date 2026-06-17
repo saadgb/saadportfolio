@@ -217,6 +217,70 @@
       font-size: 14px;
     }
 
+    .nav-links.is-open {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(6, 9, 15, 0.97);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(99, 228, 255, 0.1);
+      padding: 10px 20px 16px;
+      gap: 2px;
+      z-index: 20;
+    }
+
+    .nav-links.is-open a {
+      padding: 11px 14px;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    .nav-mobile-cta {
+      display: none;
+    }
+
+    .nav-links.is-open .nav-mobile-cta {
+      display: block;
+      margin-top: 6px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .nav-hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px;
+      height: 36px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: rgba(255,255,255,0.75);
+      border-radius: 2px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .nav-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.is-open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
     .nav-links a {
       padding: 8px 10px;
       border-radius: 999px;
@@ -4109,6 +4173,14 @@
         display: flex;
       }
 
+      .nav-hamburger {
+        display: none;
+      }
+
+      .nav-mobile-cta {
+        display: none !important;
+      }
+
       .metric-strip,
       .process-grid,
       .skills-grid,
@@ -4214,18 +4286,13 @@
         padding: 48px 0;
       }
 
-      .nav {
-        padding: 12px 0;
-      }
-
       .nav-inner {
-        flex-wrap: wrap;
-        gap: 12px;
+        min-height: 52px;
+        gap: 10px;
       }
 
       .nav-cta {
-        font-size: 14px;
-        padding: 10px 16px;
+        display: none;
       }
 
       h1 {

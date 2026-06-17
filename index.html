@@ -85,10 +85,14 @@
         <a href="#work">Work</a>
         <a href="#process">Process</a>
         <a href="#experience">Experience</a>
-       
+        <a href="#contact" class="nav-mobile-cta">Contact</a>
       </nav>
 
       <a class="nav-cta" href="#contact">Contact</a>
+
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
@@ -634,6 +638,25 @@
   <!-- GSAP CDN removed to avoid CSP 'unsafe-eval' blocking on server; using WAAPI fallback for animations -->
   <script>
     // Ensure hash fragments scroll to the target even if layout shifts or header is fixed
+    window.addEventListener('DOMContentLoaded', function () {
+      var hamburger = document.querySelector('.nav-hamburger');
+      var navLinks = document.querySelector('.nav-links');
+      if (hamburger && navLinks) {
+        hamburger.addEventListener('click', function () {
+          var open = navLinks.classList.toggle('is-open');
+          hamburger.classList.toggle('is-open', open);
+          hamburger.setAttribute('aria-expanded', open);
+        });
+        navLinks.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navLinks.classList.remove('is-open');
+            hamburger.classList.remove('is-open');
+            hamburger.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    });
+
     window.addEventListener('DOMContentLoaded', function () {
       try {
         if (location.hash) {

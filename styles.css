@@ -727,7 +727,7 @@
     .client-track {
       display: flex;
       width: max-content;
-      padding: 13px 0 14px;
+      padding: 13px 0 25px;
       animation: logo-drift 30s linear infinite;
     }
 
@@ -4286,6 +4286,14 @@
         padding: 48px 0;
       }
 
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+      }
+
       .nav-inner {
         min-height: 52px;
         gap: 10px;
@@ -4293,6 +4301,19 @@
 
       .nav-cta {
         display: none;
+      }
+
+      .hero {
+        padding-top: calc(52px + 20px);
+      }
+
+      .about-outcomes {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .glass-card {
+        width: 100%;
+        box-sizing: border-box;
       }
 
       h1 {

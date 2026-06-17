@@ -261,6 +261,8 @@
       padding: 6px;
       border-radius: 8px;
       flex-shrink: 0;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .nav-hamburger span {

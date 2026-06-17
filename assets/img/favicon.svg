@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f43f5e"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .bg { display: none; }
+    @media (prefers-color-scheme: light) {
+      .bg { display: block; fill: #06090f; }
+    }
+  </style>
+  <rect class="bg" width="370" height="370" rx="72"/>
+  <g transform="translate(30.526 5.801)">
+    <path fill="url(#grad)" d="M0,0,153.223,92.037,305.727,0V231.735L270.8,209.616s20.664-121.945,0-145.519-82.655,51.223-82.655,51.223,43.655,16.007,58.208,34.924,0,40.745,0,40.745S68.437,79.67,41.464,64.1s-36.671,57.043,0,105.937,146.683,89.64,146.683,89.64l-34.924,24.448L0,190.99Z" transform="translate(0.448)"/>
+    <path fill="url(#grad)" d="M62.566-36.229,307.039,112.783,153.371,209.4-.3,112.783V72.037S116.684,161.7,153.368,165.169s80.3-27.553,81.491-52.386S62.566,8.012,62.566,8.012Z" transform="translate(0.3 148.057)"/>
+  </g>
+</svg>

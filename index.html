@@ -8,7 +8,8 @@
   <meta name="theme-color" content="#070a12">
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/img/favicon.ico" sizes="32x32">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B8QQ3V6QJ"></script>
   <script>
@@ -45,7 +46,7 @@
     </svg>
   </a>
 
-  <header class="nav">
+  <header class="nav nav--home">
     <div class="shell nav-inner">
       <a class="brand" href="#top" aria-label="Muhammad Saad home">
         <span class="brand-mark">
@@ -56,13 +57,10 @@
                 <stop offset="1" stop-color="#545454"/>
               </linearGradient>
               <clipPath id="b"><rect width="370" height="370" transform="translate(-0.316 -0.316)" fill="url(#a)"/></clipPath>
-              <linearGradient id="c" x1="1" x2="0.392" y2="1" gradientUnits="objectBoundingBox">
-                <stop offset="0" stop-color="#10d6f9"/>
-                <stop offset="0.301" stop-color="#2d49c5"/>
-                <stop offset="0.501" stop-color="#482ee6"/>
-                <stop offset="0.678" stop-color="#7600f1"/>
-                <stop offset="0.823" stop-color="#6815cb"/>
-                <stop offset="1" stop-color="#e9134d"/>
+              <linearGradient id="c" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#f43f5e"/>
+                <stop offset="0.5" stop-color="#8b5cf6"/>
+                <stop offset="1" stop-color="#06b6d4"/>
               </linearGradient>
               <clipPath id="f"><rect width="370" height="370"/></clipPath>
             </defs>
@@ -85,7 +83,6 @@
         <a href="#work">Work</a>
         <a href="#process">Process</a>
         <a href="#experience">Experience</a>
-        <a href="#contact" class="nav-mobile-cta">Contact</a>
       </nav>
 
       <a class="nav-cta" href="#contact">Contact</a>
@@ -93,6 +90,14 @@
       <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+    </div>
+    <div class="nav-collapse" id="navCollapse">
+      <div class="shell">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </header>
 
@@ -640,16 +645,16 @@
     // Ensure hash fragments scroll to the target even if layout shifts or header is fixed
     window.addEventListener('DOMContentLoaded', function () {
       var hamburger = document.querySelector('.nav-hamburger');
-      var navLinks = document.querySelector('.nav-links');
-      if (hamburger && navLinks) {
+      var navCollapse = document.getElementById('navCollapse');
+      if (hamburger && navCollapse) {
         hamburger.addEventListener('click', function () {
-          var open = navLinks.classList.toggle('is-open');
+          var open = navCollapse.classList.toggle('is-open');
           hamburger.classList.toggle('is-open', open);
           hamburger.setAttribute('aria-expanded', open);
         });
-        navLinks.querySelectorAll('a').forEach(function (link) {
+        navCollapse.querySelectorAll('a').forEach(function (link) {
           link.addEventListener('click', function () {
-            navLinks.classList.remove('is-open');
+            navCollapse.classList.remove('is-open');
             hamburger.classList.remove('is-open');
             hamburger.setAttribute('aria-expanded', 'false');
           });

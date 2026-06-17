@@ -55,7 +55,7 @@
       font-size: 16px;
       line-height: 1.6;
       letter-spacing: 0;
-      overflow-x: hidden;
+      overflow-x: clip; /* clip avoids scroll-container that blocks fixed-nav touch events on iOS */
     }
 
     body::before {

@@ -907,6 +907,7 @@
       gap: 14px;
       max-width: 760px;
       margin-bottom: 28px;
+      align-content: start;
     }
 
     .section-kicker {
@@ -4185,7 +4186,6 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
       }
 
-      .about-grid,
       .contact-grid {
         grid-template-columns: 1fr 1fr;
       }

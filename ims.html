@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMS Case Study - Muhammad Saad</title>
+  <meta name="description" content="IMS (Islamic Messaging System): Community-driven digital platform for learning, discussion, mentorship, and real-world engagement. Full product design case study.">
+  <meta name="theme-color" content="#070a12">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/img/favicon.ico" sizes="32x32">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B8QQ3V6QJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-7B8QQ3V6QJ');
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","k7sxjmd1hl");
+  </script>
+
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="tech-field" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="index.html" aria-label="Muhammad Saad home">
+        <span class="brand-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0"/><stop offset="1" stop-color="#545454"/>
+              </linearGradient>
+              <clipPath id="b"><rect width="370" height="370" transform="translate(-0.316 -0.316)" fill="url(#a)"/></clipPath>
+              <linearGradient id="c" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#f43f5e"/>
+                <stop offset="0.5" stop-color="#8b5cf6"/>
+                <stop offset="1" stop-color="#06b6d4"/>
+              </linearGradient>
+              <clipPath id="f"><rect width="370" height="370"/></clipPath>
+            </defs>
+            <g clip-path="url(#f)">
+              <g transform="translate(0.316 0.316)" clip-path="url(#b)">
+                <g transform="translate(30.526 5.801)"><g>
+                  <path d="M0,0,153.223,92.037,305.727,0V231.735L270.8,209.616s20.664-121.945,0-145.519-82.655,51.223-82.655,51.223,43.655,16.007,58.208,34.924,0,40.745,0,40.745S68.437,79.67,41.464,64.1s-36.671,57.043,0,105.937,146.683,89.64,146.683,89.64l-34.924,24.448L0,190.99Z" transform="translate(0.448)" fill="url(#c)"/>
+                  <path d="M62.566-36.229,307.039,112.783,153.371,209.4-.3,112.783V72.037S116.684,161.7,153.368,165.169s80.3-27.553,81.491-52.386S62.566,8.012,62.566,8.012Z" transform="translate(0.3 148.057)" fill="url(#c)"/>
+                </g></g>
+              </g>
+            </g>
+          </svg>
+        </span>
+      </a>
+      <a id="backButton" class="nav-cta" href="index.html#work" aria-label="Go back to portfolio"><span style="margin-right:.5rem">← </span>Go Back</a>
+      <a class="nav-cta" href="index.html#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ── Hero ──────────────────────────────────────────────────────────── -->
+    <section class="cs-hero">
+      <div class="shell">
+        <div class="cs-hero-content reveal">
+
+          <div class="ims-wip-banner">
+            <div class="ims-wip-dot"></div>
+            <p><strong>Work In Progress</strong> — This project is actively evolving. The case study documents current design thinking and architecture decisions made through the product definition and UX architecture phases. Final screens are in development.</p>
+          </div>
+
+          <span class="cs-project-name">Community Platform · Mobile App</span>
+          <div class="ims-title-row">
+            <h1>IMS App — Islamic Messaging System</h1>
+            <div class="ims-store-buttons">
+              <div class="ims-store-wrap">
+                <span class="ims-coming-soon">Coming Soon</span>
+                <a href="https://play.google.com/store" target="_blank" rel="noopener" class="ims-play-badge">
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1 1.5L11.5 11L1 20.5V1.5Z" fill="white" opacity=".9"/>
+                    <path d="M1 1.5L14 7.5L11.5 11L1 1.5Z" fill="#a8edff"/>
+                    <path d="M1 20.5L11.5 11L14 14.5L1 20.5Z" fill="#ff9e64"/>
+                    <path d="M14 7.5L19 10.2C19.6 10.55 19.6 11.45 19 11.8L14 14.5L11.5 11L14 7.5Z" fill="#f5c842"/>
+                  </svg>
+                  <span class="ims-play-text">
+                    <span class="ims-play-sub">GET IT ON</span>
+                    <span class="ims-play-main">Google Play</span>
+                  </span>
+                </a>
+              </div>
+              <div class="ims-store-wrap">
+                <span class="ims-coming-soon">Coming Soon</span>
+                <a href="https://apps.apple.com" target="_blank" rel="noopener" class="ims-play-badge">
+                  <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M14.98 11.65c-.02-2.3 1.88-3.42 1.97-3.48-1.08-1.57-2.75-1.79-3.34-1.81-1.42-.14-2.77.84-3.49.84-.72 0-1.84-.82-3.02-.8-1.56.02-3 .91-3.8 2.31-1.62 2.81-.42 6.97 1.17 9.25.77 1.12 1.69 2.37 2.9 2.32 1.17-.05 1.61-.75 3.02-.75 1.41 0 1.81.75 3.04.73 1.25-.02 2.05-1.14 2.81-2.27.89-1.3 1.26-2.56 1.28-2.63-.03-.01-2.52-.97-2.54-3.71z" fill="white" opacity=".9"/>
+                    <path d="M12.72 4.37c.64-.78 1.07-1.86.95-2.95-.92.04-2.03.61-2.69 1.38-.59.68-1.1 1.77-.96 2.81 1.02.08 2.06-.52 2.7-1.24z" fill="white" opacity=".9"/>
+                  </svg>
+                  <span class="ims-play-text">
+                    <span class="ims-play-sub">DOWNLOAD ON THE</span>
+                    <span class="ims-play-main">App Store</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="cs-hero-subtitle">A purpose-built platform for the global Muslim intellectual community</p>
+          <p>Designed the complete product ecosystem for the Islamic Messaging System — a platform where learning, mentorship, community building, and real-world engagement converge. Not social media. A deliberate architecture for meaningful participation, inspired by the educational framework of Surah Al-Jumu'ah.</p>
+
+          <div class="cs-hero-grid">
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Role</div>
+              <div class="cs-info-value">Lead Designer · Team of 5</div>
+            </div>
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Platform</div>
+              <div class="cs-info-value">Android · iOS · Web Portal</div>
+            </div>
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Design Language</div>
+              <div class="cs-info-value">Material Design 3</div>
+            </div>
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Tool</div>
+              <div class="cs-info-value">Figma</div>
+            </div>
+            <div class="cs-info-card reveal">
+              <div class="cs-info-label">Status</div>
+              <div class="cs-info-value" style="color:#f5c842">In Progress — MVP Design</div>
+            </div>
+          </div>
+
+          <div class="cs-hero-toc reveal">
+            <p><strong>On this page:</strong>
+              <a href="#overview">Overview</a> •
+              <a href="#screens">App Screens</a> •
+              <a href="#problem">Problem</a> •
+              <a href="#role">My Role</a> •
+              <a href="#philosophy">Philosophy</a> •
+              <a href="#process">Process</a> •
+              <a href="#ia">IA</a> •
+              <a href="#community">Community</a> •
+              <a href="#map">Map</a> •
+              <a href="#missions">Missions</a> •
+              <a href="#admin">Admin Portal</a> •
+              <a href="#design-system">Design System</a> •
+              <a href="#features">Features</a> •
+              <a href="#challenges">Challenges</a> •
+              <a href="#roadmap">Roadmap</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero ecosystem diagram -->
+        <div class="ims-hero-visual reveal">
+          <svg width="100%" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <pattern id="ims-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(99,228,255,0.06)" stroke-width="1"/>
+              </pattern>
+              <radialGradient id="ims-glow1" cx="42%" cy="48%" r="42%">
+                <stop offset="0%" stop-color="rgba(125,240,190,0.18)"/>
+                <stop offset="100%" stop-color="rgba(125,240,190,0)"/>
+              </radialGradient>
+              <radialGradient id="ims-glow2" cx="68%" cy="32%" r="36%">
+                <stop offset="0%" stop-color="rgba(99,228,255,0.13)"/>
+                <stop offset="100%" stop-color="rgba(99,228,255,0)"/>
+              </radialGradient>
+              <filter id="dot-glow" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <!-- Background -->
+            <rect width="960" height="540" fill="url(#ims-grid)"/>
+            <ellipse cx="400" cy="260" rx="300" ry="220" fill="url(#ims-glow1)"/>
+            <ellipse cx="660" cy="160" rx="240" ry="180" fill="url(#ims-glow2)"/>
+
+            <!-- Layer 1: Connecting lines -->
+            <line x1="480" y1="270" x2="195" y2="148" stroke="rgba(99,228,255,0.18)"   stroke-width="1.5" stroke-dasharray="5,5"/>
+            <line x1="480" y1="270" x2="765" y2="148" stroke="rgba(125,240,190,0.18)"  stroke-width="1.5" stroke-dasharray="5,5"/>
+            <line x1="480" y1="270" x2="175" y2="400" stroke="rgba(167,139,250,0.18)"  stroke-width="1.5" stroke-dasharray="5,5"/>
+            <line x1="480" y1="270" x2="785" y2="400" stroke="rgba(245,200,66,0.18)"   stroke-width="1.5" stroke-dasharray="5,5"/>
+            <line x1="480" y1="270" x2="480" y2="82"  stroke="rgba(255,158,100,0.18)"  stroke-width="1.5" stroke-dasharray="5,5"/>
+            <line x1="480" y1="270" x2="480" y2="468" stroke="rgba(99,228,255,0.12)"   stroke-width="1.5" stroke-dasharray="5,5"/>
+
+            <!-- Layer 2: Flowing dots (UNDER nodes) -->
+            <!-- Community (cyan) -->
+            <circle r="2.8" fill="rgba(99,228,255,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.2s" repeatCount="indefinite" begin="0s"   path="M195,148 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+            </circle>
+            <circle r="2.8" fill="rgba(99,228,255,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.2s" repeatCount="indefinite" begin="1.1s" path="M195,148 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.2s" repeatCount="indefinite" begin="1.1s"/>
+            </circle>
+            <!-- Library (green) -->
+            <circle r="2.8" fill="rgba(125,240,190,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.4s" path="M765,148 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.4s" repeatCount="indefinite" begin="0.4s"/>
+            </circle>
+            <circle r="2.8" fill="rgba(125,240,190,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.6s" path="M765,148 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.4s" repeatCount="indefinite" begin="1.6s"/>
+            </circle>
+            <!-- Map (violet) -->
+            <circle r="2.8" fill="rgba(167,139,250,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.2s" path="M175,400 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.6s" repeatCount="indefinite" begin="0.2s"/>
+            </circle>
+            <circle r="2.8" fill="rgba(167,139,250,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.6s" repeatCount="indefinite" begin="1.5s" path="M175,400 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.6s" repeatCount="indefinite" begin="1.5s"/>
+            </circle>
+            <!-- Missions (gold) -->
+            <circle r="2.8" fill="rgba(245,200,66,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.8s" path="M785,400 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.5s" repeatCount="indefinite" begin="0.8s"/>
+            </circle>
+            <circle r="2.8" fill="rgba(245,200,66,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.5s" repeatCount="indefinite" begin="2.0s" path="M785,400 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.5s" repeatCount="indefinite" begin="2.0s"/>
+            </circle>
+            <!-- Dashboard (orange) -->
+            <circle r="2.8" fill="rgba(255,158,100,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.0s" repeatCount="indefinite" begin="0.6s" path="M480,82 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.0s" repeatCount="indefinite" begin="0.6s"/>
+            </circle>
+            <circle r="2.8" fill="rgba(255,158,100,0.95)" filter="url(#dot-glow)">
+              <animateMotion dur="2.0s" repeatCount="indefinite" begin="1.6s" path="M480,82 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.0s" repeatCount="indefinite" begin="1.6s"/>
+            </circle>
+            <!-- My Space (muted cyan) -->
+            <circle r="2.8" fill="rgba(99,228,255,0.65)" filter="url(#dot-glow)">
+              <animateMotion dur="2.3s" repeatCount="indefinite" begin="1.0s" path="M480,468 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.3s" repeatCount="indefinite" begin="1.0s"/>
+            </circle>
+            <circle r="2.8" fill="rgba(99,228,255,0.65)" filter="url(#dot-glow)">
+              <animateMotion dur="2.3s" repeatCount="indefinite" begin="2.2s" path="M480,468 L480,270"/>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.88;1" dur="2.3s" repeatCount="indefinite" begin="2.2s"/>
+            </circle>
+
+            <!-- Layer 3: Opaque node backgrounds (mask dots at source + destination) -->
+            <circle cx="480" cy="270" r="80"  fill="#090d1a"/>
+            <circle cx="195" cy="148" r="58"  fill="#090d1a"/>
+            <circle cx="765" cy="148" r="58"  fill="#090d1a"/>
+            <circle cx="175" cy="400" r="58"  fill="#090d1a"/>
+            <circle cx="785" cy="400" r="58"  fill="#090d1a"/>
+            <circle cx="480" cy="82"  r="46"  fill="#090d1a"/>
+            <circle cx="480" cy="468" r="46"  fill="#090d1a"/>
+
+            <!-- Layer 4: Node rings + labels (ON TOP of dots) -->
+            <!-- Core -->
+            <circle cx="480" cy="270" r="80"  fill="rgba(99,228,255,0.05)" stroke="rgba(99,228,255,0.30)" stroke-width="1.5"/>
+            <circle cx="480" cy="270" r="58"  fill="rgba(99,228,255,0.07)" stroke="rgba(99,228,255,0.18)" stroke-width="1"/>
+            <text x="480" y="263" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="rgba(99,228,255,0.95)">IMS</text>
+            <text x="480" y="283" text-anchor="middle" font-family="DM Sans, sans-serif"        font-size="12" fill="rgba(174,183,200,0.60)">Platform Core</text>
+            <!-- Community -->
+            <circle cx="195" cy="148" r="58"  fill="rgba(99,228,255,0.06)"  stroke="rgba(99,228,255,0.28)"  stroke-width="1.5"/>
+            <text x="195" y="143" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="rgba(99,228,255,0.90)">Community</text>
+            <text x="195" y="160" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" fill="rgba(174,183,200,0.55)">Discussions</text>
+            <!-- Library -->
+            <circle cx="765" cy="148" r="58"  fill="rgba(125,240,190,0.06)" stroke="rgba(125,240,190,0.28)" stroke-width="1.5"/>
+            <text x="765" y="143" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="rgba(125,240,190,0.90)">Library</text>
+            <text x="765" y="160" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" fill="rgba(174,183,200,0.55)">Knowledge</text>
+            <!-- Map -->
+            <circle cx="175" cy="400" r="58"  fill="rgba(167,139,250,0.06)" stroke="rgba(167,139,250,0.28)" stroke-width="1.5"/>
+            <text x="175" y="395" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="rgba(167,139,250,0.90)">Map</text>
+            <text x="175" y="412" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" fill="rgba(174,183,200,0.55)">Discovery</text>
+            <!-- Missions -->
+            <circle cx="785" cy="400" r="58"  fill="rgba(245,200,66,0.06)"  stroke="rgba(245,200,66,0.24)"  stroke-width="1.5"/>
+            <text x="785" y="395" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="rgba(245,200,66,0.90)">Missions</text>
+            <text x="785" y="412" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" fill="rgba(174,183,200,0.55)">Growth</text>
+            <!-- Dashboard -->
+            <circle cx="480" cy="82"  r="46"  fill="rgba(255,158,100,0.06)" stroke="rgba(255,158,100,0.24)" stroke-width="1.5"/>
+            <text x="480" y="77"  text-anchor="middle" font-family="DM Sans, sans-serif" font-size="12" font-weight="700" fill="rgba(255,158,100,0.90)">Dashboard</text>
+            <text x="480" y="92"  text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" fill="rgba(174,183,200,0.55)">Home</text>
+            <!-- My Space -->
+            <circle cx="480" cy="468" r="46"  fill="rgba(99,228,255,0.04)"  stroke="rgba(99,228,255,0.18)"  stroke-width="1.5"/>
+            <text x="480" y="463" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="12" font-weight="700" fill="rgba(174,183,200,0.70)">My Space</text>
+            <text x="480" y="478" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" fill="rgba(174,183,200,0.45)">Profile</text>
+
+            <!-- Layer 5: Core pulse rings (topmost, expand outward) -->
+            <circle cx="480" cy="270" r="82" fill="none" stroke="rgba(99,228,255,0.22)" stroke-width="1">
+              <animate attributeName="r"              values="82;96;82"     dur="3.2s" repeatCount="indefinite"/>
+              <animate attributeName="stroke-opacity" values="0.22;0;0.22" dur="3.2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="480" cy="270" r="82" fill="none" stroke="rgba(99,228,255,0.12)" stroke-width="1">
+              <animate attributeName="r"              values="82;108;82"    dur="3.2s" repeatCount="indefinite" begin="1.6s"/>
+              <animate attributeName="stroke-opacity" values="0.12;0;0.12" dur="3.2s" repeatCount="indefinite" begin="1.6s"/>
+            </circle>
+
+            <!-- Quadrant legend — anchored below Missions node (cx=785, bottom=458) -->
+            <!-- Connector stem -->
+            <line x1="785" y1="458" x2="785" y2="474" stroke="rgba(245,200,66,0.35)" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <circle cx="785" cy="474" r="3" fill="rgba(245,200,66,0.50)"/>
+            <!-- Card centered at x=785 -->
+            <rect x="706" y="474" width="158" height="62" rx="10" fill="rgba(9,13,26,0.90)" stroke="rgba(245,200,66,0.22)" stroke-width="1"/>
+            <text x="785" y="491" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9"  font-weight="700" fill="rgba(245,200,66,0.65)" letter-spacing="1">SURAH AL-JUMU'AH</text>
+            <text x="785" y="504" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9"  fill="rgba(174,183,200,0.50)">Recitation · Purification</text>
+            <text x="785" y="516" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9"  fill="rgba(174,183,200,0.50)">Knowledge · Wisdom</text>
+            <text x="785" y="530" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="10" font-weight="700" fill="rgba(125,240,190,0.65)">4 Core Quadrants</text>
+          </svg>
+        </div>
+        <p class="ims-diagram-hint">← Swipe to explore the ecosystem →</p>
+      </div>
+    </section>
+
+    <!-- ── App Screens Showcase ───────────────────────────────────────────── -->
+    <section id="screens">
+      <div class="shell">
+        <span class="cs-section-label">App Screens</span>
+        <h2>Mobile App Experience</h2>
+       
+
+        <div class="ims-screens-wrap reveal">
+
+          <!-- Phone 1 -->
+          <div class="ims-phone">
+            <div class="ims-phone-frame">
+          
+              <div class="ims-phone-statusbar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="ims-phone-screen">
+                <img src="assets/img/ims-screen-1.jpg" alt="IMS Community Screen" onerror="this.style.display='none'">
+                <div class="ims-phone-placeholder">
+                  <div class="ims-ph-icon">🌐</div>
+                  <p class="ims-ph-label">Community</p>
+                  <p>ims-screen-2.png</p>
+                </div>
+              </div>
+            </div>
+            <p class="ims-phone-label">Community</p>
+          </div>
+
+          <!-- Phone 2 — featured / centre -->
+          <div class="ims-phone featured">
+            <div class="ims-phone-frame">
+           
+              <div class="ims-phone-statusbar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="ims-phone-screen">
+                <img src="assets/img/ims-screen-2.jpg" alt="IMS Home Dashboard" onerror="this.style.display='none'">
+                <div class="ims-phone-placeholder">
+                  <div class="ims-ph-icon">🏠</div>
+                  <p class="ims-ph-label">Home Dashboard</p>
+                  <p>ims-screen-1.png</p>
+                </div>
+              </div>
+            </div>
+            <p class="ims-phone-label">Home Dashboard</p>
+          </div>
+
+          <!-- Phone 3 -->
+          <div class="ims-phone">
+            <div class="ims-phone-frame">
+            
+              <div class="ims-phone-statusbar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="ims-phone-screen">
+                <img src="assets/img/ims-screen-3.jpg" alt="IMS Map Screen" onerror="this.style.display='none'">
+                <div class="ims-phone-placeholder">
+                  <div class="ims-ph-icon">📍</div>
+                  <p class="ims-ph-label">Interactive Map</p>
+                  <p>ims-screen-3.png</p>
+                </div>
+              </div>
+            </div>
+            <p class="ims-phone-label">Interactive Map</p>
+          </div>
+
+          <!-- Phone 4 -->
+          <div class="ims-phone">
+            <div class="ims-phone-frame">
+            
+              <div class="ims-phone-statusbar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="ims-phone-screen">
+                <img src="assets/img/ims-screen-4.jpg" alt="IMS Missions Screen" onerror="this.style.display='none'">
+                <div class="ims-phone-placeholder">
+                  <div class="ims-ph-icon">🎯</div>
+                  <p class="ims-ph-label">Tasks & Missions</p>
+                  <p>ims-screen-4.png</p>
+                </div>
+              </div>
+            </div>
+            <p class="ims-phone-label">Missions</p>
+          </div>
+
+          <!-- Phone 5 -->
+          <div class="ims-phone">
+            <div class="ims-phone-frame">
+             
+              <div class="ims-phone-statusbar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="ims-phone-screen">
+                <img src="assets/img/ims-screen-5.jpg" alt="IMS My Space Screen" onerror="this.style.display='none'">
+                <div class="ims-phone-placeholder">
+                  <div class="ims-ph-icon">👤</div>
+                  <p class="ims-ph-label">My Space</p>
+                  <p>ims-screen-5.png</p>
+                </div>
+              </div>
+            </div>
+            <p class="ims-phone-label">My Space</p>
+          </div>
+
+        </div>
+        <p class="ims-swipe-hint">← Swipe to explore screens →</p>
+      </div>
+    </section>
+
+    <!-- ── Project Overview ──────────────────────────────────────────────── -->
+    <section id="overview">
+      <div class="shell">
+        <span class="cs-section-label">Project Overview</span>
+        <h2>A platform built around purpose, not engagement</h2>
+        <p class="cs-section-intro">IMS is a community-driven digital platform designed to connect Muslims around the world through structured learning, intellectual discussion, personal development, and real-world engagement. The platform deliberately avoids the mechanics of social media — no infinite scroll, no vanity metrics, no attention-hacking. Every feature is designed to push users toward contribution, not consumption.</p>
+
+        <div class="cs-overview-grid reveal">
+          <div class="cs-overview-card">
+            <h3>What It Is</h3>
+            <p>A scalable product ecosystem combining Reddit's discussions, LinkedIn's professional network, Meetup's event discovery, Discord's community structure, and structured learning — filtered through Islamic educational principles. Not one thing, but a coherent whole.</p>
+          </div>
+          <div class="cs-overview-card">
+            <h3>What It Is Not</h3>
+            <p>Not another social media app. IMS deliberately rejects addictive design patterns, dark patterns, and passive consumption mechanics. No algorithmic feeds designed to maximize time-on-screen. Every decision reinforces meaningful participation.</p>
+          </div>
+          <div class="cs-overview-card">
+            <h3>The Opportunity</h3>
+            <p>The global Muslim community lacks a dedicated digital space for intellectual growth and real-world connection. Existing platforms are either too general, or built on engagement mechanics that don't serve personal development. IMS fills that gap.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Problem Statement ─────────────────────────────────────────────── -->
+    <section id="problem">
+      <div class="shell">
+        <span class="cs-section-label">Problem Statement</span>
+        <h2>The fragmentation of Muslim intellectual life online</h2>
+        <p class="cs-section-intro">Muslims seeking intellectual growth, community connection, and mentorship today must navigate a fragmented landscape — scattered across platforms not designed for them, with no mechanism to bridge online discussions to offline impact.</p>
+
+        <div class="ims-problem-highlights reveal">
+          <div class="ims-problem-block">
+            <h4>No Dedicated Intellectual Space</h4>
+            <p>Platforms like Reddit and Twitter host Muslim discussions, but the architecture rewards sensationalism over depth. There's no space optimized for intellectual growth within an Islamic framework.</p>
+          </div>
+          <div class="ims-problem-block">
+            <h4>Online-Offline Disconnect</h4>
+            <p>No platform bridges digital community participation to real-world meetups, workshops, and local events. Meetup.com is secular and general. Local Muslim events have no shared discovery layer.</p>
+          </div>
+          <div class="ims-problem-block">
+            <h4>Passive Consumption Culture</h4>
+            <p>Social media conditions users to consume rather than contribute. The Muslim community needs tools that reward active participation, scholarship, mentorship, and peer-to-peer learning.</p>
+          </div>
+          <div class="ims-problem-block">
+            <h4>No Growth Accountability</h4>
+            <p>Personal development in Islamic tradition is structured and measurable. Existing platforms provide no framework to track growth across spiritual, intellectual, and community dimensions.</p>
+          </div>
+        </div>
+
+        <div class="ims-research-callout reveal">
+          <div class="ims-research-callout-header">
+            <span class="ims-research-icon">📱</span>
+            <span class="ims-research-label">Research Context</span>
+          </div>
+          <h4>The existing workaround: WhatsApp Communities</h4>
+          <p>Many Muslim communities are already coordinating digitally — through WhatsApp Communities, Telegram groups, and private Discord servers. This validates real demand for a connected community space. But these are borrowed tools, not built-for-purpose infrastructure. There is no scoring system, no contribution tracking, no content moderation at scale, and no mechanism to keep members meaningfully engaged over time. Activity spikes on announcements and dies between them. The goal of IMS is to replace the workaround with a purpose-built ecosystem — one where every action, a discussion started, a task completed, a workshop attended, accumulates into a measurable growth profile and creates a daily reason to come back.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── My Role ───────────────────────────────────────────────────────── -->
+    <section id="role">
+      <div class="shell">
+        <span class="cs-section-label">My Role</span>
+        <h2>Lead Designer — directing a team of five</h2>
+        <p class="cs-section-intro">I led a design team of five, with each designer owning a distinct product module. My role spanned overall product vision, design direction, cross-module consistency, and the architecture decisions that unified the full platform. Individual modules were executed collaboratively, with designers working in parallel under shared guidelines I established — then reviewed, aligned, and integrated into the cohesive product.</p>
+
+        <div class="ims-insight reveal" style="margin-bottom:28px;border-color:rgba(167,139,250,.18)">
+          <p><strong style="color:var(--violet)">Team structure:</strong> Five remote designers total — Community &amp; Discussions, Map &amp; Events, Missions &amp; Gamification, Library &amp; Knowledge, and Admin Portal — each owning their module end to end. I led across all modules: setting the design language, defining the IA, and ensuring everything connected as one coherent system.</p>
+        </div>
+
+        <div class="ims-role-grid reveal">
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Product Strategy &amp; Vision</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Design Team Leadership</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Information Architecture</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Cross-module Design Review</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Community Ecosystem Design</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Gamification Strategy</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Design System &amp; Tokens</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Design Direction &amp; QA</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Community Growth Framework</span></div>
+          <div class="ims-role-pill"><div class="ims-role-pill-dot"></div><span>Developer Handoff Standards</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Core Philosophy ───────────────────────────────────────────────── -->
+    <section id="philosophy">
+      <div class="shell">
+        <span class="cs-section-label">Core Philosophy</span>
+        <h2>Rooted in Surah Al-Jumu'ah</h2>
+        <p class="cs-section-intro">The product's architecture is not arbitrary. It is structured around the four developmental dimensions described in Surah Al-Jumu'ah — the Quranic model of community education. These quadrants are not cosmetic; they define how the platform measures growth, structures content, and rewards participation.</p>
+
+        <div class="ims-quadrant-grid reveal">
+          <div class="ims-card ims-quadrant-card">
+            <span class="ims-quadrant-num">Quadrant 01</span>
+            <div class="ims-quadrant-arabic">يَتْلُوا عَلَيْهِمْ آيَاتِهِ</div>
+            <h3>Recitation &amp; Reflection</h3>
+            <p>Quranic understanding, personal reflection, and deep engagement with revealed knowledge. The platform's content and reflection tools are designed to foster this mode of learning.</p>
+          </div>
+          <div class="ims-card ims-quadrant-card">
+            <span class="ims-quadrant-num">Quadrant 02</span>
+            <div class="ims-quadrant-arabic">وَيُزَكِّيهِمْ</div>
+            <h3>Purification &amp; Character</h3>
+            <p>Morality, ethics, and personal growth. Community behavior standards, mentorship features, and character-building activities all tie back to this quadrant.</p>
+          </div>
+          <div class="ims-card ims-quadrant-card">
+            <span class="ims-quadrant-num">Quadrant 03</span>
+            <div class="ims-quadrant-arabic">يُعَلِّمُهُمُ الْكِتَابَ</div>
+            <h3>Knowledge &amp; Education</h3>
+            <p>Structured learning, research, courses, and intellectual development. The Library module, courses, and publications all serve this quadrant directly.</p>
+          </div>
+          <div class="ims-card ims-quadrant-card">
+            <span class="ims-quadrant-num">Quadrant 04</span>
+            <div class="ims-quadrant-arabic">وَالْحِكْمَةَ</div>
+            <h3>Wisdom &amp; Application</h3>
+            <p>Applying knowledge in the real world — leadership, decision-making, events, workshops, and community impact. The Map and Missions features primarily serve this quadrant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design Process ────────────────────────────────────────────────── -->
+    <section id="process">
+      <div class="shell">
+        <span class="cs-section-label">Design Process</span>
+        <h2>From product definition to MVP design</h2>
+        <p class="cs-section-intro">Given the scope of this platform — six major product areas, an admin portal, a gamification system, and a design system — the process was structured to establish strong foundations before moving into screen-level design.</p>
+
+        <div class="ims-process-flow reveal">
+          <div class="ims-process-step">
+            <div class="ims-ps-num">01</div>
+            <div class="ims-ps-label">Product Definition</div>
+            <div class="ims-ps-desc">Mission, vision, core philosophy, competitive positioning</div>
+          </div>
+          <div class="ims-process-step">
+            <div class="ims-ps-num">02</div>
+            <div class="ims-ps-label">UX Architecture</div>
+            <div class="ims-ps-desc">IA mapping, navigation model, user journeys across personas</div>
+          </div>
+          <div class="ims-process-step">
+            <div class="ims-ps-num">03</div>
+            <div class="ims-ps-label">Ecosystem Design</div>
+            <div class="ims-ps-desc">Community model, gamification logic, growth framework</div>
+          </div>
+          <div class="ims-process-step">
+            <div class="ims-ps-num">04</div>
+            <div class="ims-ps-label">Design System</div>
+            <div class="ims-ps-desc">Token architecture, component library, MD3 adaptation</div>
+          </div>
+          <div class="ims-process-step">
+            <div class="ims-ps-num">05</div>
+            <div class="ims-ps-label">MVP Screens</div>
+            <div class="ims-ps-desc">Core flows: onboarding, home, community, map</div>
+          </div>
+        </div>
+
+        <div class="ims-insight reveal">
+          <p>A key process decision was to invest heavily in product architecture before touching screens. Platforms of this complexity — with multiple overlapping content types, personas, and community behaviors — fail when designed screen-first. The IA and ecosystem work took longer, but every screen designed thereafter had a clear structural foundation and clear purpose.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Information Architecture ─────────────────────────────────────── -->
+    <section id="ia">
+      <div class="shell">
+        <span class="cs-section-label">Information Architecture</span>
+        <h2>Six modules, one coherent system</h2>
+        <p class="cs-section-intro">The platform is organized into six primary areas, each with a distinct purpose. Navigation is designed so users can access any module in two taps from anywhere in the app. The bottom navigation bar is persistent; deeper navigation within each module follows Material Design 3 navigation patterns.</p>
+
+        <div class="ims-ia-tree reveal">
+          <div class="ims-ia-row">
+            <div class="ims-ia-module" style="border-color:rgba(255,158,100,.22);background:rgba(255,158,100,.06);color:#ff9e64">🏠 Dashboard</div>
+            <div class="ims-ia-children">
+              <span class="ims-ia-child">Welcome &amp; Summary</span>
+              <span class="ims-ia-child">Community Highlights</span>
+              <span class="ims-ia-child">Quadrant Progress</span>
+              <span class="ims-ia-child">Active Tasks</span>
+              <span class="ims-ia-child">Upcoming Events</span>
+              <span class="ims-ia-child">Personalized Feed</span>
+            </div>
+          </div>
+          <div class="ims-ia-row">
+            <div class="ims-ia-module" style="border-color:rgba(99,228,255,.22);background:rgba(99,228,255,.06);color:#63e4ff">🌐 Community</div>
+            <div class="ims-ia-children">
+              <span class="ims-ia-child">Overview &amp; Activity</span>
+              <span class="ims-ia-child">Threads &amp; Discussions</span>
+              <span class="ims-ia-child">Community Tasks</span>
+              <span class="ims-ia-child">Events &amp; Meetups</span>
+              <span class="ims-ia-child">Resources</span>
+              <span class="ims-ia-child">About &amp; Mission</span>
+            </div>
+          </div>
+          <div class="ims-ia-row">
+            <div class="ims-ia-module" style="border-color:rgba(167,139,250,.22);background:rgba(167,139,250,.06);color:#a78bfa">📍 Map</div>
+            <div class="ims-ia-children">
+              <span class="ims-ia-child">Interactive Map View</span>
+              <span class="ims-ia-child">Nearby Communities</span>
+              <span class="ims-ia-child">Events &amp; Workshops</span>
+              <span class="ims-ia-child">Member Discovery</span>
+              <span class="ims-ia-child">Filters &amp; Distance</span>
+              <span class="ims-ia-child">Bottom Sheet Details</span>
+            </div>
+          </div>
+          <div class="ims-ia-row">
+            <div class="ims-ia-module" style="border-color:rgba(245,200,66,.22);background:rgba(245,200,66,.06);color:#f5c842">🎯 Missions</div>
+            <div class="ims-ia-children">
+              <span class="ims-ia-child">Active Missions</span>
+              <span class="ims-ia-child">Learning Tasks</span>
+              <span class="ims-ia-child">Reflection Activities</span>
+              <span class="ims-ia-child">Contribution Tasks</span>
+              <span class="ims-ia-child">Progress &amp; Points</span>
+              <span class="ims-ia-child">Leaderboard</span>
+            </div>
+          </div>
+          <div class="ims-ia-row">
+            <div class="ims-ia-module" style="border-color:rgba(125,240,190,.22);background:rgba(125,240,190,.06);color:#7df0be">📚 Library</div>
+            <div class="ims-ia-children">
+              <span class="ims-ia-child">Books &amp; Articles</span>
+              <span class="ims-ia-child">Research Papers</span>
+              <span class="ims-ia-child">Case Studies</span>
+              <span class="ims-ia-child">Session Recordings</span>
+              <span class="ims-ia-child">Publications</span>
+              <span class="ims-ia-child">Moderated Submissions</span>
+            </div>
+          </div>
+          <div class="ims-ia-row">
+            <div class="ims-ia-module" style="border-color:rgba(99,228,255,.14);background:rgba(99,228,255,.03);color:var(--muted)">👤 My Space</div>
+            <div class="ims-ia-children">
+              <span class="ims-ia-child">Activity History</span>
+              <span class="ims-ia-child">Tasks: Ongoing &amp; Completed</span>
+              <span class="ims-ia-child">Points &amp; Level</span>
+              <span class="ims-ia-child">Quadrant Scores</span>
+              <span class="ims-ia-child">Progress Graphs</span>
+              <span class="ims-ia-child">Badges &amp; Recognition</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Community Ecosystem ───────────────────────────────────────────── -->
+    <section id="community">
+      <div class="shell">
+        <span class="cs-section-label">Community Ecosystem</span>
+        <h2>The heart of the platform</h2>
+        <p class="cs-section-intro">The Community module is the most complex part of the product. It needed to support everything from casual discussion threads to structured community management, from peer-to-peer content sharing to admin-approved task systems. The design challenge was making this richness feel accessible, not overwhelming.</p>
+
+        <div class="ims-module-grid reveal">
+          <div class="ims-card">
+            <span class="ims-module-num">Community Layer 01</span>
+            <h3>Discovery &amp; Joining</h3>
+            <p>Users browse interest-based communities via a searchable directory. Communities are categorized by topic, location, and quadrant alignment. Verified communities display trust indicators. Any user can join public communities; restricted communities require approval.</p>
+            <div class="ims-module-tags">
+              <span class="ims-tag cyan">Browse</span>
+              <span class="ims-tag green">Search</span>
+              <span class="ims-tag violet">Filter by Quadrant</span>
+            </div>
+          </div>
+          <div class="ims-card">
+            <span class="ims-module-num">Community Layer 02</span>
+            <h3>Discussion Architecture</h3>
+            <p>Inspired by Reddit's upvote model but without the toxicity incentives. Threads, posts, and comments are organized by recency and community-voted quality. The design deliberately avoids hot-sorting that rewards outrage. Long-form posts are first-class content.</p>
+            <div class="ims-module-tags">
+              <span class="ims-tag cyan">Threads</span>
+              <span class="ims-tag violet">Posts</span>
+              <span class="ims-tag green">Upvote / Downvote</span>
+              <span class="ims-tag gold">Long-form</span>
+            </div>
+          </div>
+          <div class="ims-card">
+            <span class="ims-module-num">Community Layer 03</span>
+            <h3>Community Creation</h3>
+            <p>Verified users can create communities with defined missions, descriptions, and moderation rules. Community creation requires identity verification to prevent abuse. Admins can set community type (public, restricted, private) and manage membership levels.</p>
+            <div class="ims-module-tags">
+              <span class="ims-tag violet">Verified Users</span>
+              <span class="ims-tag orange">Moderation</span>
+              <span class="ims-tag cyan">Mission-driven</span>
+            </div>
+          </div>
+          <div class="ims-card">
+            <span class="ims-module-num">Community Layer 04</span>
+            <h3>Resources &amp; Events</h3>
+            <p>Each community has a Resources tab for shared documents, links, and publications — all moderated before appearing. The Events tab surfaces community-organized meetups and workshops. Events link to the Map module for location-aware discovery.</p>
+            <div class="ims-module-tags">
+              <span class="ims-tag green">Shared Files</span>
+              <span class="ims-tag cyan">Moderated</span>
+              <span class="ims-tag gold">Events Link</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Map Experience ────────────────────────────────────────────────── -->
+    <section id="map">
+      <div class="shell">
+        <span class="cs-section-label">Map Experience</span>
+        <h2>The feature that changes everything</h2>
+        <p class="cs-section-intro">The Interactive Map is IMS's most significant differentiator. It solves the online-offline problem that every community platform struggles with. Rather than keeping the community purely digital, the Map makes the physical Muslim world visible and navigable — allowing users to discover people, events, workshops, and communities in their area.</p>
+
+        <div class="ims-insight reveal" style="border-color:rgba(167,139,250,.18)">
+          <p><strong style="color:var(--violet)">Design inspiration:</strong> Meetup's event discovery, Couchsurfing's community-around-me model, and the navigational clarity of Google Maps — filtered through a product that is specifically for structured community participation rather than casual travel or social events.</p>
+        </div>
+
+        <div class="ims-map-grid reveal">
+          <div class="ims-card">
+            <div class="ims-map-icon">🗺️</div>
+            <h3>Map Layers</h3>
+            <p>The map renders multiple overlapping data layers: communities (represented as zones), individual members who've opted in to visibility, events and workshops, and permanent venue markers. Users toggle layers based on what they're looking for.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-map-icon">🔍</div>
+            <h3>Discovery Filters</h3>
+            <p>Filtering by distance, interest category, event type, community size, and date range. The filter system collapses into a persistent bottom bar on mobile. Filter state persists across sessions so users don't re-configure every visit.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-map-icon">📋</div>
+            <h3>Bottom Sheet Pattern</h3>
+            <p>A persistent bottom sheet surfaces the nearest 3–5 opportunities contextually, updating as the user pans the map. Tapping any item expands it to full detail. This avoids forcing users to tap individual pins for basic context.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-map-icon">✅</div>
+            <h3>Verification Gate</h3>
+            <p>Hosting events, placing yourself on the map, and creating community markers all require identity verification. This trust architecture is critical for safety — especially for in-person meetups with strangers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Tasks & Missions ──────────────────────────────────────────────── -->
+    <section id="missions">
+      <div class="shell">
+        <span class="cs-section-label">Tasks &amp; Missions Framework</span>
+        <h2>Growth that means something</h2>
+        <p class="cs-section-intro">The gamification strategy for IMS was the most philosophically difficult design challenge. The goal was to create meaningful incentives without importing the addictive, shallow mechanics of social media. Points and badges need to feel earned through genuine contribution, not through gaming the system.</p>
+
+        <div class="ims-mission-wrap reveal">
+          <div class="ims-mission-step">
+            <div class="ims-mission-node">📋</div>
+            <div class="ims-mission-label">Task Assigned</div>
+            <div class="ims-mission-sub">Community or system</div>
+          </div>
+          <div class="ims-mission-step">
+            <div class="ims-mission-node">✍️</div>
+            <div class="ims-mission-label">User Completes</div>
+            <div class="ims-mission-sub">Submission with evidence</div>
+          </div>
+          <div class="ims-mission-step">
+            <div class="ims-mission-node">👁️</div>
+            <div class="ims-mission-label">Admin Reviews</div>
+            <div class="ims-mission-sub">Moderated approval</div>
+          </div>
+          <div class="ims-mission-step">
+            <div class="ims-mission-node">⭐</div>
+            <div class="ims-mission-label">Points Awarded</div>
+            <div class="ims-mission-sub">Quadrant-specific XP</div>
+          </div>
+          <div class="ims-mission-step">
+            <div class="ims-mission-node">📈</div>
+            <div class="ims-mission-label">Progress Updated</div>
+            <div class="ims-mission-sub">Level, badges, leaderboard</div>
+          </div>
+        </div>
+
+        <div class="ims-module-grid reveal">
+          <div class="ims-card">
+            <span class="ims-module-num">Reward Layer</span>
+            <h3>Meaningful Badges</h3>
+            <p>Badges are earned through verifiable contributions, not passive activity. "Community Helper," "Active Contributor," "Mentor," and "Top Researcher" are awarded by admins following review — not automatically. This makes each badge a real credential, not a hollow achievement.</p>
+            <div class="ims-module-tags">
+              <span class="ims-tag cyan">Admin-verified</span>
+              <span class="ims-tag green">Real credentials</span>
+            </div>
+          </div>
+          <div class="ims-card">
+            <span class="ims-module-num">Recognition Layer</span>
+            <h3>Hall of Fame</h3>
+            <p>Top contributors by community, country, and region appear in the Hall of Fame. Unlike social media follower counts, this recognition is based on contribution quality, not content virality. It creates aspirational role models within the community.</p>
+            <div class="ims-module-tags">
+              <span class="ims-tag violet">Global</span>
+              <span class="ims-tag gold">Country</span>
+              <span class="ims-tag cyan">Regional</span>
+            </div>
+          </div>
+          <div class="ims-card">
+            <span class="ims-module-num">Opportunity Layer</span>
+            <h3>Scholarships &amp; Access</h3>
+            <p>High-level contributors unlock exclusive opportunities: scholarship applications, private mentorship sessions, early access to resources, and invitations to exclusive workshops. This creates a clear, meaningful progression path beyond abstract point totals.</p>
+            <div class="ims-module-tags">
+              <span class="ims-tag orange">Scholarships</span>
+              <span class="ims-tag green">Mentorship</span>
+              <span class="ims-tag violet">Exclusive Access</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Admin Portal ──────────────────────────────────────────────────── -->
+    <section id="admin">
+      <div class="shell">
+        <span class="cs-section-label">Admin Portal</span>
+        <h2>The control layer that keeps the ecosystem healthy</h2>
+        <p class="cs-section-intro">A platform like IMS — with moderated content, verified identities, admin-reviewed tasks, and managed events — requires a robust administrative backend. The Admin Portal is a separate web-based application designed for platform operators, community managers, and trust &amp; safety teams. It was designed in parallel with the mobile app to ensure every admin action maps cleanly to a user-facing outcome.</p>
+
+        <div class="ims-admin-grid reveal">
+          <div class="ims-card admin">
+            <span class="ims-admin-tag">Module 01</span>
+            <h3>Dashboard</h3>
+            <p>Platform health overview: active users, content volume, task completion rates, verification queue depth, flagged content. Designed for at-a-glance situation awareness.</p>
+          </div>
+          <div class="ims-card admin">
+            <span class="ims-admin-tag">Module 02</span>
+            <h3>Task Management</h3>
+            <p>Create platform-wide and community-specific tasks. Review user submissions, approve or reject with feedback, award points and badges. Full task lifecycle management.</p>
+          </div>
+          <div class="ims-card admin">
+            <span class="ims-admin-tag">Module 03</span>
+            <h3>Sessions</h3>
+            <p>Approve, schedule, and manage recorded learning sessions. Link sessions to Library entries. Manage session recordings and associated metadata.</p>
+          </div>
+          <div class="ims-card admin">
+            <span class="ims-admin-tag">Module 04</span>
+            <h3>Events</h3>
+            <p>Approve meetup and workshop creation requests. Manage event listings, validate venue information, and monitor attendance for safety tracking.</p>
+          </div>
+          <div class="ims-card admin">
+            <span class="ims-admin-tag">Module 05</span>
+            <h3>Communities</h3>
+            <p>Review community creation requests, manage community status, handle moderation escalations, and audit community health metrics over time.</p>
+          </div>
+          <div class="ims-card admin">
+            <span class="ims-admin-tag">Module 06</span>
+            <h3>KYC — Identity</h3>
+            <p>Review CNIC, passport, and selfie verification submissions. Approve or reject with reason codes. Manage verification tiers and permission grants per user.</p>
+          </div>
+          <div class="ims-card admin">
+            <span class="ims-admin-tag">Module 07</span>
+            <h3>UMS — User Management</h3>
+            <p>Full user record management: profile history, activity logs, verification status, warnings, bans, and permission overrides. The source of truth for every user account.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design System ─────────────────────────────────────────────────── -->
+    <section id="design-system">
+      <div class="shell">
+        <span class="cs-section-label">Design System</span>
+        <h2>Material Design 3, adapted with purpose</h2>
+        <p class="cs-section-intro">The design system is built on Material Design 3 as its foundation — chosen for its Android-first optimization, dynamic color system, and accessible component library. It was then adapted to serve IMS's specific visual direction: modern, clean, purposeful, and trustworthy without feeling clinical or corporate.</p>
+
+        <div class="ims-ds-grid reveal">
+          <div class="ims-card">
+            <span class="ims-ds-label">Foundation</span>
+            <h3>Dynamic Color System</h3>
+            <p>MD3's dynamic color system forms the base. A primary seed color generates the full palette — tonal surfaces, on-colors, and semantic states. The system supports both light and dark schemes, with dark mode as the default for the mobile application to reduce eye strain during extended reading sessions.</p>
+          </div>
+          <div class="ims-card">
+            <span class="ims-ds-label">Typography</span>
+            <h3>Hierarchical Type Scale</h3>
+            <p>Five type roles (Display, Headline, Title, Body, Label) map to semantic usage contexts — not arbitrary sizes. Arabic script support is built into the type system from the ground up, with proper RTL handling for Quranic verses, community names, and user content.</p>
+          </div>
+          <div class="ims-card">
+            <span class="ims-ds-label">Components</span>
+            <h3>Purposeful Components</h3>
+            <p>Cards, sheets, navigation bars, FABs, and dialogs follow MD3 specifications but are extended with IMS-specific patterns: quadrant progress indicators, community badges, verification seals, map markers, and mission cards that don't exist in the base MD3 library.</p>
+          </div>
+          <div class="ims-card">
+            <span class="ims-ds-label">Interaction</span>
+            <h3>Motion &amp; Feedback</h3>
+            <p>MD3's emphasis on meaningful motion — shared element transitions, container transforms, and fade-through — is used deliberately. Animations reinforce spatial relationships and content hierarchy rather than serving as decoration. Reduced-motion preferences are respected throughout.</p>
+          </div>
+          <div class="ims-card">
+            <span class="ims-ds-label">Iconography</span>
+            <h3>Material Symbols</h3>
+            <p>Material Symbols (variable font) as the primary icon set, with custom icons for IMS-specific concepts: quadrant indicators, verification status, community tier markers, and mission type icons that require unique visual treatment.</p>
+          </div>
+          <div class="ims-card">
+            <span class="ims-ds-label">Tokens</span>
+            <h3>Design Tokens</h3>
+            <p>All design decisions are expressed as tokens: color, spacing, radius, elevation, and motion. Tokens are structured for direct handoff to Android developers using Material Theme Builder outputs — no translation layer needed between design and engineering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Key Features ──────────────────────────────────────────────────── -->
+    <section id="features">
+      <div class="shell">
+        <span class="cs-section-label">Key Features</span>
+        <h2>Designed for depth, not engagement metrics</h2>
+
+        <div class="ims-features-grid reveal">
+          <div class="ims-card">
+            <div class="ims-feature-icon">🔐</div>
+            <h3>Identity Verification (KYC)</h3>
+            <p>CNIC, passport, and selfie-based verification reviewed by admins. Verified users unlock hosting, community creation, and map visibility — creating a trusted, accountable community.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-feature-icon">📊</div>
+            <h3>Public Analytics Transparency</h3>
+            <p>Unlike traditional platforms, engagement data is transparent. Users see who read their article, which experts engaged, and detailed interaction stats — fostering accountability without anonymity.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-feature-icon">🔔</div>
+            <h3>Smart Notification Summaries</h3>
+            <p>Contextual summaries rather than notification spam: "3 experts viewed your profile," "Your article received 12 upvotes," "New workshop 4km away." A login summary bottom sheet surfaces the most relevant updates at session start.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-feature-icon">🧭</div>
+            <h3>Quadrant Progress Tracking</h3>
+            <p>Every action on the platform maps to one or more of the four Surah Al-Jumu'ah quadrants. Users see their development balance across Recitation, Purification, Knowledge, and Wisdom dimensions.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-feature-icon">🤝</div>
+            <h3>Mentorship Framework</h3>
+            <p>Senior members can offer mentorship through the platform. The mentorship system is tied to verification and point levels — ensuring mentors have demonstrated real contribution before advising others.</p>
+          </div>
+          <div class="ims-card">
+            <div class="ims-feature-icon">📖</div>
+            <h3>Moderated Knowledge Library</h3>
+            <p>All content in the Library is reviewed before publication. No unmoderated user uploads. This preserves content quality and builds the Library as a genuine scholarly resource rather than a content dump.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Challenges & Decisions ────────────────────────────────────────── -->
+    <section id="challenges">
+      <div class="shell">
+        <span class="cs-section-label">Challenges &amp; Decisions</span>
+        <h2>The hard calls that shaped the product</h2>
+
+        <div class="ims-challenge-grid reveal">
+          <div class="ims-card challenge">
+            <span class="ims-challenge-tag">Challenge 01</span>
+            <h3>Scope vs. Coherence</h3>
+            <p>Six major modules, an admin portal, gamification, a map, and a library — the risk was building six mediocre products instead of one great one. The pressure to include everything was real.</p>
+            <div class="ims-challenge-resolution">
+              <span class="res-label">Resolution</span>
+              <p>Each module was defined with a clear primary purpose and a single success metric. Features that didn't serve the primary purpose were deferred to later phases. Community and Map were prioritized as the two features that deliver unique value no existing platform offers.</p>
+            </div>
+          </div>
+          <div class="ims-card challenge">
+            <span class="ims-challenge-tag">Challenge 02</span>
+            <h3>Gamification Without Addiction</h3>
+            <p>Every gamification mechanic that works in consumer apps works by exploiting psychological vulnerabilities. The challenge was building a reward system that motivates without manipulating.</p>
+            <div class="ims-challenge-resolution">
+              <span class="res-label">Resolution</span>
+              <p>The key decision was making all significant rewards human-reviewed rather than algorithmic. Badges require admin approval. Scholarships require applications. This introduces intentional friction that filters out gaming behavior while preserving genuine achievement recognition.</p>
+            </div>
+          </div>
+          <div class="ims-card challenge">
+            <span class="ims-challenge-tag">Challenge 03</span>
+            <h3>Trust &amp; Safety at Scale</h3>
+            <p>A platform enabling in-person meetups between strangers carries real safety responsibility. Standard community platform safety design wasn't sufficient given the sensitivity.</p>
+            <div class="ims-challenge-resolution">
+              <span class="res-label">Resolution</span>
+              <p>Identity verification was made a hard gate — not optional — for any feature involving physical-world interaction. The KYC module was designed as a first-class product, not an afterthought. Admins see the verification queue as a primary dashboard item.</p>
+            </div>
+          </div>
+          <div class="ims-card challenge">
+            <span class="ims-challenge-tag">Challenge 04</span>
+            <h3>Arabic + RTL Content</h3>
+            <p>The platform's core philosophy is expressed through Quranic Arabic. Typography, layout, and content components needed to handle RTL text elegantly — not as an afterthought addition.</p>
+            <div class="ims-challenge-resolution">
+              <span class="res-label">Resolution</span>
+              <p>RTL support was built into the design system from day one, not retrofitted. Arabic type was tested across all component variants. The quadrant cards use Arabic text as a design element — it's prominent and beautiful, not hidden or scaled down.</p>
+            </div>
+          </div>
+          <div class="ims-card challenge">
+            <span class="ims-challenge-tag">Challenge 05</span>
+            <h3>Community Cold Start</h3>
+            <p>A community platform with no users is unusable. The design needed to account for the state where communities are empty, content is sparse, and the map shows nothing nearby.</p>
+            <div class="ims-challenge-resolution">
+              <span class="res-label">Resolution</span>
+              <p>Empty states are designed as calls to action rather than blank voids. The Home dashboard surfaces global community highlights when local content is thin. The Map shows a regional view with nearby opportunities even when the immediate vicinity is sparse.</p>
+            </div>
+          </div>
+          <div class="ims-card challenge">
+            <span class="ims-challenge-tag">Challenge 06</span>
+            <h3>Defining "Intellectual" Without Exclusion</h3>
+            <p>The platform name and philosophy could inadvertently signal that it's only for academics or the highly educated — excluding the majority of the community it aims to serve.</p>
+            <div class="ims-challenge-resolution">
+              <span class="res-label">Resolution</span>
+              <p>The four quadrants deliberately include Recitation (accessible to all) and Character Development (universal) alongside Knowledge and Wisdom. Onboarding language emphasizes that everyone is at a different stage of their journey, and the platform meets people where they are.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design Principles ─────────────────────────────────────────────── -->
+    <section>
+      <div class="shell">
+        <span class="cs-section-label">Design Principles</span>
+        <h2>What guided every decision</h2>
+
+        <div class="ims-principle-list reveal">
+          <div class="ims-principle-row">
+            <div class="ims-principle-num">01</div>
+            <div>
+              <h3>Contribution Over Consumption</h3>
+              <p>Every feature is evaluated against this question: does it make it easier to give or to take? Features that primarily serve consumption are either redesigned or deprioritized. The default state of the platform pushes users toward creating, sharing, and engaging rather than scrolling.</p>
+            </div>
+          </div>
+          <div class="ims-principle-row">
+            <div class="ims-principle-num">02</div>
+            <div>
+              <h3>Trust is Earned, Not Assumed</h3>
+              <p>Permissions are progressive. New users get basic access. Verified users get community creation and map presence. High-level contributors get exclusive opportunities. This creates a clear social contract — the platform gives more as users demonstrate genuine contribution.</p>
+            </div>
+          </div>
+          <div class="ims-principle-row">
+            <div class="ims-principle-num">03</div>
+            <div>
+              <h3>Clarity Over Cleverness</h3>
+              <p>The platform serves a global, diverse audience with varied digital literacy. Clever interaction patterns that require learning are avoided in favor of immediately understandable affordances. If a feature needs a tooltip to explain it, it needs to be redesigned.</p>
+            </div>
+          </div>
+          <div class="ims-principle-row">
+            <div class="ims-principle-num">04</div>
+            <div>
+              <h3>The Offline World Matters</h3>
+              <p>A community platform that keeps its community entirely online has failed. Every digital interaction should have a pathway to real-world connection — events, meetups, mentorship sessions, and workshops. The Map module is the physical expression of this principle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Future Roadmap ────────────────────────────────────────────────── -->
+    <section id="roadmap">
+      <div class="shell">
+        <span class="cs-section-label">Future Roadmap</span>
+        <h2>Where the platform goes from here</h2>
+        <p class="cs-section-intro">The current phase covers Android MVP. The product is designed as a scalable ecosystem — the architecture decisions made now are deliberately forward-compatible with the full vision.</p>
+
+        <div class="ims-roadmap-grid reveal">
+          <div class="ims-card phase">
+            <span class="ims-phase-label">Phase 1 — Now</span>
+            <h3>Android MVP</h3>
+            <ul>
+              <li>Home Dashboard</li>
+              <li>Community (core)</li>
+              <li>Interactive Map</li>
+              <li>Tasks &amp; Missions</li>
+              <li>Admin Portal v1</li>
+              <li>Identity Verification</li>
+            </ul>
+          </div>
+          <div class="ims-card phase">
+            <span class="ims-phase-label">Phase 2 — Near</span>
+            <h3>Knowledge Layer</h3>
+            <ul>
+              <li>Full Library module</li>
+              <li>Course creation tools</li>
+              <li>Session recordings</li>
+              <li>Research publications</li>
+              <li>My Space — full profile</li>
+              <li>Mentorship matching</li>
+            </ul>
+          </div>
+          <div class="ims-card phase">
+            <span class="ims-phase-label">Phase 3 — Mid-term</span>
+            <h3>Web Platform</h3>
+            <ul>
+              <li>Web application (responsive)</li>
+              <li>Extended creator tools</li>
+              <li>Advanced analytics</li>
+              <li>Scholarship portal</li>
+              <li>Hall of Fame public page</li>
+              <li>Community API</li>
+            </ul>
+          </div>
+          <div class="ims-card phase">
+            <span class="ims-phase-label">Phase 4 — Long-term</span>
+            <h3>iOS &amp; Ecosystem</h3>
+            <ul>
+              <li>iOS application</li>
+              <li>Institutional accounts</li>
+              <li>White-label communities</li>
+              <li>Advanced recommendation engine</li>
+              <li>Translation &amp; localization</li>
+              <li>Open content API</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WIP CTA ────────────────────────────────────────────────────────── -->
+    <section style="padding-bottom:100px">
+      <div class="shell">
+        <div class="ims-wip-cta reveal">
+          <div class="ims-wip-badge">
+            <div class="ims-wip-dot"></div>
+            <span>Active Work In Progress</span>
+          </div>
+          <h2>This project is still being built</h2>
+          <p>IMS is in active product definition, UX architecture, and design system creation. This case study documents strategic and architectural decisions — final screens and prototypes are being developed. Interested in following the progress or discussing the product?</p>
+          <div class="ims-cta-buttons">
+            <a class="button primary" href="index.html#contact">Get in Touch</a>
+            <a class="button secondary" href="index.html#work">View Other Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Next projects CTA ─────────────────────────────────────────────── -->
+    <section class="cs-cta">
+      <div class="shell">
+        <span class="cs-section-label">More Work</span>
+        <h2>Explore other case studies</h2>
+        <div class="cs-cta-buttons">
+          <a class="button primary" href="aegis.html">AEGIS — Counter-Drone C2</a>
+          <a class="button secondary" href="meridian.html">Meridian — B2B SaaS</a>
+          <a class="button secondary" href="index.html#work">All Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>© 2025 Muhammad Saad · Senior Product Designer</span>
+      <span>IMS — Islamic Messaging System · Case Study</span>
+    </div>
+  </footer>
+
+  <a href="javascript:void(0)" class="button scroll-top" id="scrollTopButton" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </svg>
+  </a>
+
+  <script src="zoom.js"></script>
+  <script src="top.js"></script>
+  <script>
+    // Back button: go to referrer if available
+    const backBtn = document.getElementById('backButton');
+    if (backBtn && document.referrer && document.referrer !== window.location.href) {
+      backBtn.href = document.referrer;
+    }
+    // Hide phone placeholder when image loads successfully
+    document.querySelectorAll('.ims-phone-screen img').forEach(img => {
+      img.addEventListener('load', function() {
+        const ph = this.parentElement.querySelector('.ims-phone-placeholder');
+        if (ph) ph.style.display = 'none';
+      });
+      if (img.complete && img.naturalWidth > 0) {
+        const ph = img.parentElement.querySelector('.ims-phone-placeholder');
+        if (ph) ph.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -333,12 +333,8 @@
                 <span>●●●</span>
               </div>
               <div class="ims-phone-screen">
-                <img src="assets/img/ims-screen-1.jpg" alt="IMS Community Screen" onerror="this.style.display='none'">
-                <div class="ims-phone-placeholder">
-                  <div class="ims-ph-icon">🌐</div>
-                  <p class="ims-ph-label">Community</p>
-                  <p>ims-screen-2.png</p>
-                </div>
+                <picture><source media="(max-width:768px)" srcset="assets/img/mobile/ims-screen-1.webp" type="image/webp"><img src="assets/img/ims-screen-1.jpg" alt="IMS Community Screen" onerror="this.style.display='none'"></picture>
+                
               </div>
             </div>
             <p class="ims-phone-label">Community</p>
@@ -353,12 +349,8 @@
                 <span>●●●</span>
               </div>
               <div class="ims-phone-screen">
-                <img src="assets/img/ims-screen-2.jpg" alt="IMS Home Dashboard" onerror="this.style.display='none'">
-                <div class="ims-phone-placeholder">
-                  <div class="ims-ph-icon">🏠</div>
-                  <p class="ims-ph-label">Home Dashboard</p>
-                  <p>ims-screen-1.png</p>
-                </div>
+                <picture><source media="(max-width:768px)" srcset="assets/img/mobile/ims-screen-2.webp" type="image/webp"><img src="assets/img/ims-screen-2.jpg" alt="IMS Home Dashboard" onerror="this.style.display='none'"></picture>
+               
               </div>
             </div>
             <p class="ims-phone-label">Home Dashboard</p>
@@ -373,12 +365,8 @@
                 <span>●●●</span>
               </div>
               <div class="ims-phone-screen">
-                <img src="assets/img/ims-screen-3.jpg" alt="IMS Map Screen" onerror="this.style.display='none'">
-                <div class="ims-phone-placeholder">
-                  <div class="ims-ph-icon">📍</div>
-                  <p class="ims-ph-label">Interactive Map</p>
-                  <p>ims-screen-3.png</p>
-                </div>
+                <picture><source media="(max-width:768px)" srcset="assets/img/mobile/ims-screen-3.webp" type="image/webp"><img src="assets/img/ims-screen-3.jpg" alt="IMS Map Screen" onerror="this.style.display='none'"></picture>
+                
               </div>
             </div>
             <p class="ims-phone-label">Interactive Map</p>
@@ -393,12 +381,8 @@
                 <span>●●●</span>
               </div>
               <div class="ims-phone-screen">
-                <img src="assets/img/ims-screen-4.jpg" alt="IMS Missions Screen" onerror="this.style.display='none'">
-                <div class="ims-phone-placeholder">
-                  <div class="ims-ph-icon">🎯</div>
-                  <p class="ims-ph-label">Tasks & Missions</p>
-                  <p>ims-screen-4.png</p>
-                </div>
+                <picture><source media="(max-width:768px)" srcset="assets/img/mobile/ims-screen-4.webp" type="image/webp"><img src="assets/img/ims-screen-4.jpg" alt="IMS Missions Screen" onerror="this.style.display='none'"></picture>
+                
               </div>
             </div>
             <p class="ims-phone-label">Missions</p>
@@ -413,12 +397,8 @@
                 <span>●●●</span>
               </div>
               <div class="ims-phone-screen">
-                <img src="assets/img/ims-screen-5.jpg" alt="IMS My Space Screen" onerror="this.style.display='none'">
-                <div class="ims-phone-placeholder">
-                  <div class="ims-ph-icon">👤</div>
-                  <p class="ims-ph-label">My Space</p>
-                  <p>ims-screen-5.png</p>
-                </div>
+                <picture><source media="(max-width:768px)" srcset="assets/img/mobile/ims-screen-5.webp" type="image/webp"><img src="assets/img/ims-screen-5.jpg" alt="IMS My Space Screen" onerror="this.style.display='none'"></picture>
+                
               </div>
             </div>
             <p class="ims-phone-label">My Space</p>
@@ -1190,5 +1170,40 @@
       }
     });
   </script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var revealItems = document.querySelectorAll(".reveal");
+      if (prefersReducedMotion) {
+        revealItems.forEach(function (item) {
+          item.style.opacity = "1";
+          item.style.transform = "";
+        });
+      } else {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "";
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+        revealItems.forEach(function (item) {
+          var rect = item.getBoundingClientRect();
+          if (rect.top > window.innerHeight * 0.95) {
+            item.style.opacity = "0";
+            item.style.transform = "translateY(22px) scale(0.98)";
+            item.style.transition = "opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)";
+            observer.observe(item);
+          } else {
+            item.style.opacity = "1";
+            item.style.transform = "";
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

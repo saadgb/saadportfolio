@@ -470,7 +470,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/strategic-overview.jpg" alt="Strategic Overview"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/strategic-overview.webp" type="image/webp"><img src="assets/img/strategic-overview.jpg" alt="Strategic Overview"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>Strategic Overview</h3>
@@ -494,7 +494,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/reality-canvas.jpg" alt="Reality Canvas"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/reality-canvas.webp" type="image/webp"><img src="assets/img/reality-canvas.jpg" alt="Reality Canvas"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>Reality Canvas</h3>
@@ -518,7 +518,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/pattern.jpg" alt="Pattern Lab"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/pattern.webp" type="image/webp"><img src="assets/img/pattern.jpg" alt="Pattern Lab"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>Pattern Lab</h3>
@@ -542,7 +542,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/agent.jpg" alt="Agent Theater"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/agent.webp" type="image/webp"><img src="assets/img/agent.jpg" alt="Agent Theater"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>Agent Theater</h3>
@@ -648,7 +648,7 @@
               <p>Implicit role inference risks showing a DG the wrong workspace or exposing IO-level data to admin-only actions. An explicit persona gate makes the security boundary visible at the right moment.</p>
             </div>
             <div class="m-case-file-media">
-            <img src="assets/img/login-meridian.jpg" alt="Login Screen">
+            <picture><source media="(max-width:768px)" srcset="assets/img/mobile/login-meridian.webp" type="image/webp"><img src="assets/img/login-meridian.jpg" alt="Login Screen"></picture>
           </div>
           </div>
           
@@ -752,7 +752,36 @@
 
   <script>
     window.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('.reveal').forEach(function (item) { item.style.opacity = '1'; item.style.transform = ''; });
+      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var revealItems = document.querySelectorAll(".reveal");
+      if (prefersReducedMotion) {
+        revealItems.forEach(function (item) {
+          item.style.opacity = "1";
+          item.style.transform = "";
+        });
+      } else {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "";
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+        revealItems.forEach(function (item) {
+          var rect = item.getBoundingClientRect();
+          if (rect.top > window.innerHeight * 0.95) {
+            item.style.opacity = "0";
+            item.style.transform = "translateY(22px) scale(0.98)";
+            item.style.transition = "opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)";
+            observer.observe(item);
+          } else {
+            item.style.opacity = "1";
+            item.style.transform = "";
+          }
+        });
+      }
 
       var backButton = document.getElementById('backButton');
       if (backButton) {
@@ -765,6 +794,7 @@
   </script>
   <script src="top.js"></script>
   <script src="zoom.js" defer></script>
+
 </body>
 </html>
     

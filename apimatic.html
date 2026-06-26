@@ -278,7 +278,7 @@
         <span class="cs-section-label">What The Data Revealed</span>
         <p>Behavioral analytics and session recordings exposed where users struggled, abandoned workflows, and failed to reach value. These findings directly informed the redesign priorities.</p>
         <div class="cs-screen-showcase reveal">
-          <div class="cs-placeholder"><img src="assets/img/signup-drop-off.jpg" alt="Onboarding Friction" /></div>
+          <div class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/signup-drop-off.webp" type="image/webp"><img src="assets/img/signup-drop-off.jpg" alt="Onboarding Friction" /></picture></div>
           <div>
             <h3>Onboarding Drop-Off</h3>
             <p>Users were abandoning onboarding before experiencing the value of the platform. The process prioritized data collection over product activation, creating friction early in the journey.</p>
@@ -292,7 +292,7 @@
           </div>
         </div>
         <div class="cs-screen-showcase reveal">
-          <div class="cs-placeholder"><img src="assets/img/fail-pattern.png" alt="Explorer Failure Patterns" /></div>
+          <div class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/fail-pattern.webp" type="image/webp"><img src="assets/img/fail-pattern.png" alt="Explorer Failure Patterns" /></picture></div>
           <div>
             <h3>Explorer Failure Patterns</h3>
             <p>Error states provided little context, making it difficult for users to distinguish API issues from configuration mistakes. This often resulted in failed testing and abandonment.</p>
@@ -337,7 +337,7 @@
         <h2>Project Titan Redesign</h2>
         <div class="cs-solution-panel cs-solution-01 reveal">
           <div class="cs-solution-media">
-            <img src="assets/img/explorer.png" style="    object-fit: fill;" alt="Project Titan Redesign" />
+            <picture><source media="(max-width:768px)" srcset="assets/img/mobile/explorer.webp" type="image/webp"><img src="assets/img/explorer.png" style="    object-fit: fill;" alt="Project Titan Redesign" /></picture>
           </div>
           <div class="cs-solution-copy">
             <div class="cs-solution-step">
@@ -369,7 +369,7 @@
         <div class="cs-comparison-grid cs-solution-showcase">
           <div class="cs-comparison-column reveal">
             <h3 class="cs-comparison-header cs-comparison-before">Before</h3>
-            <div class="cs-comparison-visual"><span class="cs-placeholder"><img src="assets/img/old-form.png" alt="Before"></span></div>
+            <div class="cs-comparison-visual"><span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/old-form.webp" type="image/webp"><img src="assets/img/old-form.png" alt="Before"></picture></span></div>
             <div class="cs-comparison-stack">
               <span class="cs-comparison-tag">Long form</span>
               <span class="cs-comparison-tag">High abandonment</span>
@@ -377,7 +377,7 @@
           </div>
           <div class="cs-comparison-column reveal">
             <h3 class="cs-comparison-header cs-comparison-after">After</h3>
-            <div class="cs-comparison-visual"><span class="cs-placeholder"><img src="assets/img/new-form.png" alt="After"></span></div>
+            <div class="cs-comparison-visual"><span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/new-form.webp" type="image/webp"><img src="assets/img/new-form.png" alt="After"></picture></span></div>
             <div class="cs-comparison-stack">
               <span class="cs-comparison-tag">Minimal path to value</span>
               <span class="cs-comparison-tag">Spec upload → live portal</span>
@@ -396,8 +396,8 @@
           <div class="cs-solution-media">
             <div class="cs-image-carousel" style="height:320px;">
               <div class="cs-carousel-track">
-                <div class="cs-carousel-slide"><img src="assets/img/pub1.png" alt="Explorer Fixes screen 1"></div>
-                <div class="cs-carousel-slide"><img src="assets/img/pub2.png" alt="Explorer Fixes screen 2" style="object-fit: contain;background-color: #fff;"></div>
+                <div class="cs-carousel-slide"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/pub1.webp" type="image/webp"><img src="assets/img/pub1.png" alt="Explorer Fixes screen 1"></picture></div>
+                <div class="cs-carousel-slide"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/pub2.webp" type="image/webp"><img src="assets/img/pub2.png" alt="Explorer Fixes screen 2" style="object-fit: contain;background-color: #fff;"></picture></div>
               </div>
               <button class="cs-carousel-arrow prev" aria-label="Previous slide">❮</button>
               <button class="cs-carousel-arrow next" aria-label="Next slide">❯</button>
@@ -430,7 +430,7 @@
         <p class="cs-section-intro">Before redesigning onboarding and workflows, I established a scalable design system that unified components, interaction patterns, and visual language across the platform. This foundation enabled faster iteration, consistent user experiences, and more efficient collaboration with engineering.</p>
         <div class="cs-showcase-container reveal">
           <div class="cs-showcase-item cs-design-system-card">
-            <img src="assets/img/apimatic-design-system.jpg" alt="Design System">
+            <picture><source media="(max-width:768px)" srcset="assets/img/mobile/apimatic-design-system.webp" type="image/webp"><img src="assets/img/apimatic-design-system.jpg" alt="Design System"></picture>
           </div>
         </div>
       </div>
@@ -558,17 +558,40 @@
     </div>
   </footer>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script>
     window.addEventListener("DOMContentLoaded", function () {
-      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      var revealItems = document.querySelectorAll(".reveal");
-
-      revealItems.forEach(function (item) {
-        item.style.opacity = "1";
-        item.style.removeProperty('transform');
-      });
+      (function () {
+        var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var revealItems = document.querySelectorAll(".reveal");
+        if (prefersReducedMotion) {
+          revealItems.forEach(function (item) {
+            item.style.opacity = "1";
+            item.style.transform = "";
+          });
+        } else {
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "";
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.18 });
+          revealItems.forEach(function (item) {
+            var rect = item.getBoundingClientRect();
+            if (rect.top > window.innerHeight * 0.95) {
+              item.style.opacity = "0";
+              item.style.transform = "translateY(22px) scale(0.98)";
+              item.style.transition = "opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)";
+              observer.observe(item);
+            } else {
+              item.style.opacity = "1";
+              item.style.transform = "";
+            }
+          });
+        }
+      })();
 
       var backButton = document.getElementById('backButton');
       if (backButton) {

@@ -155,7 +155,7 @@
     <section class="cs-showcase-section">
       <div class="shell">
         <div class="cs-showcase-container reveal">
-          <span class="cs-placeholder"><img src="assets/img/spectra-hero.jpg" alt="SPECTRA Hero Image"></span>
+          <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/spectra-hero.webp" type="image/webp"><img src="assets/img/spectra-hero.jpg" alt="SPECTRA Hero Image"></picture></span>
           <div class="cs-showcase-overlay">
             <p class="cs-showcase-caption">SPECTRA unified multiple operational workflows into a single intelligence platform with a consistent interaction model. Operators, analysts, and commanders access their domain-specific view through a common system.</p>
           </div>
@@ -331,7 +331,7 @@
           <div class="cs-comparison-column">
             <h3 class="cs-comparison-header cs-comparison-before">Before</h3>
             <div class="cs-comparison-visual">
-              <span class="cs-placeholder"><img src="assets/img/spectra-before.jpg" alt="Before Image"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/spectra-before.webp" type="image/webp"><img src="assets/img/spectra-before.jpg" alt="Before Image"></picture></span>
             </div>
             <div class="cs-comparison-item">
               <span class="cs-compare-icon before" aria-hidden="true"></span>
@@ -357,7 +357,7 @@
           <div class="cs-comparison-column">
             <h3 class="cs-comparison-header cs-comparison-after">After</h3>
             <div class="cs-comparison-visual">
-              <span class="cs-placeholder"><img src="assets/img/spectra-after.jpg" alt="After Image"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/spectra-after.webp" type="image/webp"><img src="assets/img/spectra-after.jpg" alt="After Image"></picture></span>
             </div>
             <div class="cs-comparison-item">
               <span class="cs-compare-icon after" aria-hidden="true"><svg width="14" height="10" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L5 11L15 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -660,7 +660,7 @@
         <div class="cs-screens-container">
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/cop.jpg" alt="Common Operating Picture"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/cop.webp" type="image/webp"><img src="assets/img/cop.jpg" alt="Common Operating Picture"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>Common Operating Picture</h3>
@@ -684,7 +684,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/comint.jpg" alt="COMINT Dashboard"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/comint.webp" type="image/webp"><img src="assets/img/comint.jpg" alt="COMINT Dashboard"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>COMINT Dashboard</h3>
@@ -708,7 +708,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/threat-fusion.jpg" alt="Threat Fusion"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/threat-fusion.webp" type="image/webp"><img src="assets/img/threat-fusion.jpg" alt="Threat Fusion"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>Threat Fusion</h3>
@@ -732,7 +732,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/jadops-ai.jpg" alt="JADOPS-AI Terminal"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/jadops-ai.webp" type="image/webp"><img src="assets/img/jadops-ai.jpg" alt="JADOPS-AI Terminal"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>JADOPS-AI Terminal</h3>
@@ -756,7 +756,7 @@
 
           <div class="cs-screen-showcase reveal">
             <div class="cs-screen-image">
-              <span class="cs-placeholder"><img src="assets/img/ew-planning.jpg" alt="EW Planning"></span>
+              <span class="cs-placeholder"><picture><source media="(max-width:768px)" srcset="assets/img/mobile/ew-planning.webp" type="image/webp"><img src="assets/img/ew-planning.jpg" alt="EW Planning"></picture></span>
             </div>
             <div class="cs-screen-content">
               <h3>EW Planning</h3>
@@ -1111,17 +1111,40 @@
   </footer>
 
   <script src="zoom.js" defer></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script>
     window.addEventListener("DOMContentLoaded", function () {
-      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      var revealItems = document.querySelectorAll(".reveal");
-
-      revealItems.forEach(function (item) {
-        item.style.opacity = "1";
-        item.style.transform = "";
-      });
+      (function () {
+        var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var revealItems = document.querySelectorAll(".reveal");
+        if (prefersReducedMotion) {
+          revealItems.forEach(function (item) {
+            item.style.opacity = "1";
+            item.style.transform = "";
+          });
+        } else {
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "";
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.18 });
+          revealItems.forEach(function (item) {
+            var rect = item.getBoundingClientRect();
+            if (rect.top > window.innerHeight * 0.95) {
+              item.style.opacity = "0";
+              item.style.transform = "translateY(22px) scale(0.98)";
+              item.style.transition = "opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)";
+              observer.observe(item);
+            } else {
+              item.style.opacity = "1";
+              item.style.transform = "";
+            }
+          });
+        }
+      })();
 
       // Back button: prefer history.back(), fallback to index with contact hash
       var backButton = document.getElementById('backButton');

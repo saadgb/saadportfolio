@@ -7,7 +7,7 @@
   <meta name="description" content="APIMatic: Developer Experience transformation. Data-led redesign of onboarding, portal configuration, and developer workflows.">
   <meta name="theme-color" content="#070a12">
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
-  <script>document.documentElement.classList.add('js-reveal')</script>
+  <script data-cfasync="false">document.documentElement.classList.add('js-reveal')</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -684,9 +684,13 @@
   </script>
   <script src="top.js"></script>
   <script src="zoom.js" defer></script>
-  <script>
+  <script data-cfasync="false">
     (function () {
-      if (!('IntersectionObserver' in window)) return;
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
@@ -695,8 +699,14 @@
           }
         });
       }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-      document.querySelectorAll('.reveal').forEach(function (el) {
-        observer.observe(el);
+      els.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) {
+          el.style.transition = 'none';
+          el.classList.add('is-visible');
+        } else {
+          observer.observe(el);
+        }
       });
     })();
   </script>
